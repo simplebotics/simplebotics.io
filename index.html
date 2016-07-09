@@ -1,62 +1,36 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>simplebotics.io</title>
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
-<script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-route.min.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-<script src="script.js"></script>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round" rel="stylesheet">
-<link rel="stylesheet" href="https://simplebotics.github.io/simplebotics.io/custom.css">
-<script>
+  <meta charset="UTF-8">
+  <title>simplebotics.io</title>
+  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-route.min.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round" rel="stylesheet">
+  <link rel="stylesheet" href="https://simplebotics.github.io/simplebotics.io/custom.css">
+  <script>
 
-function showConsumer() {
-   document.getElementById('consumerHidden').style.display = "block";
-}
 
-function showDeveloper() {
-   document.getElementById('developerHidden').style.display = "block";
-   document.getElementById('consumerHidden' || 'educatorHidden' || 'consumerRobotsHidden' || 'consumerDronesHidden' 
-   	|| 'developerRobotsHidden' || 'developerDronesHidden' || 'educatorRobotsHidden' || 'educatorDronesHidden').style.display = "none";
-}
+    var divState = {};
+    function showHide(id) {
+      if (document.getElementById) {
+        var divid = document.getElementById(id);
+        divState[id] = (divState[id]) ? false : true;
+        //close others
+        for (var div in divState){
+          if (divState[div] && div != id){
+            document.getElementById(div).style.display = 'none';
+            divState[div] = false;
+          }
+        }
+        divid.style.display = (divid.style.display == 'block' ? 'none' : 'block');
+      }
+    }
 
-function showConsumerRobotsFloorCards() {
-	document.getElementById('consumerRobotsFloorCards').style.display = "block";
-}
-
-function showEducator() {
-   document.getElementById('educatorHidden').style.display = "block";
-}
-
-function showConsumerRobots() {
-   document.getElementById('consumerRobotsHidden').style.display = "block";
-}
-
-function showConsumerDrones() {
-   document.getElementById('consumerDronesHidden').style.display = "block";
-}
-
-function showDeveloperRobots() {
-   document.getElementById('developerRobotsHidden').style.display = "block";
-}
-
-function showDeveloperDrones() {
-   document.getElementById('developerDronesHidden').style.display = "block";
-}
-
-function showEducatorRobots() {
-   document.getElementById('educatorRobotsHidden').style.display = "block";
-}
-
-function showEducatorDrones() {
-   document.getElementById('educatorDronesHidden').style.display = "block";
-}
-
-$(document).ready(function(){
+        $(document).ready(function(){
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
 
@@ -73,7 +47,7 @@ $(document).ready(function(){
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function(){
-   
+
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
@@ -82,86 +56,102 @@ $(document).ready(function(){
 });
 
 
-</script>
+  </script>
+
+  <style>
+
+    #content > div {display:none;}
+
+    #Consumer, #Developer,#Educator {
+      padding: 200px;
+    }
+
+  </style>
 
 </head>
+
 <body>
-<div>
-<div>
-<nav class="navbar navbar-inverse" role="navigation" style="padding-left:130px;">
+  <div>
+    <div>
+      <nav class="navbar navbar-inverse" role="navigation" style="padding-left:130px;">
        <ul class="nav navbar-nav">
-      <li class="active"><a href="/">Home<span class="sr-only">(current)</span></a></li>
-      <li><a href="/robots">About</a></li>
-      <li><a href="/drones">Pricing</a></li>
-      <li><a href="/contact">Contact us</a></li>
-    </ul>
-</nav>
-</div>
-<br/>
-
-<div align="center">
-
-<div class="jumbotron">
-<p>I am a:</p>
-<a class="btn btn-primary" href="#consumerHidden" role="button" onclick="showConsumer()">Consumer</a>
-<a class="btn btn-primary" href="#developerHidden" role="button" onclick="showDeveloper()">Developer</a>
-<a class="btn btn-primary" href="#educatorHidden" role="button" onclick="showEducator()">Teacher</a>
-
-
-
-
-<div id="consumerHidden" style="display:none; padding: 200px;" class="answer_list" >
-		<p>Looking for a:</p>
-			<a class="btn btn-primary" href="#consumerRobotsHidden" role="button" onclick="showConsumerRobots()">Robot</a>
-			<a class="btn btn-primary" href="#drone" role="button">Drone</a>
-</div>
-
-<div id="developerHidden" style="display:none; padding: 200px;" class="answer_list" >
-		<p>Looking for a:</p>
-			<a class="btn btn-primary" href="#consumerRobotsHidden" role="button" onclick="showConsumerRobots()">Robot</a>
-			<a class="btn btn-primary" href="#drone" role="button">Drone</a>
-</div>
-<div id="educatorHidden" style="display:none; padding: 200px;" class="answer_list" >
-		<p>Looking for a:</p>
-			<a class="btn btn-primary" href="#consumerRobotsHidden" role="button" onclick="showConsumerRobots()">Robot</a>
-			<a class="btn btn-primary" href="#drone" role="button">Drone</a>
-</div>
-
-<div id="consumerRobotsHidden" style="display:none; padding: 200px;" class="answer_list" >
-		<p>That:</p>
-<div class="btn-group" data-toggle="buttons">
-  <label class="btn btn-primary">
-    <input type="radio" name="options" id="optionFloor" autocomplete="off" onclick="showConsumerRobotsFloorCards()"> Cleans Floors
-  </label>
-  <label class="btn btn-primary">
-    <input type="radio" name="options" id="optionMow" autocomplete="off"> Mows Lawns
-  </label>
-</div>
-</div>
-
-<div id="consumerRobotsFloorCards" style="display: none; padding: 200px" class=answer_list>
-<div class="card">
-  <div class="card-block">
-    <h4 class="card-title">Roomba 980</h4>
-    <h6 class="card-subtitle text-muted">Home Robotic Vacuum Cleaner</h6>
+        <li class="active"><a href="/">Home<span class="sr-only">(current)</span></a></li>
+        <li><a href="/robots">About</a></li>
+        <li><a href="/drones">Pricing</a></li>
+        <li><a href="/contact">Contact us</a></li>
+      </ul>
+    </nav>
   </div>
-  <img data-src="http://i.imgur.com/emTfvZs.jpg" alt="Card image">
-  <div class="card-block">
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="card-link">Card link</a>
-    <a href="#" class="card-link">Another link</a>
-  </div>
-</div>
-</div>
+  <br/>
+
+  <div align="center">
+
+    <div class="jumbotron">
+      <p>I am a:</p>
+      <a class="btn btn-primary" href="javascript:void(null)" role="button" onclick="showHide('Consumer')";>Consumer</a>
+      <a class="btn btn-primary" href="javascript:void(null)" role="button" onclick="showHide('Developer')";>Developer</a>
+      <a class="btn btn-primary" href="javascript:void(null)" role="button" onclick="showHide('Educator')";>Teacher</a>
 
 
-</div>
+      <div id="content">
 
-<footer class="footer">
-      <div class="container">
-        <p class="text-muted">Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="http://simplebotics.com">simplebotics.com</a></p>
+        <div id="Consumer">
+          <p>Looking for a:</p>
+          <a class="btn btn-primary" href="#consumerRobotsHidden" role="button" onclick="showConsumerRobots()">Robot</a>
+          <a class="btn btn-primary" href="#drone" role="button">Drone</a>
+        </div>
+
+        <div id="Developer">
+          <p>Looking for a:</p>
+          <a class="btn btn-primary" href="#consumerRobotsHidden" role="button" onclick="showConsumerRobots()">Robot</a>
+          <a class="btn btn-primary" href="#drone" role="button">Drone</a>
+        </div>
+
+        <div id="Educator">
+          <p>Looking for a:</p>
+          <a class="btn btn-primary" href="#consumerRobotsHidden" role="button" onclick="showConsumerRobots()">Robot</a>
+          <a class="btn btn-primary" href="#drone" role="button">Drone</a>
+        </div>
+
+
+        <div id="consumerRobotsHidden" style="display:none; padding: 200px;" class="answer_list" >
+          <p>That:</p>
+          <div class="btn-group" data-toggle="buttons">
+            <label class="btn btn-primary">
+              <input type="radio" name="options" id="optionFloor" autocomplete="off" onclick="showConsumerRobotsFloorCards()"> Cleans Floors
+            </label>
+            <label class="btn btn-primary">
+              <input type="radio" name="options" id="optionMow" autocomplete="off"> Mows Lawns
+            </label>
+          </div>
+        </div>
+
+        <div id="consumerRobotsFloorCards" style="display: none; padding: 200px" class=answer_list>
+          <div class="card">
+            <div class="card-block">
+              <h4 class="card-title">Roomba 980</h4>
+              <h6 class="card-subtitle text-muted">Home Robotic Vacuum Cleaner</h6>
+            </div>
+            <img data-src="http://i.imgur.com/emTfvZs.jpg" alt="Card image">
+            <div class="card-block">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+        </div>
       </div>
-</footer>
+    </div>
+ 
+
+
+  <footer class="footer">
+    <div class="container">
+      <p class="text-muted">Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="http://simplebotics.com">simplebotics.com</a></p>
+    </div>
+  </footer>
+
+  </div>
 
 </body>
 
