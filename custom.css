@@ -1,1 +1,57 @@
-
+.hidden {
+     display:none;
+}
+.btn {
+    display: inline-block;
+    padding: 48px 64px;
+    margin-bottom: 0;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: none;
+    border-radius: 4px;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #fff;
+    background-color: rgba(239, 85, 39, 0.73);
+    border-color: none;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #ef3f27;
+    border-color: none;
+}
+.jumbotron p {
+    margin-bottom: 15px;
+    font-size: 50px;
+    font-weight: 200;
+    font-family: varela round;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #ef3f27;
+    border-color: #240d0a;
+    font-family: open sans;
+}
+body {
+	background: rgb(237, 249, 255);
+}
+.jumbotron {
+    padding: 150px 0;
+    background-color: rgb(237, 249, 255);
+}
+.fa-heart:before {
+    content: "\f004";
+    color: #ff2b62;
+}
