@@ -9,9 +9,10 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Muli:300,400" rel="stylesheet">
   <link rel="stylesheet" href="https://simplebotics.github.io/simplebotics.io/custom.css">
   <script>
+
 
     var divState = {};
     function showHide(id) {
@@ -29,9 +30,12 @@
       }
     }
 
-        $(document).ready(function(){
+    jQuery.noConflict();
+    var a=jQuery.noConflict() || $.noConflict;
+
+    a(document).ready(function(){
   // Add smooth scrolling to all links
-  $("a").on('click', function(event) {
+  a("a").on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
@@ -43,7 +47,7 @@
 
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
+      a('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function(){
 
@@ -55,102 +59,132 @@
 });
 
 
-  </script>
 
-  <style>
-
-    #content > div {display:none;}
-
-    #Consumer, #Developer, #Educator {
-      padding: 200px;
-    }
-
-  </style>
+</script>
 
 </head>
 
 <body>
-  <div>
-    <div>
-      <nav class="navbar navbar-inverse" role="navigation" style="padding-left:130px;">
-       <ul class="nav navbar-nav">
-        <li class="active"><a href="/">Home<span class="sr-only">(current)</span></a></li>
-        <li><a href="/robots">About</a></li>
-        <li><a href="/drones">Pricing</a></li>
-        <li><a href="/contact">Contact us</a></li>
-      </ul>
-    </nav>
+
+ <nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">simplebotics.io</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">About</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
   </div>
-  <br/>
+</nav>
+
 
   <div align="center">
 
     <div class="jumbotron">
+      <div class="container">
+
+        <h1>Add a little STEM to your classroom.</h1>
+        <h2>Simplebotics.io helps teachers and parents find STEM products for their classrooms and kids.</h2>
+        <a class="btn btn-primary-outline" href="javascript:void(null)" role="button" onclick="showHide('Type')";>Begin</a>
+      </div>
+    </div>
+
+    <div id="content">
+
+     <div id="Type">
       <p>I am a:</p>
-      <a class="btn btn-primary" href="javascript:void(null)" role="button" onclick="showHide('Consumer')";>Consumer</a>
-      <a class="btn btn-primary" href="javascript:void(null)" role="button" onclick="showHide('Developer')";>Developer</a>
-      <a class="btn btn-primary" href="javascript:void(null)" role="button" onclick="showHide('Educator')";>Teacher</a>
+      <a class="btn btn-primary" href="javascript:void(null)" role="button" onclick="showHide('Teacher')";>Teacher</a>
+      <a class="btn btn-primary" href="javascript:void(null)" role="button" onclick="showHide('Parent')";>Parent</a>
+    </div>
 
 
-      <div id="content">
 
-        <div id="Consumer">
-          <p>Looking for a:</p>
-          <a class="btn btn-primary" href="#consumerRobotsHidden" role="button" onclick="showConsumerRobots()">Robot</a>
-          <a class="btn btn-primary" href="#drone" role="button">Drone</a>
+    <div id="Teacher">
+      <p>Looking for a:</p>
+      <a class="btn btn-primary" href="javascript:void(null)" role="button" onclick="showHide('teacherRobots')";>Robot</a>
+      <a class="btn btn-primary" href="javascript:void(null)" role="button" onclick="showHide('teacherDrones')";>Drone</a>
+    </div>
+
+    <div id="Parent">
+      <p>Looking for a:</p>
+      <a class="btn btn-primary" href="javascript:void(null)" role="button" onclick="showHide('parentRobots')";>Robot</a>
+      <a class="btn btn-primary" href="javascript:void(null)" role="button" onclick="showHide('parentDrones')";>Drone</a>
+    </div>
+
+
+    <div id="teacherRobots">
+      <p>That:</p>
+      <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary">
+          <input type="radio" name="options" id="optionFloor" autocomplete="off" onclick="showConsumerRobotsFloorCards()"> Cleans Floors
+        </label>
+        <label class="btn btn-primary">
+          <input type="radio" name="options" id="optionMow" autocomplete="off"> Mows Lawns
+        </label>
+      </div>
+    </div>
+
+    <div id="teacherDrones">
+      <p>That:</p>
+      <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary">
+          <input type="radio" name="options" id="optionFloor" autocomplete="off" onclick="showConsumerRobotsFloorCards()"> Cleans Floors
+        </label>
+        <label class="btn btn-primary">
+          <input type="radio" name="options" id="optionMow" autocomplete="off"> Mows Lawns
+        </label>
+      </div>
+    </div>
+
+    <div id="parentRobots">
+      <p>That:</p>
+      <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary">
+          <input type="radio" name="options" id="optionFloor" autocomplete="off" onclick="showConsumerRobotsFloorCards()"> Cleans Floors
+        </label>
+        <label class="btn btn-primary">
+          <input type="radio" name="options" id="optionMow" autocomplete="off"> Mows Lawns
+        </label>
+      </div>
+    </div>
+
+    <div id="parentDrones">
+      <p>That:</p>
+      <div class="btn-group" data-toggle="buttons">
+        <label class="btn btn-primary">
+          <input type="radio" name="options" id="optionFloor" autocomplete="off" onclick="showConsumerRobotsFloorCards()"> Cleans Floors
+        </label>
+        <label class="btn btn-primary">
+          <input type="radio" name="options" id="optionMow" autocomplete="off"> Mows Lawns
+        </label>
+      </div>
+    </div>
+
+    <div id="consumerRobotsFloorCards">
+      <div class="card">
+        <div class="card-block">
+          <h4 class="card-title">Roomba 980</h4>
+          <h6 class="card-subtitle text-muted">Home Robotic Vacuum Cleaner</h6>
         </div>
-
-        <div id="Developer">
-          <p>Looking for a:</p>
-          <a class="btn btn-primary" href="#consumerRobotsHidden" role="button" onclick="showConsumerRobots()">Robot</a>
-          <a class="btn btn-primary" href="#drone" role="button">Drone</a>
-        </div>
-
-        <div id="Educator">
-          <p>Looking for a:</p>
-          <a class="btn btn-primary" href="#consumerRobotsHidden" role="button" onclick="showConsumerRobots()">Robot</a>
-          <a class="btn btn-primary" href="#drone" role="button">Drone</a>
-        </div>
-
-
-        <div id="consumerRobotsHidden" style="display:none; padding: 200px;" class="answer_list" >
-          <p>That:</p>
-          <div class="btn-group" data-toggle="buttons">
-            <label class="btn btn-primary">
-              <input type="radio" name="options" id="optionFloor" autocomplete="off" onclick="showConsumerRobotsFloorCards()"> Cleans Floors
-            </label>
-            <label class="btn btn-primary">
-              <input type="radio" name="options" id="optionMow" autocomplete="off"> Mows Lawns
-            </label>
-          </div>
-        </div>
-
-        <div id="consumerRobotsFloorCards" style="display: none; padding: 200px" class=answer_list>
-          <div class="card">
-            <div class="card-block">
-              <h4 class="card-title">Roomba 980</h4>
-              <h6 class="card-subtitle text-muted">Home Robotic Vacuum Cleaner</h6>
-            </div>
-            <img data-src="http://i.imgur.com/emTfvZs.jpg" alt="Card image">
-            <div class="card-block">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
-            </div>
-          </div>
+        <img data-src="http://i.imgur.com/emTfvZs.jpg" alt="Card image">
+        <div class="card-block">
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
         </div>
       </div>
     </div>
- 
-
-
-  <footer class="footer">
-    <div class="container">
-      <p class="text-muted">Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="http://simplebotics.com">simplebotics.com</a></p>
     </div>
-  </footer>
 
-  </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="http://simplebotics.com">simplebotics.com</a></p>
+      </div>
+    </footer>
 
 </body>
 
