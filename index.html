@@ -13,15 +13,26 @@
   <link rel="stylesheet" href="https://simplebotics.github.io/simplebotics.io/custom.css">
   <script>
 
+    var divState = {};
+    function showHide(id) {
+      if (document.getElementById) {
+        var divid = document.getElementById(id);
+        divState[id] = (divState[id]) ? false : true;
+        //close others
+        for (var div in divState){
+          if (divState[div] && div != id){
+            document.getElementById(div).style.display = 'none';
+            divState[div] = false;
+          }
+        }
+        divid.style.display = (divid.style.display == 'block' ? 'none' : 'block');
+      }
+    }
 
 
-    
-    jQuery.noConflict();
-var a=jQuery.noConflict() || $.noConflict;
-
-        a(document).ready(function(){
+        $(document).ready(function(){
   // Add smooth scrolling to all links
-  a("a").on('click', function(event) {
+  $("a").on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
@@ -33,7 +44,7 @@ var a=jQuery.noConflict() || $.noConflict;
 
       // Using jQuery's animate() method to add smooth page scroll
       // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      a('html, body').animate({
+      $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 800, function(){
 
