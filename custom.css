@@ -95,5 +95,10 @@ font-weight: 300;
 }
   
 .bg-faded {
-  background-color: #39a5ef;
+  background-color: transparent;
 }
+
+.bg-faded-top {
+  background-color: #39a5ef !important;
+}
+
