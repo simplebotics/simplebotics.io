@@ -93,12 +93,6 @@ font-weight: 300;
     font-size: 1.25rem;
     padding: 30px;
 }
-
-.affix {
-      top: 0;
-      width: 100%;
-      background-color: #39a5ef;
-}
   
 .bg-faded {
   background-color: transparent;
