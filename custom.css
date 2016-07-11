@@ -92,3 +92,7 @@ font-weight: 300;
     font-size: 1.25rem;
     padding: 30px;
 }
+
+.bg-faded {
+    background-color: transparent;
+}
