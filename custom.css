@@ -102,7 +102,7 @@ font-weight: 300;
     font-family: muli;
 }
 
-.navbar-left {
+.navbar-brand {
    max-width: 25%;
    -webkit-filter: brightness(9);
    filter: brightness(0.25);
