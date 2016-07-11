@@ -28,6 +28,13 @@
       }
     }
 
+    $(window).on('scroll', function(event) {
+    var scrollValue = $(window).scrollTop();
+    if (scrollValue == settings.scrollTopPx || scrollValue > 70) {
+         $('.bg-faded').addClass('active');
+    } 
+});
+
 
   </script>
 
@@ -35,7 +42,7 @@
 
 <body>
 
-    <nav class="navbar navbar-light bg-faded navbar-fixed-top" data-spy="affix" data-offset-top="190">
+    <nav class="navbar navbar-light bg-faded navbar-fixed-top">
       <a class="navbar-brand" href="#">Simplebotics.io</a>
       <ul class="nav navbar-nav">
         <li class="nav-item active">
@@ -49,7 +56,6 @@
         </li>
       </ul>
     </nav>
-
 
   <div align="center">
 
