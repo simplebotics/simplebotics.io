@@ -75,3 +75,11 @@ font-weight: 300;
     padding: 150px 0;
     background-color: rgba(39, 165, 239, 0.78);
 }
+
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    float: right;
+    padding: 30px;
+}
