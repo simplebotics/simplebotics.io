@@ -83,3 +83,12 @@ font-weight: 300;
     float: right;
     padding: 30px;
 }
+
+.navbar-brand {
+    float: left;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    padding: 30px;
+}
