@@ -97,7 +97,3 @@ font-weight: 300;
 .navbar-fixed-top {
     background-color: transparent;
 }
-
-.navbar-fixed-top .active {
-    background-color: #39a5ef;
-}
