@@ -115,4 +115,11 @@ font-weight: 300;
     color: none;
 }
 
+.navbar-left {
+    max-width: 25%;
+    -webkit-filter: brightness(9);
+    filter: brightness(0.25);
+    padding: 30px;
+}
+
 
