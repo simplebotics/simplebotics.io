@@ -28,19 +28,14 @@
       }
     }
 
-$(document).ready(function(){       
-   var scroll_start = 0;
-   var startchange = $('#startchange');
-   var offset = startchange.offset();
-   $(document).scroll(function() { 
-      scroll_start = $(this).scrollTop();
-      if(scroll_start > offset.top) {
-          $('.navbar-fixed-top').css('background-color', '#39a5ef');
-       } else {
-          $('.navbar-fixed-top').css('background-color', 'transparent');
-       }
-   });
-});
+$('#myAffix').affix({
+  offset: {
+    top: 100,
+    bottom: function () {
+      return (this.bottom = $('.footer').outerHeight(true))
+    }
+  }
+})
 
 
   </script>
@@ -49,7 +44,7 @@ $(document).ready(function(){
 
 <body>
 
-  <div class=".navbar-fixed-top">
+
     <nav class="navbar navbar-light bg-faded navbar-fixed-top">
       <a class="navbar-brand" href="#">Simplebotics.io</a>
       <ul class="nav navbar-nav">
@@ -64,7 +59,6 @@ $(document).ready(function(){
         </li>
       </ul>
     </nav>
-  </div>
 
 
   <div align="center">
