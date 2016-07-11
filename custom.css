@@ -39,6 +39,14 @@
     font-family: open sans;
 }
 
+.btn-primary-outline {
+    color: #fff;
+    background-color: transparent;
+    background-image: none;
+    border-color: #fff;
+    border: 2px solid;
+}
+
 
 body {
 	background: rgb(237, 249, 255);
