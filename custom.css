@@ -97,11 +97,7 @@ font-weight: 300;
 .affix {
       top: 0;
       width: 100%;
-      background-color: #39a5ef !important;
-}
-  
-.affix .bg-faded {
-    background-color: #39a5ef !important;
+      background-color: #39a5ef;
 }
   
 .bg-faded {
