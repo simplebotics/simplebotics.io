@@ -94,10 +94,10 @@ font-weight: 300;
     padding: 30px;
 }
 
-.bg-faded {
+.navbar-fixed-top {
     background-color: transparent;
 }
 
-.bg-faded .active {
+.navbar-fixed-top .active {
     background-color: #39a5ef;
 }
