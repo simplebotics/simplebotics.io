@@ -95,10 +95,10 @@ font-weight: 300;
 }
   
 .bg-faded {
-  background-color: rgba(39, 165, 239, 0)
+  background-color: rgba(39, 165, 239, 0);
 }
 
 .bg-faded.active {
-  background-color: rgba(39, 165, 239, 0.78);
+  background-color: rgba(39, 165, 239, 0.78)!important;
 }
 
