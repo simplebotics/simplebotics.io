@@ -28,14 +28,19 @@
       }
     }
 
-    $(window).on("scroll", function() {
-      if($(window).scrollTop() > 50) {
-        $(".bg-faded").addClass("active");
-      } else {
-        //remove the background property so it comes transparent again (defined in your css)
-        $(".bg-faded").removeClass("active");
-      }
-    });
+$(document).ready(function(){       
+   var scroll_start = 0;
+   var startchange = $('#startchange');
+   var offset = startchange.offset();
+   $(document).scroll(function() { 
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          $('.navbar-fixed-top').css('background-color', '#39a5ef');
+       } else {
+          $('.navbar-fixed-top').css('background-color', 'transparent');
+       }
+   });
+});
 
 
   </script>
@@ -44,7 +49,7 @@
 
 <body>
 
-  <div class="navbar-fixed-top">
+  <div class=".navbar-fixed-top">
     <nav class="navbar navbar-light bg-faded navbar-fixed-top">
       <a class="navbar-brand" href="#">Simplebotics.io</a>
       <ul class="nav navbar-nav">
