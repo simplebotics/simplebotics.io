@@ -95,10 +95,6 @@ font-weight: 300;
 }
   
 .bg-faded {
-  background-color: transparent;
-}
-
-.nav-top {
-  background-color: #39a5ef !important;
+  background-color: rgba(39, 165, 239, 0)
 }
 
