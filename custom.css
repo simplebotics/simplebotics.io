@@ -102,4 +102,6 @@ font-weight: 300;
 .bg-faded.navbar-color {
     top: 0;
     background-color: rgba(39, 165, 239, 0.78);
+    transition: 0.8s;
+    -webkit-transition:  0.8s;
 }
