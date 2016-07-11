@@ -28,17 +28,15 @@
       }
     }
 
-var a = $(".bg-faded").offset().top;
-
 jQuery(document).ready(function($) {
   $(window).scroll(function() {
     var scrollPos = $(window).scrollTop(),
-        navbar = $('.bg-faded');
+        navbar = $('.navbar-fixed-top');
 
-    if (scrollPos > 1000) {
-      navbar.addClass('active');
+    if (scrollPos > 10) {
+      navbar.addClass('navbar-color');
     } else {
-      navbar.removeClass('active');
+      navbar.removeClass('navbar-color');
     }
   });
 });
