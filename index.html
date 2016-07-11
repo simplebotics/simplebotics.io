@@ -5,9 +5,7 @@
   <title>simplebotics.io</title>
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.3/angular.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.3/angular-route.min.js"></script>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Muli:300,400" rel="stylesheet">
   <link rel="stylesheet" href="https://simplebotics.github.io/simplebotics.io/custom.css">
@@ -86,7 +84,7 @@
     <div class="jumbotron">
       <div class="container">
 
-        <h1>Add a little STEM to your classroom.</h1>
+        <h1>Add a little STEM to your classroom</h1>
         <h2>Simplebotics.io helps teachers and parents find STEM products for their classrooms and kids.</h2>
         <a class="btn btn-primary-outline" href="javascript:void(null)" role="button" onclick="showHide('Type')";>Begin</a>
       </div>
@@ -96,33 +94,38 @@
 
      <div id="Type">
       <p>I am a:</p>
-      <a class="btn btn-primary" href="javascript:void(null)" role="button" onclick="showHide('Teacher')";>Teacher</a>
-      <a class="btn btn-primary" href="javascript:void(null)" role="button" onclick="showHide('Parent')";>Parent</a>
+      <a class="btn btn-primary" href="#Teacher" role="button" onclick="showHide('Teacher')";>Teacher</a>
+      <a class="btn btn-primary" href="#Parent" role="button" onclick="showHide('Parent')";>Parent</a>
     </div>
+
 
 
 
     <div id="Teacher">
       <p>Looking for a:</p>
-      <a class="btn btn-primary" href="javascript:void(null)" role="button" onclick="showHide('teacherRobots')";>Robot</a>
-      <a class="btn btn-primary" href="javascript:void(null)" role="button" onclick="showHide('teacherDrones')";>Drone</a>
+      <a class="btn btn-primary" href="#teacherRobots" role="button" onclick="showHide('teacherRobots')";>Robot</a>
+      <a class="btn btn-primary" href="#teacherDrones" role="button" onclick="showHide('teacherDrones')";>Drone</a>
     </div>
 
     <div id="Parent">
       <p>Looking for a:</p>
-      <a class="btn btn-primary" href="javascript:void(null)" role="button" onclick="showHide('parentRobots')";>Robot</a>
-      <a class="btn btn-primary" href="javascript:void(null)" role="button" onclick="showHide('parentDrones')";>Drone</a>
+      <a class="btn btn-primary" href="#parentRobots" role="button" onclick="showHide('parentRobots')";>Robot</a>
+      <a class="btn btn-primary" href="#parentDrones" role="button" onclick="showHide('parentDrones')";>Drone</a>
     </div>
 
 
     <div id="teacherRobots">
-      <p>That:</p>
+      <p>That is:</p>
+      <h5>(Select all that apply)</h5>
       <div class="btn-group" data-toggle="buttons">
         <label class="btn btn-primary">
-          <input type="radio" name="options" id="optionFloor" autocomplete="off" onclick="showConsumerRobotsFloorCards()"> Cleans Floors
+          <input type="checkbox" name="options" id="optionFloor" autocomplete="off" onclick="showConsumerRobotsFloorCards()">Programmable
         </label>
         <label class="btn btn-primary">
-          <input type="radio" name="options" id="optionMow" autocomplete="off"> Mows Lawns
+          <input type="checkbox" name="options" id="optionMow" autocomplete="off">App-Friendly
+        </label>
+        <label class="btn btn-primary">
+          <input type="checkbox" name="options" id="optionMow" autocomplete="off">Do it Yourself
         </label>
       </div>
     </div>
@@ -185,6 +188,10 @@
         <p class="text-muted">Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="http://simplebotics.com">simplebotics.com</a></p>
       </div>
     </footer>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
 
 </body>
 
