@@ -28,11 +28,13 @@
       }
     }
 
-    $(window).on('scroll', function(event) {
-    var scrollValue = $(window).scrollTop();
-    if (scrollValue == settings.scrollTopPx || scrollValue > 70) {
-         $('.bg-faded').addClass('nav-top');
-    } 
+var a = $(".bg-faded").offset().top;
+
+$(document).scroll(function() {
+  var dHeight = $(this).height()-$(window).height();
+  if (dHeight >= $(this).scrollTop()) {
+    $('bg-faded').css('background-color', 'rgba(39, 165, 239, 0.78)' + $(this).scrollTop() / dHeight + ')');
+  }
 });
 
 
@@ -41,6 +43,7 @@
 </head>
 
 <body>
+
 
     <nav class="navbar navbar-light bg-faded navbar-fixed-top">
       <a class="navbar-brand" href="#">Simplebotics.io</a>
