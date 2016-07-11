@@ -20,25 +20,6 @@
     border-radius: 4px;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
-    color: #fff;
-    background-color: rgba(239, 85, 39, 0.73);
-    border-color: none;
-}
-
-.btn-primary {
-    color: #fff;
-    background-color: #ef3f27;
-    border-color: none;
-}
-
-.btn-primary {
-    color: #fff;
-    background-color: #ef3f27;
-    border-color: #240d0a;
-    font-family: open sans;
-}
-
 body {
 	background: rgb(237, 249, 255);
 }
@@ -91,4 +72,10 @@ font-weight: 300;
 .navbar-default {
     background-color: transparent;
     border-color: transparent;
+}
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%
 }
