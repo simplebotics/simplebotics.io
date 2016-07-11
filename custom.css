@@ -85,13 +85,6 @@ font-weight: 300;
     padding: 30px;
 }
 
-.navbar-brand {
-   max-width: 25%;
-   -webkit-filter: brightness(9);
-   filter: brightness(0.25);
-   padding: 30px;
-}
-
 .bg-faded {
     top: 0;
     background: transparent;
@@ -107,6 +100,13 @@ font-weight: 300;
 .navbar-light .navbar-nav .nav-link {
     color: #fff;
     font-family: muli;
+}
+
+.navbar-left {
+   max-width: 25%;
+   -webkit-filter: brightness(9);
+   filter: brightness(0.25);
+   padding: 30px;
 }
 
 
