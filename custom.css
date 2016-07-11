@@ -96,10 +96,9 @@ font-weight: 300;
 
 .navbar-fixed-top {
     top: 0;
-    background-color: transparent;
 }
 
 .navbar-fixed-top.navbar-color {
     top: 0;
-    background-color: rgba(39, 165, 239, 0.78)!important;
+    background-color: rgba(39, 165, 239, 0.78);
 }
