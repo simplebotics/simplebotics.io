@@ -97,12 +97,12 @@ font-weight: 300;
 .affix {
       top: 0;
       width: 100%;
-  }
-
-  .affix + .container-fluid {
-      padding-top: 0px;
-  }
+}
   
-  .bg-faded {
+.affix .bg-faded {
+    background-color: #39a5ef !important;
+}
+  
+.bg-faded {
   background-color: transparent;
-  }
+}
