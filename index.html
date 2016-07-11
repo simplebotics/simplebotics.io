@@ -32,7 +32,7 @@
     var scrollPos = $(window).scrollTop(),
         navbar = $('.bg-faded');
 
-    if (scrollPos > 1) {
+    if (scrollPos > 375) {
       navbar.addClass('navbar-color');
     } else {
       navbar.removeClass('navbar-color');
@@ -50,7 +50,7 @@
     <nav class="navbar navbar-light bg-faded navbar-fixed-top">
       <a class="navbar-brand" href="#">Simplebotics.io</a>
       <ul class="nav navbar-nav">
-        <li class="nav-item active">
+        <li class="nav-item">
           <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
