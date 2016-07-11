@@ -94,11 +94,12 @@ font-weight: 300;
     padding: 30px;
 }
 
-.navbar-fixed-top {
+.bg-faded {
     top: 0;
+    background: transparent;
 }
 
-.navbar-fixed-top.navbar-color {
+.bg-faded.navbar-color {
     top: 0;
     background-color: rgba(39, 165, 239, 0.78);
 }
