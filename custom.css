@@ -27,6 +27,13 @@
     border: 2px solid;
 }
 
+.btn-primary-outline-none {
+    color: #fff;
+    background-color: transparent;
+    background-image: none;
+    border-color: #fff;
+}
+
 
 body {
 	background-color: #f1f3f3;
