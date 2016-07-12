@@ -13,6 +13,12 @@
     font-size: 25px;
 }
 
+.btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #e2edf3;
+    background-color: #39a5ef;
+    border-color: #39a5ef;
+}
+
 .btn-primary-outline {
     color: #fff;
     background-color: transparent;
