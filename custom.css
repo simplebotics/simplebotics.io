@@ -44,12 +44,12 @@ padding: 200px;
 }
 
 .begin a {
-  font-size: 2em;
   transition: transform .1s ease-out;
   display: inline-block;
 }
+
 .begin a:hover {
-  transform: translate(0, -3px);
+  transform: translate(0, 3px);
 }
 
 .fa-heart:before {
