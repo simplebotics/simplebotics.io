@@ -83,7 +83,7 @@ font-weight: 300;
     margin-bottom: 0;
     list-style: none;
     float: right;
-    padding: 20px;
+    padding: 20px 50px;
 }
 
 .bg-faded {
@@ -107,7 +107,7 @@ font-weight: 300;
     max-width: 25%;
     -webkit-filter: brightness(9);
     filter: brightness(0.25);
-    padding: 20px;
+    padding: 20px 50px;
 }
 
 
