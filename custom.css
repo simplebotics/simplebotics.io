@@ -5,17 +5,12 @@
     border-color: none;
 }
 
-.btn-primary{
-    color: #fff;
-    background-color: #ef3f27;
-    border-color: none;
-}
-
 .btn-primary {
-    color: #fff;
-    background-color: #ef3f27;
-    border-color: #240d0a;
+    color: #39a5ef;
+    background-color: rgba(57, 165, 239, 0.08);
+    border-color: #39a5ef;
     font-family: open sans;
+    font-size: 25px;
 }
 
 .btn-primary-outline {
