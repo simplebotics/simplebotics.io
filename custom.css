@@ -39,6 +39,10 @@ body {
 	background-color: #f1f3f3;
 }
 
+.begin {
+padding: 200px;
+}
+
 .fa-heart:before {
     content: "\f004";
     color: #ee2658;
