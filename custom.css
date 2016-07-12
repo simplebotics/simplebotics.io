@@ -92,12 +92,6 @@ font-weight: 300;
     font-weight: 300;
   }
 
-  .jumbotron {
-    padding: 280px 0;
-    background-color: rgba(39, 165, 239, 0.78);
-    border-radius: 0;
-}
-
 .nav {
     padding-left: 0;
     margin-bottom: 0;
