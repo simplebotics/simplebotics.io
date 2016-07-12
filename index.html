@@ -67,11 +67,14 @@
     <div class="jumbotron">
       <div class="container">
 
-        <h1>Add a little STEM to your classroom</h1>
+        <h1>Add STEM Education To Your Classroom</h1>
         <h2>Simplebotics.io helps teachers and parents find STEM products for their classrooms and kids.</h2>
       </div>
 
-            <a class="btn btn-primary-outline" href="javascript:void(null)" role="button" onclick="showHide('Type')";>Find products</a>
+<div class="begin">
+            <a class="btn btn-primary-outline-none" href="javascript:void(null)" role="button" onclick="showHide('Type')";>Find products<br><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+            </div>
+
 
     </div>
 
@@ -79,16 +82,31 @@
     <div id="content">
 
      <div id="Type">
-      <p>I am a:</p>
-      <a class="btn btn-primary" href="#Teacher" role="button" onclick="showHide('Teacher')";>Teacher</a>
-      <a class="btn btn-primary" href="#Parent" role="button" onclick="showHide('Parent')";>Parent</a>
+      <p>Who are you?</p>
+      <a class="btn btn-primary" href="#AgeGroupTeacher" role="button" onclick="showHide('AgeGroupTeacher')";>A teacher</a>
+      <a class="btn btn-primary" href="#AgeGroupParent" role="button" onclick="showHide('AgeGroupParent')";>A parent</a>
+    </div>
+
+     <div id="AgeGroupTeacher">
+      <p>What age group do you teach?</p>
+      <a class="btn btn-primary" href="#TeacherPreSchool" role="button" onclick="showHide('TeacherPreSchool')";>Pre-School</a>
+      <a class="btn btn-primary" href="#TeacherElementary" role="button" onclick="showHide('TeacherElementary')";>Elementary</a>
+      <a class="btn btn-primary" href="#TeacherMiddleSchool" role="button" onclick="showHide('TeacherMiddleSchool')";>Middle School</a>
+      <a class="btn btn-primary" href="#TeacherHighSchool" role="button" onclick="showHide('TeacherHighSchool')";>High School</a>
+    </div>
+
+    <div id="AgeGroupParent">
+      <p>What is your child's age group?</p>
+      <a class="btn btn-primary" href="#Teacher" role="button" onclick="showHide('Teacher')";>3-7</a>
+      <a class="btn btn-primary" href="#Parent" role="button" onclick="showHide('Parent')";>8-14</a>
+      <a class="btn btn-primary" href="#Parent" role="button" onclick="showHide('Parent')";>14+</a>
     </div>
 
 
 
 
     <div id="Teacher">
-      <p>Looking for a:</p>
+      <p>What type of STEM product are you looking for?</p>
       <a class="btn btn-primary" href="#teacherRobots" role="button" onclick="showHide('teacherRobots')";>Robot</a>
       <a class="btn btn-primary" href="#teacherDrones" role="button" onclick="showHide('teacherDrones')";>Drone</a>
     </div>
@@ -111,7 +129,7 @@
           <input type="checkbox" name="options" id="optionMow" autocomplete="off">App-Friendly
         </label>
         <label class="btn btn-primary">
-          <input type="checkbox" name="options" id="optionMow" autocomplete="off">Do it Yourself
+          <input type="checkbox" name="options" id="optionMow" autocomplete="off">Do-It-Yourself
         </label>
       </div>
     </div>
