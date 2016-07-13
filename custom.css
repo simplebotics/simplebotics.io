@@ -40,8 +40,8 @@ body {
 }
 
 .begin {
-position: relative;
-bottom: -200px;
+    position: relative;
+    transform: translateY(100%);
 }
 
 .begin a {
