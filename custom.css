@@ -78,11 +78,6 @@ font-family: muli;
 
   }
   
-  .container {
-  	margin: 0 auto;
-  width: 100%;
-  }
-  
 .jumbotron {
     padding: 280px 0;
     background-color: rgba(39, 165, 239, 0.78);
