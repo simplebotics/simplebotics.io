@@ -87,11 +87,13 @@ font-family: muli;
   .jumbotron .h1, .jumbotron h1 {
     color: #fff;
     font-weight: 400;
+    font-size: 50px;
   }
 
   .jumobotron .h2, .jumbotron h2 {
     color: #fff;
     font-weight: 300;
+    font-size: 20px;
   }
 
 .nav {
