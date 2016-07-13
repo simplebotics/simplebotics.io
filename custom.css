@@ -39,6 +39,13 @@ body {
 	background-color: #f1f3f3;
 }
 
+.begin-center {
+	
+    position: absolute;
+    bottom:0px;
+    left:50%;
+}
+
 .begin {
     position: relative;
     bottom: -130px;
