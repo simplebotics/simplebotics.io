@@ -58,6 +58,7 @@ body {
 
 .begin a:hover {
   transform: translate(0, 3px);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .fa-heart:before {
