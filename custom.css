@@ -80,7 +80,9 @@ font-family: muli;
   }
   
 .jumbotron {
-    padding: 200px 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
     background: rgba(105,240,218,1);
     background: -moz-linear-gradient(-45deg, rgba(105,240,218,1) 0%, rgba(57,165,239,1) 100%);
     background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(105,240,218,1)), color-stop(100%, rgba(57,165,239,1)));
