@@ -63,11 +63,10 @@ padding: 200px;
 
   }
 
-  #content {
+#content {
 font-family: muli;
-font-size: 55px;
-font-weight: 300;
-  }
+	
+}
 
   #Teacher, #Parent, #teacherRobots, #parentRobots, #teacherDrones, #parentDrones, #Type  {
     padding: 200px;
