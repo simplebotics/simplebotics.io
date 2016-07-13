@@ -40,15 +40,14 @@ body {
 }
 
 .begin-center {
-	
     position: absolute;
     bottom:0px;
     left:50%;
 }
 
 .begin {
-    position: relative;
-    bottom: -130px;
+    position:relative;
+    left:-50%;
 }
 
 .begin a {
