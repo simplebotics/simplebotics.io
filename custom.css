@@ -86,14 +86,11 @@ font-weight: 300;
 }
 
   .jumbotron .h1, .jumbotron h1 {
-    font-size: 55px;
     color: #fff;
     font-weight: 400;
   }
 
   .jumobotron .h2, .jumbotron h2 {
-    font-size: 20px;
-    max-width: 80%;
     color: #fff;
     font-weight: 300;
   }
