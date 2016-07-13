@@ -79,6 +79,14 @@ font-family: muli;
 
   }
   
+  .vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+  
 .jumbotron {
     background: rgba(105,240,218,1);
     background: -moz-linear-gradient(-45deg, rgba(105,240,218,1) 0%, rgba(57,165,239,1) 100%);
