@@ -102,6 +102,23 @@ font-family: muli;
     font-weight: 300;
     font-size: 20px;
   }
+  
+  .navbar-brand>img {
+    display: block;
+    position: relative;
+    max-width: 200px;
+    padding: 20px;
+}
+
+.navbar-toggler {
+    padding: 1.5rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background: 0 0;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    color: #fff;
+}
 
 .nav {
     padding-left: 0;
