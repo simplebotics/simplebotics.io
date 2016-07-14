@@ -16,7 +16,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
   <script type="text/javascript" src="//userlike-cdn-widgets.s3-eu-west-1.amazonaws.com/8aa0763a08c22520bffebfed8cf71c012de9184dab0a8ec4fb472c2a9a015dea.js"></script>
-  
+
   <script>
 
 
@@ -47,6 +47,12 @@
       }
     });
 
+    $(document).ready(function() {
+    $("video").bind("contextmenu",function(){
+        return false;
+        });
+ } );
+
 
   </script>
 
@@ -75,7 +81,17 @@
   </div>
 </nav>
 
+  <div class="video-container">
+
+<video autoplay="autoplay" loop="" poster="/assets/marketing/home-video-poster.jpg" muted>
+<source src="/assets/marketing/home-video.webm" type="video/webm">
+<source src="https://dl.dropboxusercontent.com/s/j9yjzcd5eqsiudz/sphero_background_jumbotron.mp4?dl=0" type="video/mp4">
+<source src="/assets/marketing/home-video.ogv" type="video/ogg">
+</video>
+</div>
+
   <div class="jumbotron vertical-center">
+
     <div class="container">
       <h1>Add STEM education to your classroom</h1>
       <h2>Simplebotics.io helps teachers and parents find STEM products for their classrooms and kids.</h2>
@@ -109,6 +125,16 @@
 
     <div id="AgeGroupParent">
       <h3>What is your child's age group?</h3>
+      <p>
+  <a class="btn btn-sm" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    How we use this information.
+  </a>
+</p>
+<div class="collapse" id="collapseExample">
+  <div class="card card-block">
+    STEM education products vary for each age group. We use general age groups to match the right products.
+  </div>
+</div>
       <a class="btn btn-primary" href="#Parent3to7" role="button" onclick="showHide('Teacher')";>3-7</a>
       <a class="btn btn-primary" href="#Parent8to14" role="button" onclick="showHide('Parent')";>8-14</a>
       <a class="btn btn-primary" href="#Parent14" role="button" onclick="showHide('Parent')";>14+</a>
