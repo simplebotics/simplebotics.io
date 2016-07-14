@@ -39,6 +39,15 @@ body {
 	background-color: #f1f3f3;
 }
 
+.video {
+    display: inline-block;
+    vertical-align: baseline;
+    width: auto !important;
+    min-width: 100% !important;
+    height: auto !important;
+    min-height: 100%;
+}
+
 .begin-center {
     position: absolute;
     bottom:0px;
