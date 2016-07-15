@@ -180,7 +180,7 @@ font-family: muli;
 
 .bg-faded.navbar-color {
     top: 0;
-    background-color: rgba(39, 165, 239, 0.78);
+    background-color: rgba(148, 51, 159, 0.8);
     transition: 0.8s;
     -webkit-transition:  0.8s;
 }
