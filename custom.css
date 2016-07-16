@@ -14,9 +14,9 @@
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
-    color: #e2edf3;
-    background-color: #39a5ef;
-    border-color: #39a5ef;
+    color: rgba(142, 49, 149, 0.08);
+    background-color: #9a30a1;
+    border-color: #9a30a1;
 }
 
 .btn-primary-outline {
