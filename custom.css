@@ -2,7 +2,7 @@
 .btn-group-sm>.btn, .btn-sm {
     padding: .25rem .75rem;
     font-size: .875rem;
-    line-height: 1.5;
+    line-height: 1.75;
     border-radius: .2rem;
     color: #9a30a1;
 }
@@ -112,7 +112,7 @@ font-family: muli;
   }
   
   h3 {
-  	line-height: 3;
+  	line-height: 1.75;
   }
   
   .vertical-center {
