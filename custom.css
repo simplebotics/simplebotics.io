@@ -101,12 +101,9 @@ video {
 
 #content {
 font-family: muli;
+padding: 200px;
 	
 }
-
-  #all_content  {
-    padding: 200px;
-  }
 
   h1, h2, h3, h4, h5, h6 {
 
