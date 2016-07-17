@@ -1,4 +1,12 @@
 
+.btn-group-sm>.btn, .btn-sm {
+    padding: .25rem .75rem;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: .2rem;
+    color: #9a30a1;
+}
+
 .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
     color: #fff;
     background-color: rgba(239, 85, 39, 0.73);
