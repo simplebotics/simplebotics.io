@@ -104,7 +104,7 @@ font-family: muli;
 	
 }
 
-  #Type, #AgeGroupTeacher, #AgeGroupParent, #Teacher, #Parent, #teacherRobots, #parentRobots, #teacherDrones, #parentDrones  {
+  #Type, #AgeGroupTeacher, #AgeGroupParent, #Teacher, #Parent, #TeacherPreSchool, #TeacherElementary, #TeacherMiddleSchool, #TeacherHighSchool, #TeacherPreSchoolRobots, #TeacherElementaryRobots, #TeacherMiddleSchoolRobots, #TeacherHighschoolRobots  {
     padding: 200px;
   }
 
