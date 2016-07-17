@@ -96,6 +96,7 @@ video {
   #content > div {
 
     display:none;
+    padding: 200px;
 
   }
 
