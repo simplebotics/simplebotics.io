@@ -46,6 +46,11 @@
 	max-width: 100%;
 }
 
+.card-title {
+    margin-bottom: .75rem;
+    font-family: open sans;
+}
+
 .card {
     position: relative;
     display: block;
