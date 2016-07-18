@@ -42,6 +42,10 @@
     border: none;
 }
 
+.card-image {
+	max-width: 100%;
+}
+
 .card {
     position: relative;
     display: block;
