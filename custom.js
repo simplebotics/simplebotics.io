@@ -254,7 +254,7 @@
 
   $(function(){
       $(".typed-header").typed({
-        strings: ["Robots", "Drones", "Fun Coding", "Robotics Apps", "iPad-Controlled Robots", "Hands-On Robotics"],
+        strings: ["Robots", "Drones", "Fun Coding", "Robotics Apps", "iPad-Controlled Robots", "Drag-and-Drop Programming"],
         typeSpeed: 100,
         loop: true,
       });
