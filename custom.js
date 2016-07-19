@@ -255,7 +255,7 @@
   $(function(){
       $(".typed-header").typed({
         strings: ["robots", "drones", "coding", "STEM education"],
-        typeSpeed: 30,
+        typeSpeed: 90,
         loop: true,
       });
   });
