@@ -16,69 +16,11 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
   <script type="text/javascript" src="//userlike-cdn-widgets.s3-eu-west-1.amazonaws.com/8aa0763a08c22520bffebfed8cf71c012de9184dab0a8ec4fb472c2a9a015dea.js"></script>
-  <script src="https://raw.githubusercontent.com/mattboldt/typed.js/master/js/typed.js"></script>
-
-  <script>
-
-
-    var divState = {};
-    function showHide(id) {
-      if (document.getElementById) {
-        var divid = document.getElementById(id);
-        divState[id] = (divState[id]) ? false : true;
-        //close others
-        for (var div in divState){
-          if (divState[div] && div != id){
-            document.getElementById(div).style.display = 'none';
-            divState[div] = false;
-          }
-        }
-        divid.style.display = (divid.style.display == 'block' ? 'none' : 'block');
-      }
-    }
-
-    $(window).scroll(function() {
-      var scrollPos = $(window).scrollTop(),
-      navbar = $('.bg-faded');
-
-      if (scrollPos > 10) {
-        navbar.addClass('navbar-color');
-      } else {
-        navbar.removeClass('navbar-color');
-      }
-    });
-
-    $(document).ready(function() {
-      $("video").bind("contextmenu",function(){
-        return false;
-      });
-    } );
-
-    // remove fragment as much as it can go without adding an entry in browser history:
-window.location.replace("#");
-
-// slice off the remaining '#' in HTML5:    
-if (typeof window.history.replaceState == 'function') {
-  history.replaceState({}, '', window.location.href.slice(0, -1));
-}
-
-  $(function(){
-      $(".typed-header").typed({
-        strings: ["Stem.", "Robots."],
-        typeSpeed: 0
-      });
-  });
-
-
-
-  </script>
+ <script src="https://github.com/simplebotics/simplebotics.io/blob/gh-pages/custom.js"></script>
 
 </head>
 
 <body>
-
-
-<div class="typed-header"></div>
 
 
   <nav class="navbar navbar-light bg-faded navbar-fixed-top">
@@ -115,7 +57,7 @@ if (typeof window.history.replaceState == 'function') {
       <div class="jumbotron vertical-center">
 
         <div class="container">
-          <h1>STEM education products for your classroom</h1>
+          <h1>STEM <div class="typed-header"></div> for your classroom</h1>
           <h2>Simplebotics.io helps teachers and parents find STEM education products for their classrooms and kids.</h2>
           <div class="begin-center">
             <div class="begin">
