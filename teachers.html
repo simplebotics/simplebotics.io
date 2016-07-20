@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+
+  <title>simplebotics.io</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Muli:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="https://simplebotics.github.io/simplebotics.io/custom.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="//userlike-cdn-widgets.s3-eu-west-1.amazonaws.com/8aa0763a08c22520bffebfed8cf71c012de9184dab0a8ec4fb472c2a9a015dea.js"></script>
+  <script src="https://rawgit.com/simplebotics/simplebotics.io/gh-pages/custom.js"></script>
+
+
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-light bg-faded navbar-fixed-top">
+   <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
+    &#9776;
+  </button>
+  <a class="navbar-brand" href="#"><img src="http://www.simplebotics.com/wp-content/uploads/2016/07/simplebotics_io.png"/></a>
+  <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
+    <ul class="nav navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Blog</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+      <!-- Display intro text and begin button -->
+
+      <div class="jumbotron vertical-center">
+
+        <div class="container">
+          <h1>Discover <div class="typed-header"></div> for your classroom</h1>
+          <h2>Simplebotics.io helps teachers and parents find STEM education products for their classrooms and kids.</h2>
+          <div class="begin-center">
+            <div class="begin">
+              <a class="btn btn-primary-outline-none" href="javascript:void(null)" role="button" onclick="showHide('Type')";>Find products<br><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- First question -->
+
+      <div align="center">
+
+        <div class="container">
+
+          <div id="content">
+
+            <div id="Type">
+              <h3>What age group do you teach?</h3>
+              <p>
+                <a class="btn btn-sm" data-toggle="collapse" href="#collapseTeacher" aria-expanded="false" aria-controls="collapseExample">
+                How we use this information.
+                </a>
+              </p>
+             <div class="collapse" id="collapseTeacher">
+              <div class="card card-block">
+                STEM education products vary for each age group. We use general age groups to match the right products.
+              </div>
+             </div>
+              <a class="btn btn-primary" href="#TeacherPreSchool" role="button" onclick="showHide('TeacherPreSchoolRobots')";>Pre-School</a>
+              <a class="btn btn-primary" href="#TeacherElementary" role="button" onclick="showHide('TeacherElementary')";>Elementary</a>
+              <a class="btn btn-primary" href="#TeacherMiddleSchool" role="button" onclick="showHide('TeacherMiddleSchool')";>Middle School</a>
+              <a class="btn btn-primary" href="#TeacherHighSchool" role="button" onclick="showHide('TeacherHighSchool')";>High School</a>
+            </div>
+
+            <!-- Ask for age group -->
+
+              <div id="AgeGroupParent">
+                <h3>What is your child's age group?</h3>
+                <p>
+                  <a class="btn btn-sm" data-toggle="collapse" href="#collapseParent" aria-expanded="false" aria-controls="collapseExample">
+                    How we use this information.
+                  </a>
+                </p>
+                <div class="collapse" id="collapseParent">
+                  <div class="card card-block">
+                    STEM education products vary for each age group. We use general age groups to match the right products.
+                  </div>
+                </div>
+                <a class="btn btn-primary" href="#Parent3to7" role="button" onclick="showHide('Parent')";>3-7</a>
+                <a class="btn btn-primary" href="#Parent8to14" role="button" onclick="showHide('Parent')";>8-14</a>
+                <a class="btn btn-primary" href="#Parent14" role="button" onclick="showHide('Parent')";>14+</a>
+              </div>
+
+          <!-- Ask what type of product user is looking for -->
+
+              <div id="TeacherElementary">
+                <h3>What type of STEM product are you looking for?</h3>
+                <a class="btn btn-primary" href="#teacherRobots" role="button" onclick="showHide('TeacherElementaryRobots')";>Robot</a>
+                <a class="btn btn-primary" href="#teacherDrones" role="button" onclick="showHide('TeacherAllDrones')";>Drone</a>
+              </div>
+
+              <div id="TeacherMiddleSchool">
+                <h3>What type of STEM product are you looking for?</h3>
+                <a class="btn btn-primary" href="#teacherRobots" role="button" onclick="showHide('TeacherMiddleSchoolRobots')";>Robot</a>
+                <a class="btn btn-primary" href="#teacherDrones" role="button" onclick="showHide('TeacherAllDrones')";>Drone</a>
+              </div>
+
+              <div id="TeacherHighSchool">
+                <h3>What type of STEM product are you looking for?</h3>
+                <a class="btn btn-primary" href="#teacherRobots" role="button" onclick="showHide('TeacherHighSchoolRobots')";>Robot</a>
+                <a class="btn btn-primary" href="#teacherDrones" role="button" onclick="showHide('TeacherAllDrones')";>Drone</a>
+              </div>
+
+              <div id="Parent">
+                <h3>Looking for a:</h3>
+                <a class="btn btn-primary" href="#parentRobots" role="button" onclick="showHide('ParentRobots')";>Robot</a>
+                <a class="btn btn-primary" href="#parentDrones" role="button" onclick="showHide('ParentDrones')";>Drone</a>
+              </div>
+
+              <div id="Parent">
+                <h3>Looking for a:</h3>
+                <a class="btn btn-primary" href="#parentRobots" role="button" onclick="showHide('ParentRobots')";>Robot</a>
+                <a class="btn btn-primary" href="#parentDrones" role="button" onclick="showHide('ParentDrones')";>Drone</a>
+              </div>
+
+              <div id="Parent">
+                <h3>Looking for a:</h3>
+                <a class="btn btn-primary" href="#parentRobots" role="button" onclick="showHide('ParentRobots')";>Robot</a>
+                <a class="btn btn-primary" href="#parentDrones" role="button" onclick="showHide('ParentDrones')";>Drone</a>
+              </div>
+
+          <!-- Display products based on user selections -->  
+
+
+                <div id="TeacherPreSchoolRobots">
+                <h3>Here are the products we found.</h3>
+                  <div class="container-fluid">
+
+                    <div class="card-deck-wrapper">
+                      <div class="card-deck">
+
+                        <!-- Card 1 -->
+                        <div class="card">
+                          <div class="card-block">
+                            <h4 class="card-title">Cubetto</h4>
+                            <h6 class="card-subtitle text-muted">A programmable robot for toddlers</h6>
+                          </div>
+                          <img src="https://dl.dropboxusercontent.com/s/8qsjw1r4unw2hwr/simplebotics_io_cubetto.jpg?dl=0" alt="Card image" class="card-image">
+                          <div class="card-block">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="card-link">Card link</a>
+                            <a href="#" class="card-link">Another link</a>
+                          </div>
+                        </div>
+
+                        <!-- Card 2 -->
+                        <div class="card">
+                        <div class="card-block">
+                          <h4 class="card-title">Card title</h4>
+                          <h6 class="card-subtitle text-muted">Support card subtitle</h6>
+                        </div>
+                        <img data-src="..." alt="Card image">
+                        <div class="card-block">
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a>
+                        </div>
+                      </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div id="TeacherElementaryRobots">
+                <h3>What features do you want?</h3>
+                <a class="btn btn-primary" href="#teacherRobots" role="button" onclick="showHide('TeacherMiddleSchoolRobotsProgrammable')";>Programmable</a>
+                <a class="btn btn-primary" href="#teacherDrones" role="button" onclick="showHide('TeacherMiddleSchoolDronesDoItYourself')";>Do-It-Yourself</a>
+                <a class="btn btn-primary" href="#teacherDrones" role="button" onclick="showHide('TeacherMiddleSchoolOtherNDR')";>No Device Required</a>
+               </div>
+
+               <div id="TeacherMiddleSchoolRobots">
+                <h3>What features do you want?</h3>
+                <a class="btn btn-primary" href="#teacherRobots" role="button" onclick="showHide('TeacherMiddleSchoolRobotsProgrammable')";>Programmable</a>
+                <a class="btn btn-primary" href="#teacherDrones" role="button" onclick="showHide('TeacherMiddleSchoolDronesDoItYourself')";>Do-It-Yourself</a>
+                <a class="btn btn-primary" href="#teacherDrones" role="button" onclick="showHide('TeacherMiddleSchoolOtherNDR')";>No Device Required</a>
+               </div>
+
+               <div id="TeacherHighschoolRobots">
+                <h3>What features do you want?</h3>
+                <a class="btn btn-primary" href="#teacherRobots" role="button" onclick="showHide('TeacherMiddleSchoolRobotsProgrammable')";>Programmable</a>
+                <a class="btn btn-primary" href="#teacherDrones" role="button" onclick="showHide('TeacherMiddleSchoolDronesDoItYourself')";>Do-It-Yourself</a>
+                <a class="btn btn-primary" href="#teacherDrones" role="button" onclick="showHide('TeacherMiddleSchoolOtherNDR')";>No Device Required</a>
+               </div>
+
+               <div id="TeacherAllDrones">
+                <h3>What features do you want?</h3>
+                <a class="btn btn-primary" href="#teacherRobots" role="button" onclick="showHide('TeacherMiddleSchoolRobotsProgrammable')";>Programmable</a>
+                <a class="btn btn-primary" href="#teacherDrones" role="button" onclick="showHide('TeacherMiddleSchoolDronesDoItYourself')";>Do-It-Yourself</a>
+                <a class="btn btn-primary" href="#teacherDrones" role="button" onclick="showHide('TeacherMiddleSchoolOtherNDR')";>No Device Required</a>
+               </div>
+
+                <div id="parentRobots">
+                  <p>That:</p>
+                  <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-primary">
+                      <input type="radio" name="options" id="optionFloor" autocomplete="off" onclick="showConsumerRobotsFloorCards()"> Cleans Floors
+                    </label>
+                    <label class="btn btn-primary">
+                      <input type="radio" name="options" id="optionMow" autocomplete="off"> Mows Lawns
+                    </label>
+                  </div>
+                </div>
+
+                <div id="parentDrones">
+                  <p>That:</p>
+                  <div class="btn-group" data-toggle="buttons">
+                    <label class="btn btn-primary">
+                      <input type="radio" name="options" id="optionFloor" autocomplete="off" onclick="showConsumerRobotsFloorCards()"> Cleans Floors
+                    </label>
+                    <label class="btn btn-primary">
+                      <input type="radio" name="options" id="optionMow" autocomplete="off"> Mows Lawns
+                    </label>
+                  </div>
+                </div>
+
+                <div id="consumerRobotsFloorCards">
+                  <div class="card">
+                    <div class="card-block">
+                      <h4 class="card-title">Roomba 980</h4>
+                      <h6 class="card-subtitle text-muted">Home Robotic Vacuum Cleaner</h6>
+                    </div>
+                    <img data-src="http://i.imgur.com/emTfvZs.jpg" alt="Card image">
+                    <div class="card-block">
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="card-link">Card link</a>
+                      <a href="#" class="card-link">Another link</a>
+                    </div>
+                  </div>
+                </div>
+
+        </div>
+
+      </div>
+
+
+
+      <footer class="footer">
+        <div class="container">
+          <p class="text-muted">Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="http://simplebotics.com">simplebotics.com</a></p>
+        </div>
+      </footer>
+
+      </div>
+
+    </body>
+
+    </html>
