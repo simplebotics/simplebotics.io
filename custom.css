@@ -193,6 +193,7 @@ font-family: muli;
     text-align: center;
     z-index: 1;
     position: relative;
+    margin: 0;
 }
 
   .jumbotron .h1, .jumbotron h1 {
