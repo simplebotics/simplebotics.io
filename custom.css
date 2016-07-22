@@ -212,7 +212,6 @@ font-family: muli;
     display: block;
     position: relative;
     max-width: 200px;
-    padding: 20px;
 }
 
 .navbar-toggler {
@@ -230,7 +229,7 @@ font-family: muli;
     margin-bottom: 0;
     list-style: none;
     float: right;
-    padding: 20px 50px;
+    padding: 35px 20px;
 }
 
 .bg-faded {
