@@ -257,7 +257,7 @@
         strings: ["robots", "drones", "coding", "STEM education"],
         typeSpeed: 90,
         loop: true,
-        backDelay: 300,
+        backDelay: 3000,
       });
   });
   
