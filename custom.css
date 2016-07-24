@@ -243,11 +243,6 @@ font-family: muli;
   h3 {
   	line-height: 1.75;
   }
- 
-  .col-centered {
-  	display: block;
-  	margin: 0;
-  }
   
   .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
