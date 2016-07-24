@@ -10,27 +10,27 @@
 .pricing img {
   display: block;
   margin: auto;
-  width: 200px;
+  width: 150px;
 }
 .pricing li:first-child,
 .pricing li:last-child {
-  padding: 20px 13px;
+  padding: 20px 10px;
 }
 .pricing li {
   list-style: none;
-  padding: 13px;
+  padding: 5px;
   font-family: muli;
 }
 .pricing li + li {
   border-top: none;
 }
 .pricing big {
-  font-size: 32px;
+  font-size: 28px;
   color: #9a30a1;
 }
 .pricing h3 {
   margin-bottom: 0;
-  font-size: 36px;
+  font-size: 30px;
 }
 .pricing span {
   font-size: 12px;
@@ -38,7 +38,7 @@
   font-weight: normal;
 }
 .pricing li:nth-last-child(2) {
-  padding: 30px 13px;
+  padding: 10px 5px;
 }
 .pricing button {
   width: auto;
