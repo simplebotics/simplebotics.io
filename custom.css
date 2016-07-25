@@ -372,7 +372,7 @@ font-family: muli;
 
 @media (min-width: 544px) {
 	
-#teachers .jumbotron {
+.jumbotron {
     padding: 200px;
 }
 
