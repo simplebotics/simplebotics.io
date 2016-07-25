@@ -370,8 +370,11 @@ font-family: muli;
     background-size: cover;
 }
 
-@media (min-width: 544px)
+@media (min-width: 544px) {
+	
 #teachers .jumbotron {
-    padding: 8rem 2rem;
+    padding: 200px;
+}
+
 }
 
