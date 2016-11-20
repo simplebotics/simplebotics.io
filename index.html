@@ -20,8 +20,7 @@
 
 </head>
 
-<body>
-
+<body ng-app="simpleboticsIO" ng-controller="ioController">
 
   <nav class="navbar navbar-light bg-faded navbar-fixed-top">
    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
@@ -60,7 +59,7 @@
 
         <div class="container">
           <h1>Discover <div class="typed-header"></div> for the classroom</h1>
-          <h2>simplebotics.io lets you find STEM education products for classrooms and kids.</h2>
+          <h2>simplebotics.io lets you find the perfect STEM education product in seconds</h2>
           <div class="begin-center">
             <div class="begin">
               <a class="btn btn-primary-outline-none" href="javascript:void(null)" role="button" onclick="showHide('Learn')";>Learn More<br><i class="fa fa-angle-down" aria-hidden="true"></i></a>
@@ -69,28 +68,55 @@
         </div>
       </div>
 
-      <!-- First question -->
+      <!-- Search in view -->
 
-<div align="center">
+      <div align="center">
 
-<section class="container-fluid" id="section4">
-<h1>Get started</h1>
-<div class="btn-toolbar">
-    <a class="btn btn-primary" href="/teachers" role="button")";>Teachers</a>
-    <a class="btn btn-primary" href="#TeacherPreSchool" role="button" onclick="showHide('TeacherPreSchoolRobots')";>Parents</a>
-</div>
-</section>
+        <section class="container-fluid" id="section4">
+          <h1>Get started</h1>
+          <div class="btn-toolbar">
+            <label class="btn btn-primary" ng-click="showTeachers = true" uib-btn-checkbox>Teachers</label>
+            <label class="btn btn-primary" ng-click="showParents = true" uib-btn-checkbox>Parents</label>
+          </div>
+        </section>
 
+        <section class="container-fluid" id="section4" ng-show="!showTeachers"></section>
+          <h1>I'm a Teacher for ages</h1>
 
+            <div class="btn-toolbar">
+              <label class="btn btn-primary" ng-click="showContact = true" uib-btn-checkbox>3-7</label>
+              <label class="btn btn-primary" ng-click="showContact = true" uib-btn-checkbox>8-14</label>
+            </div>
 
-      <footer class="footer">
-        <div class="container">
-          <p class="text-muted">Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="http://simplebotics.com">simplebotics.com</a></p>
-        </div>
-      </footer>
+            looking to teach
 
-    </div>
+            <!-- Simple dropdown -->
+
+            <span uib-dropdown on-toggle="toggled(open)">
+              <a href id="simple-dropdown" uib-dropdown-toggle>
+                Programming
+              </a>
+              <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
+                <li ng-repeat="choice in items">
+                  <a href>{{choice}}</a>
+                </li>
+              </ul>
+            </span>
+      </div>
+        
+
+          <footer class="footer">
+            <div class="container">
+              <p class="text-muted">Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="http://simplebotics.com">simplebotics.com</a></p>
+            </div>
+          </footer>
+
+        <script src="node_modules/angular/angular.js"></script>
+        <script src="node_modules/bootstrap/ui-bootstrap-tpls-2.2.0.js"></script>
+        <script src="scripts/app.js"></script>
+        <script src="components/simplebotics.io.ctr.js"></script>
+
 
   </body>
 
-  </html>
+</html>
