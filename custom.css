@@ -173,7 +173,7 @@ h1 {
   margin: auto;
   font-size: 15px;
   font-weight: bold;
-  border-radius: 50px;
+  border-radius: .25rem;
   color: #fff;
   padding: 9px 24px;
   background: #aaa;
