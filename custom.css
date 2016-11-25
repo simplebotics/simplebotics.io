@@ -380,6 +380,10 @@ font-family: open sans;
     color: #5d565f;
   }
   
+  h1 {
+    font-size: 32px;
+}
+
   h3 {
     line-height: 1.75;
   }
