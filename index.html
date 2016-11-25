@@ -76,37 +76,19 @@
       <div align="center">
 
         <section class="container-fluid" id="section4">
-          <h1>Get started</h1>
+          <h1>I'm interested in STEM products for my</h1>
           <div class="btn-toolbar">
-            <label class="btn btn-primary" ng-click="showTeachers = true" uib-btn-checkbox>Teachers</label>
-            <label class="btn btn-primary" ng-click="showParents = true" uib-btn-checkbox>Parents</label>
+            <label class="btn btn-primary" ng-click="showTeachers = true" uib-btn-checkbox>kids</label>
+            <label class="btn btn-primary" ng-click="showParents = true" uib-btn-checkbox>students</label>
           </div>
         </section>
 
-        <section class="container-fluid" id="section4" ng-show="!showTeachers"></section>
-          <h1>I'm a Teacher for ages</h1>
-
-            <div class="btn-toolbar">
-              <label class="btn btn-primary" ng-click="showContact = true" uib-btn-checkbox>3-7</label>
-              <label class="btn btn-primary" ng-click="showContact = true" uib-btn-checkbox>8-14</label>
-            </div>
-
-            looking to teach
-
-            <!-- Simple dropdown -->
-
-            <span uib-dropdown on-toggle="toggled(open)">
-              <a href id="simple-dropdown" uib-dropdown-toggle>
-                Programming
-              </a>
-              <ul class="dropdown-menu" uib-dropdown-menu aria-labelledby="simple-dropdown">
-                <li ng-repeat="choice in items">
-                  <a href>{{choice}}</a>
-                </li>
-              </ul>
-            </span>
       </div>
         
+
+
+
+      <div align="center">
 
           <footer class="footer">
             <div class="container">
@@ -114,7 +96,10 @@
             </div>
           </footer>
 
+      </div>
+
         <script src="node_modules/angular/angular.js"></script>
+        <script src="node_modules/angular-animate/angular-animate.js"></script>
         <script src="node_modules/bootstrap/ui-bootstrap-tpls-2.2.0.js"></script>
         <script src="scripts/app.js"></script>
         <script src="components/simplebotics.io.ctr.js"></script>
