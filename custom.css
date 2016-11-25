@@ -1,7 +1,7 @@
 .lead {
     font-size: 1.25rem;
     font-weight: 300;
-    font-family: muli;
+    font-family: Varela Round;
     color: #8f7e94;
 }
 
@@ -47,7 +47,7 @@ h1 {
 .lead {
     font-size: 1.2rem;
     font-weight: 300;
-    font-family: muli;
+    font-family: Varela Round;
     color: #8f7e94;
 }
 
@@ -124,7 +124,7 @@ h1 {
     font-size: 14px;
     padding-left: 0;
     margin-bottom: 30px;
-    font-family: 'muli';
+    font-family: 'open sans';
 }
 
 .pricing img {
@@ -141,7 +141,7 @@ h1 {
 .pricing li {
   list-style: none;
   padding: 5px;
-  font-family: muli;
+  font-family: open sans;
 }
 
 .pricing li + li {
@@ -200,7 +200,7 @@ h1 {
 
 .p-startup button {
   background-color: #9a30a1;
-  font-family: open sans;
+  font-family: Varela Round;
 }
 
 .p-company big,
@@ -210,7 +210,7 @@ h1 {
 
 .p-company button {
   background-color: #9a30a1;
-  font-family: open sans;
+  font-family: Varela Round;
 }
 
 .p-unicorn big,
@@ -220,7 +220,7 @@ h1 {
 
 .p-unicorn button {
   background-color: #9a30a1;
-  font-family: open sans;
+  font-family: Varela Round;
 }
 
 #typed-cursor {
@@ -268,7 +268,7 @@ h1 {
     color: #fff;
     background-color: #9a30a1;
     border: none;
-    font-family: open sans;
+    font-family: Varela Round;
     font-size: 25px;
     width: 135px;
 }
@@ -299,7 +299,7 @@ h1 {
 
 .card-title {
     margin-bottom: .75rem;
-    font-family: open sans;
+    font-family: Varela Round;
 }
 
 .card {
@@ -366,12 +366,12 @@ video {
   }
 
 #content {
-font-family: muli;
+font-family: open sans;
 	
 }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: muli;
+    font-family: Verala Round;
     color: #5d565f;
   }
   
@@ -470,7 +470,7 @@ font-family: muli;
 
 .navbar-light .navbar-nav .nav-link {
     color: #fff;
-    font-family: muli;
+    font-family: open sans;
 }
 
 .navbar-brand {
