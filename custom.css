@@ -249,6 +249,11 @@ h1 {
   display: inline;
 }
 
+.btn-toolbar {
+    margin-left: -5px;
+    padding: 10px 0 0 0;
+}
+
 
 .btn-group-sm>.btn, .btn-sm {
     padding: .25rem .75rem;
@@ -294,7 +299,7 @@ h1 {
 }
 
 .card-image {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 .card-title {
@@ -314,7 +319,7 @@ h1 {
 
 
 body {
-	background-color: #fff;
+  background-color: #fff;
 }
 
 video {
@@ -360,14 +365,14 @@ video {
   }
   
   #contentBegin {
-  	
+    
     padding: 200px;
 
   }
 
 #content {
 font-family: open sans;
-	
+  
 }
 
   h1, h2, h3, h4, h5, h6 {
@@ -376,7 +381,7 @@ font-family: open sans;
   }
   
   h3 {
-  	line-height: 1.75;
+    line-height: 1.75;
   }
   
   .vertical-center {
@@ -500,10 +505,9 @@ font-family: open sans;
 }
 
 @media (min-width: 544px) {
-	
+  
 .jumbotron {
     padding: 170px;
 }
 
 }
-
