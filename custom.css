@@ -1,7 +1,7 @@
 .lead {
     font-size: 1.25rem;
     font-weight: 300;
-    font-family: Varela Round;
+    font-family: 'Varela Round', sans-serif;
     color: #8f7e94;
 }
 
@@ -47,7 +47,7 @@ h1 {
 .lead {
     font-size: 1.2rem;
     font-weight: 300;
-    font-family: Varela Round;
+    font-family: 'Varela Round', sans-serif;
     color: #8f7e94;
 }
 
@@ -200,7 +200,7 @@ h1 {
 
 .p-startup button {
   background-color: #9a30a1;
-  font-family: Varela Round;
+  font-family: 'Varela Round', sans-serif;
 }
 
 .p-company big,
@@ -210,7 +210,7 @@ h1 {
 
 .p-company button {
   background-color: #9a30a1;
-  font-family: Varela Round;
+  font-family: 'Varela Round', sans-serif;
 }
 
 .p-unicorn big,
@@ -220,7 +220,7 @@ h1 {
 
 .p-unicorn button {
   background-color: #9a30a1;
-  font-family: Varela Round;
+  font-family: 'Varela Round', sans-serif;
 }
 
 #typed-cursor {
@@ -268,7 +268,7 @@ h1 {
     color: #fff;
     background-color: #9a30a1;
     border: none;
-    font-family: Varela Round;
+    font-family: 'Varela Round', sans-serif;
     font-size: 25px;
     width: 135px;
 }
@@ -299,7 +299,7 @@ h1 {
 
 .card-title {
     margin-bottom: .75rem;
-    font-family: Varela Round;
+    font-family: 'Varela Round', sans-serif;
 }
 
 .card {
