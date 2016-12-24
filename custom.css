@@ -44,6 +44,20 @@
     color: #9a30a1;
 }
 
+.card {
+    position: relative;
+    display: block;
+    margin-bottom: 1.5em;
+    background-color: #eddaef;
+    border: none;
+    border-radius: .25rem;
+    color: #5d565f;
+}
+
+.collapse .card-block {
+    padding: 1.25rem;
+}
+
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
 
