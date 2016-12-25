@@ -44,7 +44,7 @@
     color: #9a30a1;
 }
 
-.card {
+.collapse .card {
     position: relative;
     display: block;
     margin-bottom: 1.5em;
