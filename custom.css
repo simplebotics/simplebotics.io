@@ -59,7 +59,7 @@
 
 .btn:focus, .btn:hover {
     text-decoration: none;
-    color: #9a30a1;
+    color: #fff;
 }
 
 .collapse .card {
