@@ -505,12 +505,12 @@ font-family: open sans;
     margin-bottom: 0;
     list-style: none;
     float: right;
-    padding: 20px 40px;
+    padding: 8px 40px;
 }
 
 .bg-faded {
     top: 0;
-    background: transparent;
+    background: #fff;
 }
 
 .bg-faded.navbar-color {
@@ -521,15 +521,13 @@ font-family: open sans;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #fff;
+    color: #9a30a1;
     font-family: open sans;
 }
 
 .navbar-brand {
     max-width: 25%;
-    -webkit-filter: brightness(9);
-    filter: brightness(100);
-    padding: 20px 50px;
+    padding: 5px 50px;
 }
 
 /* teachers css */
@@ -554,7 +552,7 @@ font-family: open sans;
 @media (min-width: 544px) {
   
 .jumbotron {
-    padding: 170px;
+    padding: 190px;
     border-radius: 0px;
 }
 
