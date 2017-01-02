@@ -490,6 +490,11 @@ font-family: open sans;
     max-width: 200px;
 }
 
+.navbar-fixed-top {
+    top: 0;
+    height: 80px;
+}
+
 .navbar-toggler {
     padding: 1.5rem 1.5rem;
     font-size: 3rem;
@@ -505,7 +510,7 @@ font-family: open sans;
     margin-bottom: 0;
     list-style: none;
     float: right;
-    padding: 20px 40px;
+    padding: 8px 40px;
 }
 
 .bg-faded {
@@ -529,19 +534,19 @@ font-family: open sans;
     max-width: 25%;
     -webkit-filter: brightness(9);
     filter: brightness(100);
-    padding: 20px 50px;
+    padding: 5px 50px;
 }
 
 /* teachers css */
 
 #teachers .jumbotron {
     background: rgba(105,240,218,1);
-    background: -moz-linear-gradient(-45deg, rgba(29, 15, 15, 0.8) 0%, rgba(224, 51, 255, 0.8) 100%);
-    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(29, 15, 15, 0.8)), color-stop(100%, rgba(224, 51, 255, 0.8)));
-    background: -webkit-linear-gradient(-45deg, rgba(29, 15, 15, 0.8) 0%, rgba(224, 51, 255, 0.8) 100%);
-    background: -o-linear-gradient(-45deg, rgba(29, 15, 15, 0.8) 0%, rgba(224, 51, 255, 0.8) 100%);
-    background: -ms-linear-gradient(-45deg, rgba(29, 15, 15, 0.8) 0%, rgba(224, 51, 255, 0.8) 100%);
-    background: linear-gradient(135deg, rgba(29, 15, 15, 0.8) 0%, rgba(224, 51, 255, 0.8) 100%);
+    background: -moz-linear-gradient(-45deg, rgba(139, 0, 222, 0.9) 0%, rgba(115, 79, 226, 0.9) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(139, 0, 222, 0.9)), color-stop(100%, rgba(115, 79, 226, 0.9)));
+    background: -webkit-linear-gradient(-45deg, rgba(139, 0, 222, 0.9) 0%, rgba(115, 79, 226, 0.9) 100%);
+    background: -o-linear-gradient(-45deg, rgba(139, 0, 222, 0.9) 0%, rgba(115, 79, 226, 0.9) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(139, 0, 222, 0.9) 0%, rgba(115, 79, 226, 0.9) 100%);
+    background: linear-gradient(135deg, rgba(139, 0, 222, 0.9) 0%, rgba(115, 79, 226, 0.9) 100%);
     border-radius: 0;
     text-align: center;
     z-index: 1;
