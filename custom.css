@@ -53,7 +53,7 @@
 
 .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover, .open>.btn-primary.dropdown-toggle.focus, .open>.btn-primary.dropdown-toggle:focus, .open>.btn-primary.dropdown-toggle:hover {
     color: #fff;
-    background-color: #9a30a1;
+    background-color: #8b00de;
     border: none;
 }
 
@@ -161,7 +161,7 @@ h1 {
 
 .pricing {
     text-align: center;
-    border: 1px solid #9a30a1;
+    border: 1px solid #8b00de;
     border-radius: .25rem;
     color: #777;
     font-size: 14px;
@@ -193,7 +193,7 @@ h1 {
 
 .pricing big {
   font-size: 28px;
-  color: #9a30a1;
+  color: #8b00de;
 }
 
 .pricing h3 {
@@ -224,7 +224,7 @@ h1 {
   transition: opacity .2s ease;
   border: none;
   outline: none;
-  background-color: #9a30a1;
+  background-color: #8b00de;
 }
 
 .pricing button:hover {
@@ -238,31 +238,31 @@ h1 {
 /* pricing color */
 .p-startup big,
 .p-startup h3 {
-  color: #9a30a1;
+  color: #8b00de;
 }
 
 .p-startup button {
-  background-color: #9a30a1;
+  background-color: #8b00de;
   font-family: 'Varela Round', sans-serif;
 }
 
 .p-company big,
 .p-company h3 {
-  color: #9a30a1;
+  color: #8b00de;
 }
 
 .p-company button {
-  background-color: #9a30a1;
+  background-color: #8b00de;
   font-family: 'Varela Round', sans-serif;
 }
 
 .p-unicorn big,
 .p-unicorn h3 {
-  color: #9a30a1;
+  color: #8b00de;
 }
 
 .p-unicorn button {
-  background-color: #9a30a1;
+  background-color: #8b00de;
   font-family: 'Varela Round', sans-serif;
 }
 
@@ -303,7 +303,7 @@ h1 {
     font-size: .875rem;
     line-height: 0;
     border-radius: .2rem;
-    color: #9a30a1;
+    color: #8b00de;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
@@ -314,7 +314,7 @@ h1 {
 
 .btn-primary {
     color: #fff;
-    background-color: #9a30a1;
+    background-color: #8b00de;
     border: none;
     font-family: 'Varela Round', sans-serif;
     font-size: 25px;
@@ -323,7 +323,7 @@ h1 {
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
     color: #fff;
-    background-color: #673AB7;
+    background-color: #734fe2;
 }
 
 .btn-primary-outline {
@@ -505,29 +505,31 @@ font-family: open sans;
     margin-bottom: 0;
     list-style: none;
     float: right;
-    padding: 8px 40px;
+    padding: 20px 40px;
 }
 
 .bg-faded {
     top: 0;
-    background: #fff;
+    background: transparent;
 }
 
 .bg-faded.navbar-color {
     top: 0;
-    background-color: #9a30a1;
+    background-color: #8b00de;
     transition: 0.8s;
     -webkit-transition:  0.8s;
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #9a30a1;
+    color: #fff;
     font-family: open sans;
 }
 
 .navbar-brand {
     max-width: 25%;
-    padding: 5px 50px;
+    -webkit-filter: brightness(9);
+    filter: brightness(100);
+    padding: 20px 50px;
 }
 
 /* teachers css */
@@ -552,7 +554,7 @@ font-family: open sans;
 @media (min-width: 544px) {
   
 .jumbotron {
-    padding: 190px;
+    padding: 170px;
     border-radius: 0px;
 }
 
