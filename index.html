@@ -29,7 +29,7 @@
    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar2">
     &#9776;
   </button>
-  <a class="navbar-brand" href="#"><img src="http://www.simplebotics.com/wp-content/uploads/2016/07/simplebotics_io.png"/></a>
+  <a class="navbar-brand" href="#"><img src="images/simplebotics_io.png"/></a>
   <div class="collapse navbar-toggleable-xs" id="exCollapsingNavbar2">
     <ul class="nav navbar-nav">
       <li class="nav-item">
@@ -65,45 +65,163 @@
           <h2>simplebotics.io lets you find the perfect STEM education product in seconds</h2>
           <div class="begin-center">
             <div class="begin">
-              <a class="btn btn-primary-outline-none" href="javascript:void(null)" role="button" onclick="showHide('Learn')";>Begin<br><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+              <a class="btn btn-primary-outline-none" href="javascript:void(null)" role="button" scroll-to="#section1" ng-click="showBegin = true">Begin<br><i class="fa fa-angle-down" aria-hidden="true"></i></a>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Search in view -->
+      <!-- Product filter in view -->
 
       <div align="center">
 
-        <section class="container-fluid" id="section4">
+        <section class="container-fluid" id="section1" ng-show="showBegin">
           <h1>You're interested in STEM for who?</h1>
           <div class="btn-toolbar">
-            <label class="btn btn-primary" ng-click="showTeachers = true" uib-btn-checkbox>Kids</label>
-            <label class="btn btn-primary" ng-click="showParents = true" uib-btn-checkbox>Students</label>
+            <label class="btn btn-primary" scroll-to="#section2" ng-click="showParentsQuestions = true; showSection2 = true" uib-btn-radio>Kids</label>
+            <label class="btn btn-primary" scroll-to="#section5" ng-click="showTeachersQuestions = true; showSection5 = true" uib-btn-radio>Students</label>
           </div>
         </section>
 
-      </div>
-        
+        <div id="showParentsQuestions">
 
+          <section class="container-fluid" id="section2" ng-show="showSection2">
+            <h1>What is their age group?</h1>
+            <h3><a class="text" data-toggle="collapse" href="#collapseAgeGroup"><i class="fa fa-question-circle" aria-hidden="true" style="color: #9a30a1"></i>
+            </a></h3>
 
-
-      <div align="center">
-
-          <footer class="footer">
-            <div class="container">
-              <p class="text-muted">Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="http://simplebotics.com">simplebotics.com</a></p>
+            <div class="collapse" id="collapseAgeGroup">
+              <div class="card card-block">
+                We use this information to match you with a product's appropriate age group.
+              </div>
             </div>
-          </footer>
+
+            <!-- Add a "why we need this information" dropdown section here -->
+
+            <div class="btn-toolbar">
+              <label class="btn btn-primary" scroll-to="#section3" ng-click="showSection3 = true" uib-btn-radio>3-7</label>
+              <label class="btn btn-primary" scroll-to="#section3" ng-click="showSection3 = true" uib-btn-radio>8-14</label>
+              <label class="btn btn-primary" scroll-to="#section3" ng-click="showSection3 = true" uib-btn-radio>14+</label>
+            </div>
+          </section>
+
+          <section class="container-fluid" id="section3" ng-show="showSection3">
+            <h1>What subject interests them the most?</h1>
+            <div class="btn-toolbar">
+              <label class="btn btn-primary" scroll-to="#section4" ng-click="showSection4 = true" uib-btn-checkbox>Electronics</label>
+              <label class="btn btn-primary" scroll-to="#section4" ng-click="showSection4 = true" uib-btn-checkbox>Coding</label>
+              <label class="btn btn-primary" scroll-to="#section4" ng-click="showSection4 = true" uib-btn-checkbox>Mechanics</label>
+            </div>
+          </section>
+
+          <section class="container-fluid" id="section4" ng-show="showSection4">
+            <h1>Lastly, please choose a type of product.</h1>
+            <div class="btn-toolbar">
+              <label class="btn btn-primary" ng-click="" uib-btn-checkbox>Robots</label>
+              <label class="btn btn-primary" ng-click="" uib-btn-checkbox>Drones</label>
+              <label class="btn btn-primary" ng-click="" uib-btn-checkbox>Apps</label>
+              <label class="btn btn-primary" ng-click="" uib-btn-checkbox>Other</label>
+            </div>
+          </section>
+
+        </div>
+
+        <div id="showTeachersQuestions">
+
+          <section class="container-fluid" id="section5" ng-show="showSection5">
+            <h1>What age group do you teach?</h1>
+            <h3><a class="text" data-toggle="collapse" href="#collapseAgeGroup"><i class="fa fa-question-circle" aria-hidden="true" style="color: #9a30a1"></i>
+            </a></h3>
+
+            <div class="collapse" id="collapseAgeGroup">
+              <div class="card card-block">
+                We use this information to match you with a product's appropriate age group.
+              </div>
+            </div>
+
+            <!-- Add a "why we need this information" dropdown section here -->
+
+            <div class="btn-toolbar">
+              <label class="btn btn-primary" scroll-to="#section6" ng-click="showSection6 = true" uib-btn-radio>3-7</label>
+              <label class="btn btn-primary" scroll-to="#section6" ng-click="showSection6 = true" uib-btn-radio>8-14</label>
+              <label class="btn btn-primary" scroll-to="#section6" ng-click="showSection6 = true" uib-btn-radio>14+</label>
+            </div>
+          </section>
+
+          <section class="container-fluid" id="section6" ng-show="showSection6">
+            <h1>What subject are you wanting to teach?</h1>
+            <div class="btn-toolbar">
+              <label class="btn btn-primary" scroll-to="#section7" ng-click="howSection7 = true" uib-btn-checkbox>Electronics</label>
+              <label class="btn btn-primary" scroll-to="#section7" ng-click="showSection7 = true" uib-btn-checkbox>Coding</label>
+              <label class="btn btn-primary" scroll-to="#section7" ng-click="showSection7 = true" uib-btn-checkbox>Mechanics</label>
+            </div>
+          </section>
+
+          <section class="container-fluid" id="section7" ng-show="showSection7">
+            <h1>What product would you like to teach with?</h1>
+            <div class="btn-toolbar">
+              <label class="btn btn-primary" ng-click="" uib-btn-checkbox>Robots</label>
+              <label class="btn btn-primary" ng-click="" uib-btn-checkbox>Drones</label>
+              <label class="btn btn-primary" ng-click="" uib-btn-checkbox>Apps</label>
+              <label class="btn btn-primary" ng-click="" uib-btn-checkbox>Other</label>
+            </div>
+          </section>
+
+        </div>
 
       </div>
 
-        <script src="node_modules/angular/angular.js"></script>
-        <script src="node_modules/angular-animate/angular-animate.js"></script>
-        <script src="node_modules/bootstrap/ui-bootstrap-tpls-2.2.0.js"></script>
-        <script src="scripts/app.js"></script>
-        <script src="components/simplebotics.io.ctr.js"></script>
+      <!-- deactivate this code >
+
+      <div class="showTeachers">
+        <section class="container-fluid" id="section4">
+          <h1>What are you looking to teach?</h1>
+          <div class="btn-toolbar">
+            <label class="btn btn-primary" ng-click="showTeachersCoding = true" uib-btn-checkbox>Coding</label>
+            <label class="btn btn-primary" ng-click="showTeachersElectronics = true" uib-btn-checkbox>Electronics</label>
+            <label class="btn btn-primary" ng-click="showTeachersMechanics = true" uib-btn-checkbox>Mechanics</label>
+          </div>
+        </section>
+      </div>
+
+    -->
   
-  </body>
+  <div class="card-deck-wrapper" ng-show="showResults">
+    <div class="card-deck">
+      <div class="card">
+        <card ng-repeat="product in products">
+          <div class="card-block">
+            <h4 class="card-title">{{ product.title }}</h4>
+            <h6 class="card-subtitle text-muted">{{ product.type }}</h6>
+          </div>
+          <img ng-src="{{ product.image }}" alt="Card image">
+          <div class="card-block">
+            <p class="card-text">{{ product.description }}</p>
+            <a href="#" class="card-link">{{ product.link }}</a>
+            <a href="#" class="card-link">{{ product.company }}</a>
+          </div>
+        </card>
+      </div>
+    </div>
+  </div>
+
+  <div align="center">
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="http://simplebotics.com">simplebotics.com</a></p>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="node_modules/angular/angular.js"></script>
+  <script src="node_modules/angular-animate/angular-animate.js"></script>
+  <script src="node_modules/bootstrap/ui-bootstrap-tpls-2.2.0.js"></script>
+  <script src="scripts/app.js"></script>
+  <script src="components/simplebotics.io.ctr.js"></script>
+  <script src="node_modules/scroll-to/scroll-to.js"></script>
+
+</body>
 
 </html>
