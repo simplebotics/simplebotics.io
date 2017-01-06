@@ -1,3 +1,36 @@
+.navbar {
+  border-radius:0;
+}
+
+.navbar-toggler {
+  border:1px solid rgba(0,0,0,0.2);
+}
+
+.navbar-toggler:hover {
+  background:rgb(240,240,240)
+}
+
+.navbar-toggler:focus {
+  outline:0;
+}
+
+.dropdown-toggle{cursor:pointer;}
+
+/* Navbar Collapse Styles To Stack Items At Mobile Widths*/
+@media(max-width:47.9em) {
+  .navbar .collapse{max-height:250px;width:100%;overflow-y:auto;overflow-x:hidden;}
+  .navbar .navbar-brand {float:none;display: inline-block;}
+  .navbar .navbar-nav>.nav-item { float: none; margin-left: .1rem;}
+  .navbar .navbar-nav {float:none !important;}
+  .nav-item{width:100%;text-align:left;}
+  .navbar .collapse .dropdown-menu {
+    position: relative;
+    float: none;
+    background:none;
+    border:none;
+  }
+}
+
 .lead {
     font-size: 1.25rem;
     font-weight: 300;
@@ -473,12 +506,12 @@ font-family: open sans;
   
 .jumbotron {
     background: rgba(105,240,218,1);
-    background: -moz-linear-gradient(-45deg, rgba(139, 0, 222, 0.9) 0%, rgba(115, 79, 226, 0.9) 100%);
-    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(139, 0, 222, 0.9)), color-stop(100%, rgba(115, 79, 226, 0.9)));
-    background: -webkit-linear-gradient(-45deg, rgba(139, 0, 222, 0.9) 0%, rgba(115, 79, 226, 0.9) 100%);
-    background: -o-linear-gradient(-45deg, rgba(139, 0, 222, 0.9) 0%, rgba(115, 79, 226, 0.9) 100%);
-    background: -ms-linear-gradient(-45deg, rgba(139, 0, 222, 0.9) 0%, rgba(115, 79, 226, 0.9) 100%);
-    background: linear-gradient(135deg, rgba(139, 0, 222, 0.9) 0%, rgba(115, 79, 226, 0.9) 100%);
+    background: -moz-linear-gradient(-45deg, rgba(103, 58, 183, 0.9) 0%, rgba(224, 51, 255, 0.9) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(103, 58, 183, 0.9)), color-stop(100%, rgba(224, 51, 255, 0.9)));
+    background: -webkit-linear-gradient(-45deg, rgba(103, 58, 183, 0.9) 0%, rgba(224, 51, 255, 0.9) 100%);
+    background: -o-linear-gradient(-45deg, rgba(103, 58, 183, 0.9) 0%, rgba(224, 51, 255, 0.9) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(103, 58, 183, 0.9) 0%, rgba(224, 51, 255, 0.9) 100%);
+    background: linear-gradient(90deg, rgba(103, 58, 183, 0.9) 0%, rgba(224, 51, 255, 0.9) 100%)
     border-radius: 0;
     text-align: center;
     z-index: 1;
@@ -525,20 +558,6 @@ font-family: open sans;
     list-style: none;
     float: right;
     padding: 8px 40px;
-}
-
-@media(max-width:47.9em) {
-  .navbar .collapse{max-height:250px;width:100%;overflow-y:auto;overflow-x:hidden;}
-  .navbar .navbar-brand {float:none;display: inline-block;}
-  .navbar .navbar-nav>.nav-item { float: none; margin-left: .1rem;}
-  .navbar .navbar-nav {float:none !important;}
-  .nav-item{width:100%;text-align:left;}
-  .navbar .collapse .dropdown-menu {
-    position: relative;
-    float: none;
-    background: #fff;
-    border: #8b00de;
-  }
 }
 
 .bg-faded {
