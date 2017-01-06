@@ -231,8 +231,8 @@ h1 {
 }
 
 .jumbotron {
-    background-color: #8b00de;
-    padding: 10% 0;
+    padding: 0!important;
+    border-radius: 0px;
 }
 
 .jumbotron .h1, .jumbotron h1 {
