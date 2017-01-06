@@ -195,6 +195,10 @@ h1 {
     max-width: 70%;
 }
 
+.video-container {
+  display: none;
+}
+
 .jumbotron .h1, .jumbotron h1 {
     color: #fff;
     font-weight: 400;
@@ -471,7 +475,7 @@ video {
 
 .fa-heart:before {
     content: "\f004";
-    color: #ee2658;
+    color: #8b00de;
 }
 
   #content > div {
@@ -543,6 +547,7 @@ font-family: open sans;
     z-index: 1;
     position: relative;
     margin: 0;
+    background-color: #8b00de;
 }
 
   .jumbotron .h1, .jumbotron h1 {
