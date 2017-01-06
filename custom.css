@@ -24,8 +24,11 @@
   }
 
   .navbar .navbar-brand {
-    float:none;display: inline-block;
-  }
+    float: none;
+    display: inline-block;
+    padding: 20px;
+    font-size: 30px;
+}
 
   .navbar .navbar-nav>.nav-item { 
     float: none; margin-left: .1rem;
