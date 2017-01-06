@@ -14,13 +14,18 @@
   outline:0;
 }
 
-.dropdown-toggle{cursor:pointer;}
+.dropdown-toggle {
+  cursor:pointer;
+}
 
 /* Navbar Collapse Styles To Stack Items At Mobile Widths*/
 @media(max-width:47.9em) {
 
   .navbar .collapse {
-    max-height:250px;width:100%;overflow-y:auto;overflow-x:hidden;
+    max-height:250px;
+    width:100%;
+    overflow-y:auto;
+    overflow-x:hidden;
   }
 
   .navbar .navbar-brand {
@@ -583,7 +588,7 @@ font-family: open sans;
     font-size: 2rem;
     line-height: 1;
     background: 0 0;
-    border: 1px solid transparent;
+    border: none;
     border-radius: .25rem;
     color: #fff;
 }
