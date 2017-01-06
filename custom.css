@@ -199,6 +199,10 @@ h1 {
   display: none;
 }
 
+.jumbotron {
+    background-color: #8b00de;
+}
+
 .jumbotron .h1, .jumbotron h1 {
     color: #fff;
     font-weight: 400;
@@ -547,7 +551,6 @@ font-family: open sans;
     z-index: 1;
     position: relative;
     margin: 0;
-    background-color: #8b00de;
 }
 
   .jumbotron .h1, .jumbotron h1 {
