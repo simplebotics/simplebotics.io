@@ -156,11 +156,7 @@ h1 {
 }
 
 .begin {
-    position: fixed!important;
-    left: 0%!important;
-    padding: 15px!important;
-    bottom: 0%!important;
-    width: 100%;
+    padding: 30px!important;
 }
 
 .row img {
