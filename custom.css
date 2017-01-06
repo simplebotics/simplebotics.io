@@ -90,7 +90,7 @@
 }
 
 #section5 {
-  background-color: #fddeff;
+  background-color: #fff;
   color:#686868;
   padding: 23% 0;
 }
@@ -102,7 +102,7 @@
 }
 
 #section7 {
-  background-color: #fddeff;
+  background-color: #fff;
   color:#686868;
   padding: 23% 0;
 }
@@ -167,30 +167,51 @@ h1 {
 }
 
 #section1 {
-  background-color: #f1f3f3;
+  background-color: #fff;
   color:#686868;
-  padding: 20px;
+  padding: 50%;
   text-align: center;
 }
 
 #section2 {
-  background-color: #fff;
+  background-color: #fddeff;
   color:#686868;
-  padding: 20px;
+  padding: 50%;
   text-align: center;
 }
 
 #section3 {
-  background-color: #f1f3f3;
+  background-color: #fff;
   color:#686868;
-  padding: 20px;
+  padding: 50%;
   text-align: center;
 }
 
 #section4 {
+  background-color: #fddeff;
+  color:#686868;
+  padding: 50%;
+  text-align: center;
+}
+
+#section5 {
   background-color: #fff;
   color:#686868;
-  padding: 20px;
+  padding: 50%;
+  text-align: center;
+}
+
+#section6 {
+  background-color: #fddeff;
+  color:#686868;
+  padding: 50%;
+  text-align: center;
+}
+
+#section7 {
+  background-color: #fff;
+  color:#686868;
+  padding: 50%;
   text-align: center;
 }
 
@@ -212,14 +233,15 @@ h1 {
 .jumbotron .h1, .jumbotron h1 {
     color: #fff;
     font-weight: 400;
-    font-size: 25px;
+    font-size: 35px;
+    text-align: left;
 }
 
 .jumobotron .h2, .jumbotron h2 {
     color: #fff;
     font-weight: 300;
-    font-size: 14px;
-    line-height: 1.5em;
+    font-size: 17px;
+    text-align: left;
 }
 
 .btn-block {
