@@ -7,7 +7,7 @@
 }
 
 .navbar-toggler:hover {
-  background:rgb(240,240,240)
+    background: #673AB7;
 }
 
 .navbar-toggler:focus {
@@ -18,11 +18,29 @@
 
 /* Navbar Collapse Styles To Stack Items At Mobile Widths*/
 @media(max-width:47.9em) {
-  .navbar .collapse{max-height:250px;width:100%;overflow-y:auto;overflow-x:hidden;}
-  .navbar .navbar-brand {float:none;display: inline-block;}
-  .navbar .navbar-nav>.nav-item { float: none; margin-left: .1rem;}
-  .navbar .navbar-nav {float:none !important;}
-  .nav-item{width:100%;text-align:left;}
+
+  .navbar .collapse {
+    max-height:250px;width:100%;overflow-y:auto;overflow-x:hidden;
+  }
+
+  .navbar .navbar-brand {
+    float:none;display: inline-block;
+  }
+
+  .navbar .navbar-nav>.nav-item { 
+    float: none; margin-left: .1rem;
+  }
+
+  .navbar .navbar-nav {
+    float: none !important;
+    background-color: #673ab7;
+    border-radius: .25rem;
+  }
+
+  .nav-item {
+    width:100%;text-align:left;
+  }
+
   .navbar .collapse .dropdown-menu {
     position: relative;
     float: none;
@@ -537,6 +555,21 @@ font-family: open sans;
     max-width: 200px;
 }
 
+.navbar-light .navbar-brand {
+    color: #fff;
+    font-family: proxima-nova-soft;
+    font-weight: bold;
+    letter-spacing: .5px;
+    font-size: 25px;
+}
+
+.navbar-brand {
+    max-width: 25%;
+    -webkit-filter: brightness(9);
+    filter: brightness(100);
+    padding: 7px 50px;
+}
+
 .navbar-fixed-top {
     top: 0;
     height: 70px;
@@ -557,7 +590,7 @@ font-family: open sans;
     margin-bottom: 0;
     list-style: none;
     float: right;
-    padding: 8px 40px;
+    padding: 5px 25px;
 }
 
 .bg-faded {
@@ -582,6 +615,10 @@ font-family: open sans;
     -webkit-filter: brightness(9);
     filter: brightness(100);
     padding: 5px 50px;
+}
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+    color: #fff;
 }
 
 /* teachers css */
