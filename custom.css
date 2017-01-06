@@ -629,9 +629,10 @@ font-family: open sans;
     font-size: 1.5rem;
     line-height: 1;
     background: 0 0;
-    border-radius: .25rem;
     color: #fff;
     margin-top: 3px;
+    border: none;
+    border-radius: .25rem;
 }
 
 .nav {
