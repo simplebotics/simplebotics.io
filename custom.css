@@ -626,12 +626,12 @@ font-family: open sans;
 
 .navbar-toggler {
     padding: .5rem .75rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 1;
     background: 0 0;
-    border: none;
     border-radius: .25rem;
     color: #fff;
+    margin-top: 3px;
 }
 
 .nav {
