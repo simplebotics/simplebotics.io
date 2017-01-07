@@ -129,6 +129,16 @@
     color: #fff;
 }
 
+.card {
+    position: relative;
+    display: block;
+    margin-bottom: 1.5em;
+    background-color: #f0e8f5;
+    border: none;
+    border-radius: .25rem;
+    color: #5d565f;
+}
+
 .collapse .card {
     position: relative;
     display: block;
