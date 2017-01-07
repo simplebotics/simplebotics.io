@@ -108,10 +108,9 @@
 }
 
 #about {
-    background-color: #fdfbfd;
+    background-color: #fff;
     color: #686868;
-    padding: 23% 0;
-    max-width: 70%;
+    padding: 70px;
 }
 
 .btn-block {
@@ -232,12 +231,19 @@ h1 {
 #about {
     background-color: #fff;
     color: #686868;
-    padding: 23% 0;
-    max-width: 70%;
+    padding: 70px;
 }
 
 .video-container {
   display: none;
+}
+
+.bg {
+    padding: 150px;
+    border-radius: 0px;
+    background-image: url(http://i.imgur.com/jY2OU4E.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .jumbotron {
@@ -554,6 +560,14 @@ font-family: open sans;
   h3 {
     line-height: 1.75;
   }
+
+  .bg {
+    padding: 150px;
+    border-radius: 0px;
+    background-image: url(http://i.imgur.com/jY2OU4E.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
   
   .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
