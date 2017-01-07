@@ -61,7 +61,7 @@
 .lead {
     font-size: 1.25rem;
     font-weight: 300;
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'proxima-nova soft', sans-serif;
     color: #8f7e94;
 }
 
@@ -175,7 +175,7 @@ h1 {
 .lead {
     font-size: 1.2rem;
     font-weight: 300;
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'proxima-nova soft', sans-serif;
     color: #8f7e94;
 }
 
@@ -371,7 +371,7 @@ h1 {
 
 .p-startup button {
   background-color: #8b00de;
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'proxima-nova soft', sans-serif;
 }
 
 .p-company big,
@@ -381,7 +381,7 @@ h1 {
 
 .p-company button {
   background-color: #8b00de;
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'proxima-nova soft', sans-serif;
 }
 
 .p-unicorn big,
@@ -391,7 +391,7 @@ h1 {
 
 .p-unicorn button {
   background-color: #8b00de;
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'proxima-nova soft', sans-serif;
 }
 
 #typed-cursor {
@@ -444,7 +444,7 @@ h1 {
     color: #fff;
     background-color: #8b00de;
     border: none;
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'proxima-nova soft', sans-serif;
     font-size: 25px;
     width: 200px;
 }
@@ -475,7 +475,7 @@ h1 {
 
 .card-title {
     margin-bottom: .75rem;
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'proxima-nova soft', sans-serif;
 }
 
 .card {
@@ -547,7 +547,7 @@ font-family: open sans;
 }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Varela Round', sans-serif;
+    font-family: 'proxima-nova soft', sans-serif;
     color: #5d565f;
   }
   
