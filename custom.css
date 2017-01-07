@@ -1,3 +1,13 @@
+a {
+    color: #8b00de;
+    text-decoration: none;
+}
+
+a:focus, a:hover {
+    color: #734fe2;
+    text-decoration: underline;
+}
+
 .navbar {
   border-radius:0;
 }
@@ -691,8 +701,19 @@ font-family: open sans;
     color: #fff;
 }
 
+.hidden-xs {
+    padding: 10px 0 0 0;
+    font-size: 15px;
+}
+
+.footer-list {
+    padding: 10px 0 0 0;
+    font-size: 15px;
+}
+
 .footer-list-item {
-  display: inline-block;
+    display: inline-block;
+    padding: 5px;
 }
 
 /* teachers css */
