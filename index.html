@@ -14,7 +14,7 @@
   <title>simplebotics.io</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Varela+Round" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
   <link rel="stylesheet" href="https://simplebotics.github.io/simplebotics.io/custom.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
@@ -27,7 +27,7 @@
 
 <nav class="navbar navbar-fixed-top navbar-light bg-faded">
   <button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#navbar-collapse">&#9776;</button>
-  <a class="navbar-brand" href="#">simplebotics.io</a>
+  <a class="navbar-brand" href="">simplebotics.io</a>
   <div class="collapse navbar-toggleable-sm" id="navbar-collapse">
     <ul class="nav navbar-nav pull-xs-right">
       <li class="nav-item">
@@ -76,19 +76,19 @@
         <section class="container-fluid" id="section1" ng-show="showBegin">
           <h1>You're interested in STEM for who?</h1>
           <div class="btn-toolbar">
-            <label class="btn btn-primary" scroll-to="#section2" ng-click="showParentsQuestions = true; showSection2 = true" uib-btn-radio>Kids</label>
-            <label class="btn btn-primary" scroll-to="#section5" ng-click="showTeachersQuestions = true; showSection5 = true" uib-btn-radio>Students</label>
+            <label class="btn btn-primary" scroll-to="#section2" ng-click="showQuestions = false; showSection2 = true" uib-btn-radio>Kids</label>
+            <label class="btn btn-primary" scroll-to="#section5" ng-click="showQuestions = true; showSection5 = true" uib-btn-radio>Students</label>
           </div>
         </section>
 
-        <div id="showParentsQuestions">
+        <div id="showParentsQuestions" ng-show="!showQuestions">
 
           <section class="container-fluid" id="section2" ng-show="showSection2">
             <h1>What is their age group?</h1>
-            <h3><a class="text" data-toggle="collapse" href="#collapseAgeGroup"><i class="fa fa-question-circle" aria-hidden="true" style="color: #8b00de"></i>
+            <h3><a class="text" data-toggle="collapse" href="#collapseParentAgeGroup"><i class="fa fa-question-circle" aria-hidden="true" style="color: #8b00de"></i>
             </a></h3>
 
-            <div class="collapse" id="collapseAgeGroup">
+            <div class="collapse" id="collapseParentAgeGroup">
               <div class="card card-block">
                 We use this information to match you with a product's appropriate age group.
               </div>
@@ -124,14 +124,14 @@
 
         </div>
 
-        <div id="showTeachersQuestions">
+        <div id="showTeachersQuestions" ng-show="showQuestions">
 
           <section class="container-fluid" id="section5" ng-show="showSection5">
             <h1>What age group do you teach?</h1>
-            <h3><a class="text" data-toggle="collapse" href="#collapseAgeGroup"><i class="fa fa-question-circle" aria-hidden="true" style="color: #9a30a1"></i>
+            <h3><a class="text" data-toggle="collapse" href="#collapseTeacherAgeGroup"><i class="fa fa-question-circle" aria-hidden="true" style="color: #9a30a1"></i>
             </a></h3>
 
-            <div class="collapse" id="collapseAgeGroup">
+            <div class="collapse" id="collapseTeacherAgeGroup">
               <div class="card card-block">
                 We use this information to match you with a product's appropriate age group.
               </div>
@@ -172,7 +172,7 @@
   <div class="card-deck-wrapper" ng-show="showResults">
     <div class="card-deck">
       <div class="card">
-        <card ng-repeat="product in products">
+        <card ng-repeat="product in products | productsFilter:4">
           <div class="card-block">
             <h4 class="card-title">{{ product.title }}</h4>
             <h6 class="card-subtitle text-muted">{{ product.type }}</h6>
@@ -197,7 +197,7 @@
     </footer>
 
   </div>
-  
+
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-animate.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.4.0/ui-bootstrap-tpls.min.js"></script>
