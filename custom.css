@@ -691,6 +691,10 @@ font-family: open sans;
     color: #fff;
 }
 
+.footer-list-item {
+  display: inline-block;
+}
+
 /* teachers css */
 
 #teachers .jumbotron {
