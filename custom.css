@@ -701,6 +701,10 @@ font-family: open sans;
     color: #fff;
 }
 
+.footer {
+  text-align: center;
+}
+
 .hidden-xs {
     padding: 10px 0 0 0;
     font-size: 15px;
