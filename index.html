@@ -27,17 +27,17 @@
 
 <nav class="navbar navbar-fixed-top navbar-light bg-faded">
   <button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#navbar-collapse">&#9776;</button>
-  <a class="navbar-brand" href="">simplebotics.io</a>
+  <a class="navbar-brand" href="http://www.simplebotics.io">simplebotics.io</a>
   <div class="collapse navbar-toggleable-sm" id="navbar-collapse">
     <ul class="nav navbar-nav pull-xs-right">
       <li class="nav-item">
-        <a class="nav-link" href="#">About</a>
+        <a class="nav-link" href="/about">About</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact</a>
+        <a class="nav-link" href="mailto:contact@simplebotics.com">Contact</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Blog</a>
+        <a class="nav-link" href="http://www.simplebotics.com">Blog</a>
       </li>
     </ul>
   </div>
@@ -63,7 +63,7 @@
           <h2>simplebotics.io lets you find the perfect STEM education product in seconds</h2>
           <div class="begin-center">
             <div class="begin">
-              <a class="btn btn-primary-outline-none" href="javascript:void(null)" role="button" scroll-to="#section1" ng-click="showBegin = true">Begin<br><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+              <a class="btn btn-primary-outline-none" href="javascript:void(null)" role="button" scroll-to="#section1">Begin<br><i class="fa fa-angle-down" aria-hidden="true"></i></a>
             </div>
           </div>
         </div>
@@ -73,7 +73,7 @@
 
       <div align="center">
 
-        <section class="container-fluid" id="section1" ng-show="showBegin">
+        <section class="container-fluid" id="section1">
           <h1>You're interested in STEM for who?</h1>
           <div class="btn-toolbar">
             <label class="btn btn-primary" scroll-to="#section2" ng-click="showQuestions = false; showSection2 = true" uib-btn-radio>Kids</label>
@@ -188,15 +188,32 @@
     </div>
   </div>
 
-  <div align="center">
+<footer class="footer">
 
-    <footer class="footer">
-      <div class="container">
-        <p class="text-muted">Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="http://simplebotics.com">simplebotics.com</a></p>
-      </div>
-    </footer>
+  <p class="hidden-xs">
+    Built with <i class="fa fa-heart" aria-hidden="true"></i> by the awesome humans at <a href="http://twitter.com/simplebotics">@simplebotics</a>
+  </p>
 
-  </div>
+  <ul class="footer-list">
+    
+      <li class="footer-list-item">
+        <a class="footer-list-link" href="/pages/about-us">About</a>
+      </li>
+    
+      <li class="footer-list-item">
+        <a class="footer-list-link" href="/pages/terms-of-service">Terms</a>
+      </li>
+    
+      <li class="footer-list-item">
+        <a class="footer-list-link" href="/pages/privacy-policy">Privacy</a>
+      </li>
+    
+      <li class="footer-list-item">
+        <a class="footer-list-link" href="/pages/our-license">Contact</a>
+      </li>
+    
+  </ul>
+</footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-animate.js"></script>
