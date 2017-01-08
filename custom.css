@@ -255,8 +255,21 @@ h1 {
 }
 
 .bg .jumbotron {
-    text-align: center;
     padding: 80px;
+}
+
+.bg .jumbotron .h1, .jumbotron h1 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 30px!important;
+    text-align: center;
+}
+
+.bg .jumobotron .h2, .jumbotron h2 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 15px!important;
+    text-align: center;
 }
 
 .jumbotron {
