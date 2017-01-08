@@ -706,12 +706,12 @@ font-family: open sans;
 }
 
 .hidden-xs {
-    padding: 10px 0 0 0;
+    padding: 0;
     font-size: 15px;
 }
 
 .footer-list {
-    padding: 10px 0 0 0;
+    padding: 0;
     font-size: 15px;
 }
 
