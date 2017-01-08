@@ -254,6 +254,11 @@ h1 {
     background-size: cover;
 }
 
+.bg .jumbotron {
+    text-align: center;
+    padding: 80px;
+}
+
 .jumbotron {
     padding: 0!important;
     border-radius: 0px;
