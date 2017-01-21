@@ -728,6 +728,10 @@ font-family: open sans;
     font-family: open sans;
 }
 
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(255, 255, 255, 0.7);
+}
+
 .navbar-brand {
     max-width: 25%;
     -webkit-filter: brightness(9);
