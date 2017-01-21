@@ -148,7 +148,7 @@ p {
     display: table;
     table-layout: fixed;
     border-spacing: 1.25rem 0;
-    padding: 23% 10px;
+    padding: 10% 10px;
 }
 
 .card {
@@ -788,7 +788,7 @@ font-family: open sans;
     display: table;
     table-layout: fixed;
     border-spacing: 1.25rem 0;
-    padding: 23% 15%;
+    padding: 10% 15%;
 }
 
 }
