@@ -8,6 +8,12 @@ a:focus, a:hover {
     text-decoration: underline;
 }
 
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-family: open sans, serif;
+}
+
 .navbar {
   border-radius:0;
 }
@@ -136,6 +142,13 @@ a:focus, a:hover {
 .btn:focus, .btn:hover {
     text-decoration: none;
     color: #fff;
+}
+
+.card-deck {
+    display: table;
+    table-layout: fixed;
+    border-spacing: 1.25rem 0;
+    padding: 23% 10px;
 }
 
 .card {
@@ -504,14 +517,17 @@ h1 {
 .card-title {
     margin-bottom: .75rem;
     font-family: 'proxima-nova-soft', sans-serif;
+    font-size: 25px;
 }
+
+
 
 .card {
     position: relative;
     display: block;
     margin-bottom: 1.5em;
-    background-color: #e9e4ec;
-    border: 1px solid #e5e5e5;
+    background-color: #fdfbfd;
+    border: 1px solid #8b00de;
     border-radius: .25rem;
     color: #333;
 }
@@ -762,6 +778,13 @@ font-family: open sans;
 .jumbotron {
     padding: 170px;
     border-radius: 0px;
+}
+
+.card-deck {
+    display: table;
+    table-layout: fixed;
+    border-spacing: 1.25rem 0;
+    padding: 23% 15%;
 }
 
 }
