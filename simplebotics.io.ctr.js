@@ -59,8 +59,8 @@
       "description":"Build and program a robotic bug with Kamigami robots. No tools required. Just a smartphone.",
       "price":99,
       "categories":[
-      "programming"
-      "electronics"
+      "programming",
+      "electronics",
       "mechanics"
       ],
       "image": "https://dl.dropbox.com/s/0i6xi1sxclm0mll/sb_io_kamigami.jpg?dl=0"
