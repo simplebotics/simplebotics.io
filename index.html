@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="https://simplebotics.github.io/simplebotics.io/custom.css">
+  <link rel="stylesheet" href="https://rawgit.com/simplebotics/simplebotics.io/gh-pages/custom.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
   <script type="text/javascript" src="//userlike-cdn-widgets.s3-eu-west-1.amazonaws.com/8aa0763a08c22520bffebfed8cf71c012de9184dab0a8ec4fb472c2a9a015dea.js"></script>
@@ -81,7 +81,7 @@
           </div>
         </section>
 
-        <div id="showParentsQuestions" ng-show="!showQuestions">
+        <div id="showQuestions" ng-show="!showQuestions">
 
           <section class="container-fluid" id="section2" ng-show="showSection2">
             <h1>What is their age group?</h1>
@@ -115,16 +115,16 @@
           <section class="container-fluid" id="section4" ng-show="showSection4">
             <h1>Lastly, please choose a type of product.</h1>
             <div class="btn-toolbar">
-              <label class="btn btn-primary" ng-click="" uib-btn-checkbox>Robots</label>
-              <label class="btn btn-primary" ng-click="" uib-btn-checkbox>Drones</label>
-              <label class="btn btn-primary" ng-click="" uib-btn-checkbox>Apps</label>
-              <label class="btn btn-primary" ng-click="" uib-btn-checkbox>Other</label>
+              <label class="btn btn-primary" scroll-to="#sectionResults" ng-click="showResults = true" uib-btn-checkbox>Robots</label>
+              <label class="btn btn-primary" scroll-to="#sectionResults" ng-click="showResults = true" uib-btn-checkbox>Drones</label>
+              <label class="btn btn-primary" scroll-to="#sectionResults" ng-click="showResults = true" uib-btn-checkbox>Apps</label>
+              <label class="btn btn-primary" scroll-to="#sectionResults" ng-click="showResults = true" uib-btn-checkbox>Other</label>
             </div>
           </section>
 
         </div>
 
-        <div id="showTeachersQuestions" ng-show="showQuestions">
+        <div id="showQuestions" ng-show="showQuestions">
 
           <section class="container-fluid" id="section5" ng-show="showSection5">
             <h1>What age group do you teach?</h1>
@@ -149,7 +149,7 @@
           <section class="container-fluid" id="section6" ng-show="showSection6">
             <h1>What subject are you wanting to teach?</h1>
             <div class="btn-toolbar">
-              <label class="btn btn-primary" scroll-to="#section7" ng-click="howSection7 = true" uib-btn-checkbox>Electronics</label>
+              <label class="btn btn-primary" scroll-to="#section7" ng-click="showSection7 = true" uib-btn-checkbox>Electronics</label>
               <label class="btn btn-primary" scroll-to="#section7" ng-click="showSection7 = true" uib-btn-checkbox>Coding</label>
               <label class="btn btn-primary" scroll-to="#section7" ng-click="showSection7 = true" uib-btn-checkbox>Mechanics</label>
             </div>
@@ -158,10 +158,10 @@
           <section class="container-fluid" id="section7" ng-show="showSection7">
             <h1>What product would you like to teach with?</h1>
             <div class="btn-toolbar">
-              <label class="btn btn-primary" ng-click="" uib-btn-checkbox>Robots</label>
-              <label class="btn btn-primary" ng-click="" uib-btn-checkbox>Drones</label>
-              <label class="btn btn-primary" ng-click="" uib-btn-checkbox>Apps</label>
-              <label class="btn btn-primary" ng-click="" uib-btn-checkbox>Other</label>
+              <label class="btn btn-primary" scroll-to="#sectionResults" ng-click="" uib-btn-checkbox>Robots</label>
+              <label class="btn btn-primary" scroll-to="#sectionResults" ng-click="" uib-btn-checkbox>Drones</label>
+              <label class="btn btn-primary" scroll-to="#sectionResults" ng-click="" uib-btn-checkbox>Apps</label>
+              <label class="btn btn-primary" scroll-to="#sectionResults" ng-click="" uib-btn-checkbox>Other</label>
             </div>
           </section>
 
@@ -169,12 +169,13 @@
 
       </div>
 
-  <div class="card-deck-wrapper" ng-show="showResults">
-    <div class="card-deck">
-      <div class="card">
-        <card ng-repeat="product in products | productsFilter:4">
+    <div class="card-deck" ng-show="showResults" id="sectionResults">
+      <div class="card" ng-repeat="product in products | filter: {type:'robot'}">
+        <card>
           <div class="card-block">
-            <h4 class="card-title">{{ product.title }}</h4>
+            <h4 class="card-title">{{ product.title }} <i class="fa fa-star" aria-hidden="true" style="
+    float: right;
+"></i></h4>
             <h6 class="card-subtitle text-muted">{{ product.type }}</h6>
           </div>
           <img ng-src="{{ product.image }}" alt="Card image">
@@ -186,7 +187,6 @@
         </card>
       </div>
     </div>
-  </div>
 
 <footer class="footer">
 
