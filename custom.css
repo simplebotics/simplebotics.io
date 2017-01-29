@@ -126,7 +126,8 @@ p {
 #about {
     background-color: #fff;
     color: #686868;
-    padding: 70px;
+    padding: 80px;
+    font-size: 18px;
 }
 
 .btn-block {
@@ -258,7 +259,8 @@ h1 {
 #about {
     background-color: #fff;
     color: #686868;
-    padding: 70px;
+    padding: 80px;
+    font-size: 18px;
 }
 
 .video-container {
