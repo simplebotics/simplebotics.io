@@ -34,10 +34,13 @@
         <a class="nav-link" href="/about">About</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="http://www.simplebotics.com">Blog</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="mailto:contact@simplebotics.com">Contact</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="http://www.simplebotics.com">Blog</a>
+        <a class="nav-link" href="/more">More</a>
       </li>
     </ul>
   </div>
@@ -76,8 +79,8 @@
         <section class="container-fluid" id="section1">
           <h1>You're interested in STEM for who?</h1>
           <div class="btn-toolbar">
-            <label class="btn btn-primary" scroll-to="#section2" ng-click="showQuestions = false; showSection2 = true" uib-btn-radio>Kids</label>
-            <label class="btn btn-primary" scroll-to="#section5" ng-click="showQuestions = true; showSection5 = true" uib-btn-radio>Students</label>
+            <label class="btn btn-primary" scroll-to="#section2" ng-click="showQuestions = false; showResults = false; showSection2 = true" uib-btn-radio>Kids</label>
+            <label class="btn btn-primary" scroll-to="#section5" ng-click="showQuestions = true; showResults = false; showSection5 = true" uib-btn-radio>Students</label>
           </div>
         </section>
 
@@ -170,12 +173,10 @@
       </div>
 
     <div class="card-deck" ng-show="showResults" id="sectionResults">
-      <div class="card" ng-repeat="product in products | filter: {type:'robot'}">
+      <div class="card" ng-repeat="product in products | filter: {type:'robot'} | orderBy:random | limitTo:3">
         <card>
           <div class="card-block">
-            <h4 class="card-title">{{ product.title }} <i class="fa fa-star" aria-hidden="true" style="
-    float: right;
-"></i></h4>
+            <h4 class="card-title">{{ product.title }}</h4>
             <h6 class="card-subtitle text-muted">{{ product.type }}</h6>
           </div>
           <img ng-src="{{ product.image }}" alt="Card image">
