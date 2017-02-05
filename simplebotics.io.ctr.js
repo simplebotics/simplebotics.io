@@ -37,7 +37,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       "type":"robot",
       "age":"8-14",
       "title":"Ozobot Evo",
-      "description":"About the size of a tangerine, this programmable robot teaches kids the basics of computer programming through an easy-to-use and drag-and-drop app, Ozoblockly.",
+      "description":"The tiniest programmable robot we could find. If your kids like Scratch programming, they'll love Ozobot!",
       "price":99,
       "link":"http://www.ozobot.com",
       "company":"Evollve Inc.",
@@ -50,8 +50,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       "type":"robot",
       "age":"8-14",
       "title":"SPRK+",
-      "description":"This robotic ball will teach kids coding through a free smartphone app. SPRK+ is durable, waterproof, and Bluetooth-enabled.",
-      "price":129,
+      "description":"This robot ball can be programmed with a smartphone. It's also made of durable, kid-proof plastic.",
       "link":"http://www.ozobot.com",
       "company":"Evollve Inc.",
       "categories":[
@@ -63,7 +62,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       "type":"robot",
       "age":"3-7",
       "title":"Dash and Dot",
-      "description":"This dynamic duo is ideal for younger kids. It works with a companion smartphone and tablet app with an engaging story that teaches simple computer programming skills. Fun accessories such as catapult and xylophone are available.",
+      "description":"The ultimate robot duo. Kids ages 5 and up can program these robots with a smartphone or tablet.",
       "price":239,
       "link":"http://www.ozobot.com",
       "company":"Evollve Inc.",
@@ -76,7 +75,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       "type":"robot",
       "age":"8-14",
       "title":"LEGO Mindstorms EV3",
-      "description":"Our personal favorite. LEGO's Minsdtorms EV3 kit combines the classic plastic brick with modern computer technology for hundreds of robotics projects.",
+      "description":"Our personal favorite. LEGO's EV3 kit combines the classic plastic brick with modern computer technology for hundreds of robotics projects.",
       "price":350,
       "link":"http://www.ozobot.com",
       "company":"Evollve Inc.",
@@ -120,6 +119,6 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
     $scope.random = function() {
         return 3 - Math.random();
-  }
+    }
 
 })();
