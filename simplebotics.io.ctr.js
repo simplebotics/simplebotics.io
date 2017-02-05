@@ -117,8 +117,4 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
   });
 
-    $scope.random = function() {
-        return 3 - Math.random();
-    }
-
 })();
