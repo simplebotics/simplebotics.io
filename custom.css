@@ -516,6 +516,18 @@ h1 {
     border: none;
 }
 
+.btn-secondary {
+    color: #fdfbfd;
+    background-color: #8b00de;
+    border: none;
+    font-family: proxima-nova-soft;
+}
+
+.btn-secondary:hover, .btn-secondary:focus, .btn-secondary.focus, .btn-secondary:active, .btn-secondary.active, .open>.dropdown-toggle.btn-secondary {
+    color: #fff;
+    background-color: #734fe2;
+}
+
 .card-image {
   max-width: 100%;
 }
