@@ -528,6 +528,18 @@ h1 {
     background-color: #734fe2;
 }
 
+.btn-secondary-outline {
+    color: #8b00de;
+    background-color: transparent;
+    background-image: none;
+    border-color: #8b00de;
+}
+
+.btn-secondary-outline:hover {
+    color: #fff;
+    background-color: #734fe2;
+}
+
 .card-image {
   max-width: 100%;
 }
@@ -579,6 +591,8 @@ video {
 .begin a {
   transition: transform .1s ease-out;
   display: inline-block;
+  font-family: open sans, serif;
+  font-size: 16px;
 }
 
 .begin a:hover {
@@ -671,13 +685,13 @@ font-family: open sans;
   .jumbotron .h1, .jumbotron h1 {
     color: #fff;
     font-weight: 400;
-    font-size: 45px;
+    font-size: 50px;
   }
 
   .jumobotron .h2, .jumbotron h2 {
     color: #fff;
     font-weight: 300;
-    font-size: 17px;
+    font-size: 20px;
   }
   
   .navbar-brand>img {
@@ -806,7 +820,7 @@ font-family: open sans;
     display: table;
     table-layout: fixed;
     border-spacing: 1.25rem 0;
-    padding: 10% 15%;
+    padding: 6% 15%;
 }
 
 }
