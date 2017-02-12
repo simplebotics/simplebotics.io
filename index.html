@@ -16,11 +16,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
   <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-  <link rel="stylesheet" href="https://github.com/simplebotics/simplebotics.io/gh-pages/custom.css">
+  <link rel="stylesheet" href="/Users/gabriel/Desktop/simplebotics.io/css/custom.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
   <script type="text/javascript" src="//userlike-cdn-widgets.s3-eu-west-1.amazonaws.com/8aa0763a08c22520bffebfed8cf71c012de9184dab0a8ec4fb472c2a9a015dea.js"></script>
-  <script src="https://github.com/simplebotics/simplebotics.io/gh-pages/custom.js"></script>
+  <script src="/Users/gabriel/Desktop/simplebotics.io/scripts/custom.js"></script>
 
 </head>
 
@@ -32,7 +32,7 @@
     <div class="collapse navbar-toggleable-sm" id="navbar-collapse">
       <ul class="nav navbar-nav pull-xs-right">
         <li class="nav-item">
-          <a class="nav-link" href="/about">About</a>
+          <a class="nav-link" href="file:///Users/gabriel/Desktop/simplebotics.io/about.html">About</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="http://www.simplebotics.com">Blog</a>
@@ -63,7 +63,7 @@
         <div class="jumbotron vertical-center">
 
           <div class="container">
-            <h1>Need <div class="typed-header"></div> for your classroom?</h1>
+            <h1>Need <div class="typed-header"></div> in your classroom?</h1>
             <h2>Discover the best STEM gadgets for your students and kids, for free.</h2>
             <div class="begin-center">
               <div class="begin">
@@ -101,8 +101,8 @@
               <!-- Add a "why we need this information" dropdown section here -->
 
               <div class="btn-toolbar">
-                <label class="btn btn-primary" scroll-to="#section3" ng-click="showSection3 = true" uib-btn-radio>3-7</label>
-                <label class="btn btn-primary" scroll-to="#section3" ng-click="showSection3 = true" uib-btn-radio>8-14</label>
+                <label class="btn btn-primary" scroll-to="#section3" ng-click="showSection3 = true; " uib-btn-radio>3-7</label>
+                <label class="btn btn-primary" scroll-to="#section3" ng-click="showSection3 = true" uib-btn-radio>8-13</label>
                 <label class="btn btn-primary" scroll-to="#section3" ng-click="showSection3 = true" uib-btn-radio>14+</label>
               </div>
             </section>
@@ -145,7 +145,7 @@
 
               <div class="btn-toolbar">
                 <label class="btn btn-primary" scroll-to="#section6" ng-click="showSection6 = true" uib-btn-radio>3-7</label>
-                <label class="btn btn-primary" scroll-to="#section6" ng-click="showSection6 = true" uib-btn-radio>8-14</label>
+                <label class="btn btn-primary" scroll-to="#section6" ng-click="showSection6 = true" uib-btn-radio>8-13</label>
                 <label class="btn btn-primary" scroll-to="#section6" ng-click="showSection6 = true" uib-btn-radio>14+</label>
               </div>
             </section>
@@ -176,7 +176,7 @@
         <section class="container-fluid" ng-show="showResults" id="sectionResults">
         <h1>Whoop! Whoop! Here's what we found! <i class="em em-smile"></i></h1>
           <div class="card-deck">
-            <div class="card" ng-repeat="product in products | filter: {type:'robot'} | orderBy:random | limitTo:3">
+            <div class="card" ng-repeat="product in products | filter: {age:'3-7'} | orderBy:random | limitTo:3">
               <card>
                 <div class="card-block">
                   <h4 class="card-title">{{ product.title }}</h4>
@@ -223,9 +223,9 @@
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-animate.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.4.0/ui-bootstrap-tpls.min.js"></script>
-  <script src="https://github.com/simplebotics/simplebotics.io/gh-pages/app.js"></script>
-  <script src="https://github.com/simplebotics/simplebotics.io/gh-pages/simplebotics.io.ctr.js"></script>
-  <script src="https://github.com/simplebotics/simplebotics.io/gh-pages/scroll-to.js"></script>
+  <script src="/Users/gabriel/Desktop/simplebotics.io/scripts/app.js"></script>
+  <script src="/Users/gabriel/Desktop/simplebotics.io/components/simplebotics.io.ctr.js"></script>
+  <script src="/Users/gabriel/Desktop/simplebotics.io/node_modules/scroll-to/scroll-to.js"></script>
 
 </body>
 </html>
