@@ -34,8 +34,9 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
     $scope.products = [
     {
+      "group":"kids",
       "type":"robot",
-      "age":"8-14",
+      "age":"8-13",
       "title":"Ozobot Evo",
       "description":"The tiniest programmable robot we could find. If your kids like Scratch programming, they'll love Ozobot!",
       "price":99,
@@ -47,6 +48,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       "image": "https://dl.dropbox.com/s/foyw10t5u0kmrcn/sb_io_ozobot.jpg?dl=0"
     },
     {
+      "group":"kids",
       "type":"robot",
       "age":"8-14",
       "title":"SPRK+",
@@ -59,6 +61,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       "image": "https://dl.dropboxusercontent.com/s/cy31ehjroj1myjx/sb_io_sprk%2B.jpg?dl=0"
     },
     {
+      "group":"kids",
       "type":"robot",
       "age":"3-7",
       "title":"Dash and Dot",
@@ -72,10 +75,11 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       "image": "https://dl.dropbox.com/s/qqhv3l5no7dpy5a/sb_io_dash_dot.jpg?dl=0"
     },
      {
+      "group":"kids",
       "type":"robot",
-      "age":"8-14",
+      "age":["8-13","14+"],
       "title":"LEGO Mindstorms EV3",
-      "description":"Our personal favorite. LEGO's EV3 kit combines the classic plastic brick with modern computer technology for hundreds of robotics projects.",
+      "description":"Our personal favorite. LEGO's EV3 kit combines the classic plastic brick with modern computer technology for hundreds of projects.",
       "price":350,
       "link":"http://www.ozobot.com",
       "company":"Evollve Inc.",
@@ -86,8 +90,9 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       "image": "https://dl.dropbox.com/s/19obolm4y38kg4t/sb_io_lego_mindstorms_ev3.jpg?dl=0"
     },
      {
+      "group":"kids",
       "type":"robot",
-      "age":"8-14",
+      "age":"8-13",
       "title":"Kamigami",
       "description":"Build and program a robotic bug with Kamigami robots. No tools required. Just a smartphone.",
       "price":99,
@@ -101,11 +106,12 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       "image": "https://dl.dropbox.com/s/0i6xi1sxclm0mll/sb_io_kamigami.jpg?dl=0"
     },
     {
+      "group":"kids",
       "type":"robot",
       "age":"3-7",
       "title":"Cubetto",
-      "description":"Made of wood, Cubetto teaches kids basic coding skills with wooden blocks and a colorful playmat. No computer, smartphone, or tablet needed.",
-      "price":245,
+      "description":"The ultimate robot duo. Kids ages 5 and up can program these robots with a smartphone or tablet.",
+      "price":239,
       "link":"http://www.ozobot.com",
       "company":"Evollve Inc.",
       "categories":[
