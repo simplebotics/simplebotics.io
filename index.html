@@ -174,9 +174,10 @@
         </div>
 
         <section class="container-fluid" ng-show="showResults" id="sectionResults">
-        <h1>Whoop! Whoop! Here's what we found! <i class="em em-smile"></i></h1>
+        <h1><i class="em em-sparkles"></i> Huzzah! Here's what we recommend:</h1>
+        <div class="scrollable">
           <div class="card-deck">
-            <div class="card" ng-repeat="product in products | filter:ProductFilterGroup | filter:ProductFilterAge | filter:ProductFilterCategories | filter:ProductFilterType | orderBy:random | limitTo:3">
+            <div class="card" ng-repeat="product in products | filter:ProductFilterGroup | filter:ProductFilterAge | filter:ProductFilterCategories | filter:ProductFilterType | orderBy:random | limitTo:4">
               <card>
                 <div class="card-block">
                   <h4 class="card-title">{{ product.title }}</h4>
@@ -185,12 +186,14 @@
                 <img ng-src="{{ product.image }}" alt="Card image">
                 <div class="card-block">
                   <p class="card-text">{{ product.description }}</p>
-                  <a href="{{ product.link }}" class="btn btn-secondary">Buy Now</a>
-                  <a href="{{ product.company }}" class="btn btn-secondary">Learn More</a>
+                  <p class="card-text"><span style="color: #8b00de">{{ product.price | currency : symbol }}</span> by {{ product.company }}</p>
+                  <a href="{{ product.buy }}" class="btn btn-secondary">Buy Now</a>
+                  <a href="{{ product.link }}" class="btn btn-secondary">Learn More</a>
                 </div>
               </card>
             </div>
           </div>
+        </div>
         </section>
 
         <footer class="footer">
@@ -218,6 +221,8 @@
             </li>
 
           </ul>
+          
+          <p class="copyright">Copyright © 2017 Simplebotics. All rights reserved.</p>
         </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
