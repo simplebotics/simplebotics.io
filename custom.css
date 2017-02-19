@@ -14,6 +14,11 @@ p {
     font-family: open sans, serif;
 }
 
+.em-smile {
+    font-size: 23px;
+    vertical-align: sub;
+}
+
 .navbar {
   border-radius:0;
 }
@@ -37,12 +42,12 @@ p {
 /* Navbar Collapse Styles To Stack Items At Mobile Widths*/
 @media(max-width:47.9em) {
 
-  .navbar .collapse {
+.navbar .collapse {
     max-height:250px;
     width:100%;
     overflow-y:auto;
     overflow-x:hidden;
-  }
+}
 
 .navbar .navbar-brand {
     float: none;
@@ -51,9 +56,9 @@ p {
     font-size: 30px;
 }
 
-  .navbar .navbar-nav>.nav-item { 
+.navbar .navbar-nav>.nav-item { 
     float: none; margin-left: .1rem;
-  }
+}
 
 .navbar .navbar-nav {
     float: none !important;
@@ -62,11 +67,11 @@ p {
     margin: 3px 0;
 }
 
-  .nav-item {
+.nav-item {
     width:100%;text-align:left;
-  }
+}
 
-  .navbar .collapse .dropdown-menu {
+.navbar .collapse .dropdown-menu {
     position: relative;
     float: none;
     background:none;
@@ -106,28 +111,26 @@ p {
 }
 
 #section5 {
-  background-color: #fff;
-  color:#686868;
-  padding: 23% 0;
-}
-
-#section6 {
   background-color: #fdfbfd;
   color:#686868;
   padding: 23% 0;
 }
 
-#section7 {
+#section6 {
   background-color: #fff;
+  color:#686868;
+  padding: 23% 0;
+}
+
+#section7 {
+  background-color: #fdfbfd;
   color:#686868;
   padding: 23% 0;
 }
 
 #sectionResults {
     background: linear-gradient(135deg, rgba(139, 0, 222, 0.9) 0%, rgba(115, 79, 226, 0.9) 100%);
-    padding: 7% 15%;
-}
-
+    padding: 8% 10%;
 }
 
 #about {
@@ -156,6 +159,11 @@ p {
     display: table;
     table-layout: fixed;
     border-spacing: 1.25rem 0;
+    width: 100%;
+}
+
+.card-block {
+    padding: 1rem;
 }
 
 .card {
@@ -168,12 +176,12 @@ p {
     box-shadow: 0px 10px 30px rgba(36, 10, 51, 0.15);
 }
 
-.card .btn-secondary:last-child {
-  float: right;
+.card-text-sm {
+  font-size: 14px;
 }
 
 .card img {
-  max-width: 300px;
+  max-width: 100%;
 }
 
 .collapse .card {
@@ -187,8 +195,26 @@ p {
     box-shadow: none;
 }
 
-.collapse .card-block {
-    padding: 1.25rem;
+.collapsing .card {
+    position: relative;
+    display: block;
+    margin-bottom: 1.5em;
+    background-color: #f0e8f5;
+    border: none;
+    border-radius: .25rem;
+    color: #5d565f;
+    box-shadow: none;
+}
+
+.collapse-in .card {
+    position: relative;
+    display: block;
+    margin-bottom: 1.5em;
+    background-color: #f0e8f5;
+    border: none;
+    border-radius: .25rem;
+    color: #5d565f;
+    box-shadow: none;
 }
 
 /* Smartphones (portrait and landscape) ----------- */
@@ -196,6 +222,10 @@ p {
 
 h1 {
     font-size: 2rem;
+}
+
+.scrollable {
+    overflow: hidden;
 }
 
 .navbar-light .navbar-nav .nav-link {
@@ -269,7 +299,7 @@ h1 {
 
 #sectionResults {
     background: linear-gradient(135deg, rgba(139, 0, 222, 0.9) 0%, rgba(115, 79, 226, 0.9) 100%);
-    padding: 10%;
+    padding: 0;
 }
 
 #about {
@@ -512,7 +542,7 @@ h1 {
     border: none;
     font-family: 'proxima-nova-soft', sans-serif;
     font-size: 23px;
-    width: 200px;
+    width: 230px;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary.focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
@@ -579,10 +609,6 @@ h1 {
     box-shadow: 0px 10px 30px rgba(36, 10, 51, 0.15);
 }
 
-.card .btn-secondary:last-child {
-  float: right;
-}
-
 body {
   background-color: #fff;
 }
@@ -626,26 +652,21 @@ video {
 }
 
 #content > div {
-
     display:none;
-
   }
   
-#contentBegin {
-    
-    padding: 200px;
-
-  }
+#contentBegin {  
+  padding: 200px;
+}
 
 #content {
 font-family: open sans;
-  
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'proxima-nova-soft', sans-serif;
     color: #5d565f;
-  }
+}
   
 h1 {
     font-size: 32px;
@@ -658,6 +679,11 @@ h3 {
 #sectionResults h1 {
     color: #fff;
     text-align: center;
+    padding: 0 0 10px 0;
+}
+
+.scrollable {
+    overflow-x: scroll;
 }
 
 .bg {
@@ -800,6 +826,10 @@ h3 {
 .footer {
   text-align: center;
   padding: 25px 0 0 0;
+}
+
+.copyright {
+  font-size: 13px;
 }
 
 .hidden-xs {
