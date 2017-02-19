@@ -45,10 +45,13 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       "buy":"",
       "link":"http://www.ozobot.com",
       "company":"Evollve Inc.",
-      "categories":[
-      "programming"
+      "categories":"programming",
+      "budget":["50",
+      "100",
+      "200",
+      "300",
       ],
-      "budget":"50",
+      "rank":10,
       "image":"https://dl.dropbox.com/s/foyw10t5u0kmrcn/sb_io_ozobot.jpg?dl=0"
     },
     {
@@ -57,14 +60,18 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       ],
       "type":"robot",
       "age":"8-13",
-      "title":"SPRK+",
+      "title":"SPRK",
       "description":"This robot ball can be programmed with a smartphone or tablet. It's also made of durable, kid-proof plastic.",
-      "price":113,
+      "price":99,
       "buy":"",
       "link":"http://www.ozobot.com",
       "company":"Sphero",
       "categories":"programming",
-      "budget":"100",
+      "budget":["100",
+      "200",
+      "300",
+      ],
+      "rank":8.3,
       "image":"https://dl.dropboxusercontent.com/s/cy31ehjroj1myjx/sb_io_sprk%2B.jpg?dl=0"
     },
     {
@@ -72,9 +79,9 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       "students"
       ],
       "type":"robot",
-      "age":[
-      "3+",
-      "4-7"],
+      "age":["3+",
+      "4-7",
+      ],
       "title":"Dash and Dot",
       "description":"The ultimate robot duo. Kids ages 5 and up can program these robots with a smartphone or tablet.",
       "price":239,
@@ -82,6 +89,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       "company":"Wonder Workshop",
       "categories":"programming",
       "budget":"300",
+      "rank":6.7,
       "image":"https://dl.dropbox.com/s/qqhv3l5no7dpy5a/sb_io_dash_dot.jpg?dl=0"
     },
     {
@@ -90,7 +98,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       ],
       "type":"robot",
       "age":["8-13",
-      "14+"],
+      "14+",
+      ],
       "title":"LEGO Mindstorms EV3",
       "description":"The LEGO EV3 kit combines the classic plastic brick with modern computer technology for hundreds of projects.",
       "price":349,
@@ -98,9 +107,10 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       "company":"LEGO",
       "categories":[
       "programming",
-      "mechanics"
+      "mechanics",
       ],
       "budget":"300",
+      "rank":10,
       "image":"https://dl.dropbox.com/s/19obolm4y38kg4t/sb_io_lego_mindstorms_ev3.jpg?dl=0"
     },
     {
@@ -117,9 +127,13 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       "company":"Dash Robotics",
       "categories":[
       "mechanics",
-      "programming"
+      "programming",
       ],
-      "budget":"100",
+      "budget":["100",
+      "200",
+      "300",
+      ],
+      "rank":10,
       "image":"https://dl.dropbox.com/s/0i6xi1sxclm0mll/sb_io_kamigami.jpg?dl=0"
     },
     {
@@ -136,9 +150,12 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       "company":"ArcBotics",
       "categories":[
       "programming",
-      "electronics"
+      "electronics",
       ],
-      "budget":"200",
+      "budget":["200",
+      "300",
+      ],
+      "rank":10,
       "image":"https://www.dropbox.com/s/9x0dbln634h8ysb/sb_io_sparki.jpg?dl=0"
     },
     {
@@ -155,7 +172,10 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       "mechanics",
       "programming"
       ],
-      "budget":"200",
+      "budget":["200",
+      "300",
+      ],
+      "rank":8.3,
       "image":"https://dl.dropbox.com/s/qslmcdqyizio693/sb_io_meccanoid_xl_2.0.jpg?dl=0"
     },
     {
@@ -169,6 +189,45 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       "company":"Primo Toys",
       "categories":"programming",
       "budget":"300",
+      "rank":5,
+      "image":"https://dl.dropbox.com/s/h9nksuvrpoxoyzw/sb_io_cubetto.jpg?dl=0"
+    },
+    {
+      "group":"kids",
+      "type":"robot",
+      "age":["3+",
+      "4-7",
+      ],
+      "title":"Codeapillar",
+      "description":"A cuboid robot made from wood. Includes physical coding blocks and a colorful playmat for hands-on learning",
+      "price":45,
+      "link":"http://www.ozobot.com",
+      "company":"Fisher Price",
+      "categories":"programming",
+      "budget":["50",
+      "100",
+      "200",
+      "300",
+      ],
+      "rank":11.7,
+      "image":"https://dl.dropbox.com/s/h9nksuvrpoxoyzw/sb_io_cubetto.jpg?dl=0"
+    },
+    {
+      "group":"kids",
+      "type":"robot",
+      "age":"4-7",
+      "title":"Coji",
+      "description":"A cuboid robot made from wood. Includes physical coding blocks and a colorful playmat for hands-on learning",
+      "price":23,
+      "link":"http://www.ozobot.com",
+      "company":"WowWee",
+      "categories":"programming",
+      "budget":["50",
+      "100",
+      "200",
+      "300",
+      ],
+      "rank":10,
       "image":"https://dl.dropbox.com/s/h9nksuvrpoxoyzw/sb_io_cubetto.jpg?dl=0"
     },
     {
@@ -184,7 +243,10 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       "link":"https://kano.me/",
       "company":"Kano",
       "categories":"programming",
-      "budget":"200",
+      "budget":["200",
+      "300",
+      ],
+      "rank":6.7,
       "image":"https://dl.dropbox.com/s/h9nksuvrpoxoyzw/sb_io_cubetto.jpg?dl=0"
     },
     {
@@ -198,7 +260,12 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       "link":"http://www.snapcircuits.net/",
       "company":"Elenco",
       "categories":"electronics",
-      "budget":"50",
+      "budget":["50",
+      "100",
+      "200",
+      "300",
+      ],
+      "rank":10,
       "image":"https://dl.dropbox.com/s/h9nksuvrpoxoyzw/sb_io_cubetto.jpg?dl=0"
     },
     {
@@ -207,7 +274,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       ],
       "type":"robot",
       "age":["8-13", 
-      "14+"
+      "14+",
       ],
       "title":"Little Robot Friends",
       "description":"A cuboid robot made from wood. Includes physical coding blocks and a colorful playmat for hands-on learning",
@@ -216,9 +283,13 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       "link":"https://littlerobotfriends.com/products/ready-to-make/",
       "company":"Little Robot Friends",
       "categories":["electronics",
-      "programming"
+      "programming",
       ],
-      "budget":"100",
+      "budget":["100",
+      "200",
+      "300",
+      ],
+      "rank":11.7,
       "image":"https://dl.dropbox.com/s/h9nksuvrpoxoyzw/sb_io_cubetto.jpg?dl=0"
     },
     {
@@ -227,14 +298,15 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       "age":"14+",
       "title":"Deluxe Flybrix Kit",
       "description":"A cuboid robot made from wood. Includes physical coding blocks and a colorful playmat for hands-on learning",
-      "price":20,
+      "price":249,
       "buy":"",
       "link":"https://littlerobotfriends.com/products/ready-to-make/",
       "company":"Flybrix",
       "categories":["electronics",
-      "mechanics"
+      "mechanics",
       ],
-      "budget":"50",
+      "budget":"300",
+      "rank":6.7,
       "image":"https://dl.dropbox.com/s/h9nksuvrpoxoyzw/sb_io_cubetto.jpg?dl=0"
     },
     {
@@ -243,7 +315,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       ],
       "type":"other",
       "age":["8-13",
-      "14+"
+      "14+",
       ],
       "title":"littleBits",
       "description":"A cuboid robot made from wood. Includes physical coding blocks and a colorful playmat for hands-on learning",
@@ -255,14 +327,18 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       "mechanics",
       "programming",
       ],
-      "budget":"100",
+      "budget":["100",
+      "200",
+      "300"
+      ],
+      "rank":13.3,
       "image":"https://dl.dropbox.com/s/h9nksuvrpoxoyzw/sb_io_cubetto.jpg?dl=0"
     },
     {
       "group":"kids",
       "type":"other",
       "age":["8-13", 
-      "14+"
+      "14+",
       ],
       "title":"Thimble",
       "description":"A cuboid robot made from wood. Includes physical coding blocks and a colorful playmat for hands-on learning",
@@ -274,7 +350,11 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       "programming",
       "mechanics",
       ],
-      "budget":"100",
+      "budget":["100",
+      "200",
+      "300",
+      ],
+      "rank":13.3,
       "image":"https://dl.dropbox.com/s/h9nksuvrpoxoyzw/sb_io_cubetto.jpg?dl=0"
     },
     ]
