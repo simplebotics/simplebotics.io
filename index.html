@@ -98,9 +98,9 @@
                 </div>
               </div>
               <div class="btn-toolbar">
-                <label class="btn btn-primary" scroll-to="#sectionSection5" ng-click="showSection5 = true; hideDroneButton = true; ProductFilterAge = {age: '3+'}" uib-btn-radio>3+</label>
+                <label class="btn btn-primary" scroll-to="#section5" ng-click="showSection5 = true; hideDroneButton = true; ProductFilterAge = {age: '3+'}" uib-btn-radio>3+</label>
                 <label class="btn btn-primary" scroll-to="#section3" ng-click="showSection3 = true; hideDroneButton = true; ProductFilterAge = {age: '4-7'}" uib-btn-radio>4-7</label>
-                <label class="btn btn-primary" scroll-to="#section3" ng-click="showSection3 = true; ProductFilterAge = {age: '8-13'}" uib-btn-radio>8-13</label>
+                <label class="btn btn-primary" scroll-to="#section3" ng-click="showSection3 = true; hideDroneButton = true; ProductFilterAge = {age: '8-13'}" uib-btn-radio>8-13</label>
                 <label class="btn btn-primary" scroll-to="#section3" ng-click="showSection3 = true; hide50Button = true; ProductFilterAge = {age: '14+'}" uib-btn-radio>14+</label>
               </div>
             </section>
@@ -117,15 +117,15 @@
             <section class="container-fluid" id="section4" ng-show="showSection4">
               <h1>Almost done. What type of product would you like?</h1>
               <div class="btn-toolbar">
+                <label class="btn btn-primary" scroll-to="#section5" ng-click="showSection5 = true; ProductFilterType = {type: 'app'}" uib-btn-checkbox>App</label>
                 <label class="btn btn-primary" scroll-to="#section5" ng-click="showSection5 = true; ProductFilterType = {type: 'robot'}" uib-btn-checkbox>Robot</label>
-                <label class="btn btn-primary" ng-hide="hideDroneButton" scroll-to="#section5" ng-click="showSection5 = true; ProductFilterType = {type: 'drones'}" uib-btn-checkbox>Drone</label>
-                <label class="btn btn-primary" scroll-to="#section5" ng-click="showSection5 = true; ProductFilterType = {type: 'apps'}" uib-btn-checkbox>App</label>
+                <label class="btn btn-primary" ng-hide="hideDroneButton" scroll-to="#sectionResults" ng-click="showResults = true; ProductFilterType = {type: 'drone'}" uib-btn-checkbox>Drone</label>
                 <label class="btn btn-primary" scroll-to="#section5" ng-click="showSection5 = true; ProductFilterType = {type: 'other'}" uib-btn-checkbox>Other</label>
               </div>
             </section>
 
             <section class="container-fluid" id="section5" ng-show="showSection5">
-              <h1>Lastly, what's your budget?</h1>
+              <h1>What's your budget?</h1>
               <div class="btn-toolbar">
                 <label class="btn btn-primary" ng-hide="hide50Button" scroll-to="#sectionResults" ng-click="showResults = true; ProductFilterBudget = {budget: '50'}" uib-btn-checkbox>$50</label>
                 <label class="btn btn-primary" scroll-to="#sectionResults" ng-click="showResults = true; ProductFilterBudget = {budget: '100'}" uib-btn-checkbox>$100</label>
@@ -171,9 +171,9 @@
             <section class="container-fluid" id="section8" ng-show="showSection8">
               <h1>What product would you like to teach with?</h1>
               <div class="btn-toolbar">
+                <label class="btn btn-primary" scroll-to="#sectionResults" ng-click="" uib-btn-checkbox>App</label>
                 <label class="btn btn-primary" scroll-to="#sectionResults" ng-click="" uib-btn-checkbox>Robot</label>
                 <label class="btn btn-primary" scroll-to="#sectionResults" ng-click="" uib-btn-checkbox>Drone</label>
-                <label class="btn btn-primary" scroll-to="#sectionResults" ng-click="" uib-btn-checkbox>App</label>
                 <label class="btn btn-primary" scroll-to="#sectionResults" ng-click="" uib-btn-checkbox>Other</label>
               </div>
             </section>
@@ -184,15 +184,16 @@
 
         <section class="container-fluid" ng-show="showResults" id="sectionResults">
         <h1><i class="em em-sparkles"></i> Huzzah! Here's what we recommend:</h1>
+        <h1 ng-show="!products.length"><i class="em em-frowning"></i> Rats! We couldn't find matching products.</h1>
           <div class="card-deck">
             <div class="card" ng-repeat="product in products | filter:ProductFilterGroup | filter:ProductFilterAge | filter:ProductFilterCategories | filter:ProductFilterType | filter:ProductFilterBudget | orderBy:'-rank' | limitTo:3">
               <card>
                 <div class="card-block">
                   <h4 class="card-title">{{ product.title }}</h4>
-                  <h6 class="card-subtitle text-muted">By {{ product.company }}</h6>
+                  <h6 class="card-subtitle text-muted">by {{ product.company }}</h6>
                   <img ng-src="{{ product.image }}" alt="Card image">
                   <p class="card-text">{{ product.description }}</p>
-                  <p><a href="{{ product.link }}" class="card-text-sm">Learn more</a></p>
+                  <p><a href="{{ product.link }}" class="card-text-sm">Read reviews</a></p>
                   <p class="card-text"><span style="color: #8b00de; padding: 5px; float: right">{{ product.price | currency : symbol }}</span></p>
                   <a href="{{ product.buy }}" class="btn btn-secondary">Buy now</a>
                 </div>
@@ -204,7 +205,7 @@
         <footer class="footer">
 
           <p class="hidden-xs">
-            Built with <i class="fa fa-heart" aria-hidden="true"></i> by the awesome humans at <a href="http://twitter.com/simplebotics">@simplebotics</a>
+            Built with <i class="fa fa-heart" aria-hidden="true"></i> by humans at <a href="http://twitter.com/simplebotics">@simplebotics</a>
           </p>
 
           <ul class="footer-list">
@@ -236,6 +237,12 @@
   <script src="/Users/gabriel/Desktop/simplebotics.io/scripts/app.js"></script>
   <script src="/Users/gabriel/Desktop/simplebotics.io/components/simplebotics.io.ctr.js"></script>
   <script src="/Users/gabriel/Desktop/simplebotics.io/node_modules/scroll-to/scroll-to.js"></script>
+  <script async src='https://www.kontaktify.com/embed.js?eyJwb3NpdGlvbiI6InJpZ2h0IiwiY29sb3IiOiI1NTI3YTAiLCJjdXN0b21Db2xvciI6dHJ1ZSwiaWNvbiI6ImJ1YmJsZSIsInByb25vdW4iOiJ1cyIsImxhbmd1YWdlIjoiZW4iLCJicmFuZGVkIjp0cnVlLCJpbnRyb1RleHQiOiJIZWxsbyB0aGVyZSEgQW55IHF1ZXN0aW9ucywgdGlwcywgb3IgZmVlZGJhY2s/IFdlJ2QgbG92ZSB0byBoZWFyIGZyb20geW91LiIsImNoYW5uZWxzIjpbWyJ0d2l0dGVyIiwic2ltcGxlYm90aWNzaW8iLCJzb2NpYWwiXSxbInByb2R1Y3RodW50Iiwic2ltcGxlYm90aWNzIiwic29jaWFsIl0sWyJlbWFpbCIsImNvbnRhY3RAc2ltcGxlYm90aWNzLmlvIiwiY2xhc3NpYyJdXX0='></script>
+
+  <script>
+    var _intro_bar = window._intro_bar || {};(function() {var i,e;i=document.createElement("script"), i.type='text/javascript';i.async=1, i.src="//cdn.introbar.com/js/v1.js", e=document.getElementsByTagName("script")[0], e.parentNode.insertBefore(i,e);})();
+    _intro_bar.account_id = '58b104af6e8e7';
+  </script>
 
 </body>
 </html>
