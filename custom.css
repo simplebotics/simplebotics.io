@@ -116,18 +116,6 @@ p {
   padding: 23% 0;
 }
 
-#section6 {
-  background-color: #f7f7f7;
-  color:#686868;
-  padding: 23% 0;
-}
-
-#section7 {
-  background-color: #fff;
-  color:#686868;
-  padding: 23% 0;
-}
-
 #sectionResults {
     background: #5527A0;
     padding: 8% 10%;
@@ -140,8 +128,21 @@ p {
     font-size: 18px;
 }
 
+#faq {
+    background-color: #fff;
+    color: #686868;
+    padding: 90px 130px 90px 130px;
+    font-size: 18px;
+}
+
 #about p {
-  font-size: 17px;
+    font-size: 17px;
+    padding: 10px 0 0 0;
+}
+
+#faq p {
+    font-size: 17px;
+    padding: 10px 0 0 0;
 }
 
 .btn-block {
@@ -288,26 +289,19 @@ h1 {
   text-align: center;
 }
 
-#section6 {
-  background-color: #f7f7f7;
-  color:#686868;
-  padding: 25% 0;
-  text-align: center;
-}
-
-#section7 {
-  background-color: #fff;
-  color:#686868;
-  padding: 25% 0;
-  text-align: center;
-}
-
 #sectionResults {
     background: #5527A0;
     padding: 0;
 }
 
 #about {
+    background-color: #fff;
+    color: #686868;
+    padding: 80px;
+    font-size: 18px;
+}
+
+#faq {
     background-color: #fff;
     color: #686868;
     padding: 80px;
@@ -881,4 +875,10 @@ h3 {
     border-spacing: 1.25rem 0;;
 }
 
+}
+
+.card-deck .card {
+    display: block;
+    max-width: 100%;
+    vertical-align: top;
 }
