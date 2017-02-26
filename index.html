@@ -22,6 +22,31 @@
   <script type="text/javascript" src="//userlike-cdn-widgets.s3-eu-west-1.amazonaws.com/8aa0763a08c22520bffebfed8cf71c012de9184dab0a8ec4fb472c2a9a015dea.js"></script>
   <script src="/Users/gabriel/Desktop/simplebotics.io/scripts/custom.js"></script>
 
+    <!-- Start of Async Drift Code -->
+  <script>
+  !function() {
+    var t;
+    if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, 
+    t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+    t.factory = function(e) {
+      return function() {
+        var n;
+        return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+      };
+    }, t.methods.forEach(function(e) {
+      t[e] = t.factory(e);
+    }), t.load = function(t) {
+      var e, n, o, i;
+      e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"), 
+      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js", 
+      n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+    });
+  }();
+  drift.SNIPPET_VERSION = '0.3.1';
+  drift.load('6nxces4c8en6');
+  </script>
+  <!-- End of Async Drift Code -->
+
 </head>
 
 <body ng-app="simpleboticsIO" ng-controller="ioController">
@@ -33,7 +58,7 @@
     <div class="collapse navbar-toggleable-sm" id="navbar-collapse">
       <ul class="nav navbar-nav pull-xs-right">
         <li class="nav-item">
-          <a class="nav-link" href="file:///Users/gabriel/Desktop/simplebotics.io/about.html">About</a>
+          <a class="nav-link" href="http://www.simplebotics.io/about">About</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="http://www.simplebotics.com">Blog</a>
@@ -42,7 +67,7 @@
           <a class="nav-link" href="mailto:contact@simplebotics.io">Contact</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/more">More</a>
+          <a class="nav-link" href="http://www.simplebotics.io/faq">FAQ</a>
         </li>
       </ul>
     </div>
@@ -78,23 +103,22 @@
 
         <div align="center">
 
-          <section class="container-fluid" id="section1">
-            <h1>You're interested in STEM for who?</h1>
-            <div class="btn-toolbar">
-              <label class="btn btn-primary" scroll-to="#section2" ng-click="showQuestions = false; showResults = false; showSection2 = true; ProductFilterGroup = {group: 'kids'}" uib-btn-radio>Kids</label>
-              <label class="btn btn-primary" scroll-to="#section5" ng-click="showQuestions = true; showResults = false; showSection5 = true; ProductFilterGroup = {group: 'students'}" uib-btn-radio>Students</label>
-            </div>
-          </section>
-
-          <div id="showQuestions" ng-show="!showQuestions">
+            <section class="container-fluid" id="section1">
+              <h1>You're interested in STEM for who?</h1>
+              <div class="btn-toolbar">
+                <label class="btn btn-primary" scroll-to="#section2" ng-click="showSection2 = true; group = true; ProductFilterGroup = {group: 'kids'}" uib-btn-radio>Kids</label>
+                <label class="btn btn-primary" scroll-to="#section2" ng-click="showSection2 = true; group = false; ProductFilterGroup = {group: 'students'}" uib-btn-radio>Students</label>
+              </div>
+            </section>
 
             <section class="container-fluid" id="section2" ng-show="showSection2">
-              <h1>What is their age group?</h1>
+              <h1 ng-show="group">What is their age group?</h1>
+              <h1 ng-show="!group">What age group do you teach?</h1>
               <h3><a class="text" data-toggle="collapse" href="#collapseParentAgeGroup"><i class="fa fa-question-circle" aria-hidden="true" style="color: #8b00de"></i>
               </a></h3>
               <div class="collapse" id="collapseParentAgeGroup">
                 <div class="card card-block">
-                  We use this information to match you with a product's appropriate age group.
+                  We use this information to match you with appropriate products.
                 </div>
               </div>
               <div class="btn-toolbar">
@@ -106,7 +130,8 @@
             </section>
 
             <section class="container-fluid" id="section3" ng-show="showSection3">
-              <h1>What subject interests them the most?</h1>
+              <h1 ng-show="group">What subject interests them the most?</h1>
+              <h1 ng-show="!group">What subject would you like to teach?</h1>
               <div class="btn-toolbar">
                 <label class="btn btn-primary" scroll-to="#section4" ng-click="showSection4 = true; ProductFilterCategories = {categories: 'electronics'}" uib-btn-checkbox>Electronics</label>
                 <label class="btn btn-primary" scroll-to="#section4" ng-click="showSection4 = true; ProductFilterCategories = {categories: 'programming'}" uib-btn-checkbox>Computers</label>
@@ -115,9 +140,10 @@
             </section>
 
             <section class="container-fluid" id="section4" ng-show="showSection4">
-              <h1>Almost done. What type of product would you like?</h1>
+              <h1 ng-show="group">Almost done. What type of product would you like?</h1>
+              <h1 ng-show="!group">Almost done. What type of product would you prefer?</h1>
               <div class="btn-toolbar">
-                <label class="btn btn-primary" scroll-to="#section5" ng-click="showSection5 = true; ProductFilterType = {type: 'app'}" uib-btn-checkbox>App</label>
+                <label class="btn btn-primary" scroll-to="#sectionResults" ng-click="showResults = true; ProductFilterType = {type: 'app'}" uib-btn-checkbox>App</label>
                 <label class="btn btn-primary" scroll-to="#section5" ng-click="showSection5 = true; ProductFilterType = {type: 'robot'}" uib-btn-checkbox>Robot</label>
                 <label class="btn btn-primary" ng-hide="hideDroneButton" scroll-to="#sectionResults" ng-click="showResults = true; ProductFilterType = {type: 'drone'}" uib-btn-checkbox>Drone</label>
                 <label class="btn btn-primary" scroll-to="#section5" ng-click="showSection5 = true; ProductFilterType = {type: 'other'}" uib-btn-checkbox>Other</label>
@@ -125,7 +151,8 @@
             </section>
 
             <section class="container-fluid" id="section5" ng-show="showSection5">
-              <h1>What's your budget?</h1>
+              <h1 ng-show="group">What's your budget?</h1>
+              <h1 ng-show="!group">What's your classroom budget?</h1>
               <div class="btn-toolbar">
                 <label class="btn btn-primary" ng-hide="hide50Button" scroll-to="#sectionResults" ng-click="showResults = true; ProductFilterBudget = {budget: '50'}" uib-btn-checkbox>$50</label>
                 <label class="btn btn-primary" scroll-to="#sectionResults" ng-click="showResults = true; ProductFilterBudget = {budget: '100'}" uib-btn-checkbox>$100</label>
@@ -135,56 +162,12 @@
               <span style="padding: 10px"><h6><a class="text" scroll-to="#sectionResults" ng-click="showResults = true;">Not sure, skip question</a></h6></span>
             </section>
 
-          </div>
-
-          <div id="showQuestions" ng-show="showQuestions">
-
-            <section class="container-fluid" id="section6" ng-show="showSection6">
-              <h1>What age group do you teach?</h1>
-              <h3><a class="text" data-toggle="collapse" href="#collapseTeacherAgeGroup"><i class="fa fa-question-circle" aria-hidden="true" style="color: #9a30a1"></i>
-              </a></h3>
-
-              <div class="collapse" id="collapseTeacherAgeGroup">
-                <div class="card card-block">
-                  We use this information to match you with a product's appropriate age group.
-                </div>
-              </div>
-
-              <!-- Add a "why we need this information" dropdown section here -->
-
-              <div class="btn-toolbar">
-                <label class="btn btn-primary" scroll-to="#section7" ng-click="showSection7 = true" uib-btn-radio>3-7</label>
-                <label class="btn btn-primary" scroll-to="#section7" ng-click="showSection7 = true" uib-btn-radio>8-13</label>
-                <label class="btn btn-primary" scroll-to="#section7" ng-click="showSection7 = true" uib-btn-radio>14+</label>
-              </div>
-            </section>
-
-            <section class="container-fluid" id="section7" ng-show="showSection7">
-              <h1>What subject are you wanting to teach?</h1>
-              <div class="btn-toolbar">
-                <label class="btn btn-primary" scroll-to="#section7" ng-click="showSection7 = true" uib-btn-checkbox>Electronics</label>
-                <label class="btn btn-primary" scroll-to="#section7" ng-click="showSection7 = true" uib-btn-checkbox>Coding</label>
-                <label class="btn btn-primary" scroll-to="#section7" ng-click="showSection7 = true" uib-btn-checkbox>Mechanics</label>
-              </div>
-            </section>
-
-            <section class="container-fluid" id="section8" ng-show="showSection8">
-              <h1>What product would you like to teach with?</h1>
-              <div class="btn-toolbar">
-                <label class="btn btn-primary" scroll-to="#sectionResults" ng-click="" uib-btn-checkbox>App</label>
-                <label class="btn btn-primary" scroll-to="#sectionResults" ng-click="" uib-btn-checkbox>Robot</label>
-                <label class="btn btn-primary" scroll-to="#sectionResults" ng-click="" uib-btn-checkbox>Drone</label>
-                <label class="btn btn-primary" scroll-to="#sectionResults" ng-click="" uib-btn-checkbox>Other</label>
-              </div>
-            </section>
-
-          </div>
-
         </div>
 
         <section class="container-fluid" ng-show="showResults" id="sectionResults">
-        <h1><i class="em em-sparkles"></i> Huzzah! Here's what we recommend:</h1>
-        <h1 ng-show="!products.length"><i class="em em-frowning"></i> Rats! We couldn't find matching products.</h1>
+        <h1 ng-show="group"><i class="em em-sparkles"></i> Huzzah! Here's what we recommend:</h1>
+        <h1 ng-show="!group"><i class="em em-sparkles"></i> Shazam! Here's what we recommend:</h1>
+        <h1 ng-show="!products == length"><i class="em em-frowning"></i> Rats! We couldn't find matching products.</h1>
           <div class="card-deck">
             <div class="card" ng-repeat="product in products | filter:ProductFilterGroup | filter:ProductFilterAge | filter:ProductFilterCategories | filter:ProductFilterType | filter:ProductFilterBudget | orderBy:'-rank' | limitTo:3">
               <card>
@@ -195,7 +178,8 @@
                   <p class="card-text">{{ product.description }}</p>
                   <p><a href="{{ product.link }}" class="card-text-sm">Read reviews</a></p>
                   <p class="card-text"><span style="color: #8b00de; padding: 5px; float: right">{{ product.price | currency : symbol }}</span></p>
-                  <a href="{{ product.buy }}" class="btn btn-secondary">Buy now</a>
+                  <a href="{{ product.buy }}" class="btn btn-secondary" ng-show="group">Buy now</a>
+                  <a href="{{ product.buy-classroom }}" class="btn btn-secondary" ng-show="!group">Buy classroom pack</a>
                 </div>
               </card>
             </div>
@@ -205,7 +189,7 @@
         <footer class="footer">
 
           <p class="hidden-xs">
-            Built with <i class="fa fa-heart" aria-hidden="true"></i> by humans at <a href="http://twitter.com/simplebotics">@simplebotics</a>
+            Built with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="http://twitter.com/simplebotics">@simplebotics</a>
           </p>
 
           <ul class="footer-list">
@@ -232,12 +216,9 @@
         </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-animate.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.4.0/ui-bootstrap-tpls.min.js"></script>
   <script src="/Users/gabriel/Desktop/simplebotics.io/scripts/app.js"></script>
   <script src="/Users/gabriel/Desktop/simplebotics.io/components/simplebotics.io.ctr.js"></script>
   <script src="/Users/gabriel/Desktop/simplebotics.io/node_modules/scroll-to/scroll-to.js"></script>
-  <script async src='https://www.kontaktify.com/embed.js?eyJwb3NpdGlvbiI6InJpZ2h0IiwiY29sb3IiOiI1NTI3YTAiLCJjdXN0b21Db2xvciI6dHJ1ZSwiaWNvbiI6ImJ1YmJsZSIsInByb25vdW4iOiJ1cyIsImxhbmd1YWdlIjoiZW4iLCJicmFuZGVkIjp0cnVlLCJpbnRyb1RleHQiOiJIZWxsbyB0aGVyZSEgQW55IHF1ZXN0aW9ucywgdGlwcywgb3IgZmVlZGJhY2s/IFdlJ2QgbG92ZSB0byBoZWFyIGZyb20geW91LiIsImNoYW5uZWxzIjpbWyJ0d2l0dGVyIiwic2ltcGxlYm90aWNzaW8iLCJzb2NpYWwiXSxbInByb2R1Y3RodW50Iiwic2ltcGxlYm90aWNzIiwic29jaWFsIl0sWyJlbWFpbCIsImNvbnRhY3RAc2ltcGxlYm90aWNzLmlvIiwiY2xhc3NpYyJdXX0='></script>
 
   <script>
     var _intro_bar = window._intro_bar || {};(function() {var i,e;i=document.createElement("script"), i.type='text/javascript';i.async=1, i.src="//cdn.introbar.com/js/v1.js", e=document.getElementsByTagName("script")[0], e.parentNode.insertBefore(i,e);})();
