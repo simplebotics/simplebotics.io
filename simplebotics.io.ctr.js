@@ -1,29 +1,3 @@
-
-/* (The MIT License) CHANGE LICENSE
-
-Copyright (c) 2016-2017 Simplebotics <contact@simplebotics.com@.com>
-
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-'Software'), to deal in the Software without restriction, including
-without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so, subject to
-the following conditions:
-
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
-IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
-CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
-TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
-SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-*/
-
 (function() {
 
   "use strict";
@@ -169,7 +143,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       "type":"robot",
       "age":"8-13",
       "title":"Meccanoid XL 2.0",
-      "description":"A 4-foot tall programmable robotics kit. Build a humanoid, dinosour, or scorpion, and program using a smart device.",
+      "description":"A 4-foot tall programmable robotics kit. Build and program a humanoid, dinosour, or scorpion.",
       "price":174,
       "buy":"http://amzn.to/2lEcf5Q",
       "link":"http://amzn.to/2l8vMt9",
@@ -248,8 +222,8 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       "title":"Kano",
       "description":"A cuboid robot made from wood. Includes physical coding blocks and a colorful playmat for hands-on learning",
       "price":139,
-      "buy":"http://amzn.to/2lSvCL2",
-      "link":"http://amzn.to/2lDVQyd",
+      "buy":"http://amzn.to/2lk5F7H",
+      "link":"http://amzn.to/2lk5XeN",
       "company":"Kano",
       "categories":["programming",
       "electronics"
@@ -259,6 +233,31 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       ],
       "rank":6.7,
       "image":"https://dl.dropbox.com/s/riho717du996x7d/sb_io_kano.jpg?dl=0"
+    },
+    {
+      "group":["kids",
+      "students"
+      ],
+      "type":["other",
+      "app"
+      ],
+      "age":["4-7",
+      "8-13"
+      ],
+      "title":"Osmo Coding",
+      "description":"Osmo Coding uses hands-on physical blocks to control an iPad game. Each block is a piece of code that commands the game's character, Awbie.",
+      "price":49,
+      "buy":"http://amzn.to/2lk5F7H",
+      "link":"http://amzn.to/2lk5XeN",
+      "company":"Tangible Play Inc.",
+      "categories":"programming",
+      "budget":["50",
+      "100",
+      "200",
+      "300",
+      ],
+      "rank":11.7,
+      "image":"https://dl.dropbox.com/s/4s5xgnkflv60rqm/sb_io_osmo.jpg?dl=0"
     },
     {
       "group":"kids",
@@ -288,7 +287,7 @@ SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
       "14+",
       ],
       "title":"Little Robot Friends",
-      "description":"A cuboid robot made from wood. Includes physical coding blocks and a colorful playmat for hands-on learning",
+      "description":"A plucky robot buildable from scratch. Complete with resistors, buzzers, and blinky LEDs.",
       "price":95,
       "buy":"https://shop-ca.littlerobotfriends.com/products/ready-to-make-kit",
       "link":"https://littlerobotfriends.com/products/ready-to-make/",
