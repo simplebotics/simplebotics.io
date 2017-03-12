@@ -21,7 +21,7 @@ angular.module('scrollto')
           container: 'html, body',
           scrollTo: angular.element(),
           offset: 0,
-          duration: 700,
+          duration: 500,
           easing: 'swing'
         }, attrs);
         
