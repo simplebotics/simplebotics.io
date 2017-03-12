@@ -117,21 +117,21 @@ p {
 }
 
 #sectionResults {
-    background: #5527A0;
-    padding: 8% 10%;
+    background: #f7f7f7;
+    padding: 9% 10%;
 }
 
 #about {
     background-color: #fff;
     color: #686868;
-    padding: 90px 130px 90px 130px;
+    padding: 90px 190px 90px 190px;
     font-size: 18px;
 }
 
 #faq {
     background-color: #fff;
     color: #686868;
-    padding: 90px 130px 90px 130px;
+    padding: 90px 190px 90px 190px;
     font-size: 18px;
 }
 
@@ -184,6 +184,7 @@ p {
     border-radius: .25rem;
     color: #525252;
     box-shadow: 0px 10px 30px rgba(36, 10, 51, 0.15);
+    width: 100%;
 }
 
 .card-text-sm {
@@ -191,8 +192,10 @@ p {
 }
 
 .card img {
-  max-width: 100%;
-  padding: 10px 0 10px 0;
+    max-width: 80%;
+    padding: 10px 0 10px 0;
+    display: block;
+    margin: auto;
 }
 
 .collapse .card {
@@ -259,44 +262,53 @@ h1 {
     color: #8f7e94;
 }
 
+#section {
+  -webkit-transition:all linear 0.5s;
+  transition:all linear 0.5s;
+}
+
+#section.ng-hide {
+  opacity:0;
+}
+
 #section1 {
   background-color: #fff;
   color:#686868;
-  padding: 25% 0;
+  padding: 70% 0;
   text-align: center;
 }
 
 #section2 {
   background-color: #f7f7f7;
   color:#686868;
-  padding: 25% 0;
+  padding: 70% 0;
   text-align: center;
 }
 
 #section3 {
   background-color: #fff;
   color:#686868;
-  padding: 25% 0;
+  padding: 70% 0;
   text-align: center;
 }
 
 #section4 {
   background-color: #f7f7f7;
   color:#686868;
-  padding: 25% 0;
+  padding: 70% 0;
   text-align: center;
 }
 
 #section5 {
   background-color: #fff;
   color:#686868;
-  padding: 25% 0;
+  padding: 70% 0;
   text-align: center;
 }
 
 #sectionResults {
-    background: #5527A0;
-    padding: 0;
+    background: #f7f7f7;
+    padding: 25% 0;
 }
 
 #about {
@@ -317,8 +329,40 @@ h1 {
   display: none;
 }
 
+.image-container {
+    background-image: url(https://dl.dropbox.com/s/hmeep1lbcdytvrm/sb_io_background.jpg?dl=0);
+    background-position-x: 75%!important;
+    background-position-y: 50%!important;
+    position: absolute;
+    left: 0;
+    z-index: 0;
+    height: auto;
+    width: auto;
+    min-height: 100%;
+    min-width: 100%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-position: center;
+}
+
 .bg {
     background-image: url(http://i.imgur.com/jY2OU4E.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.faq .bg {
+    background-image: url(https://dl.dropbox.com/s/25wplgetq6yyo14/faq.jpg?dl=0);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pricing .bg {
+    background-image: url(https://dl.dropbox.com/s/2hysfm2zrsg4xeo/pricing.jpg?dl=0);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -566,7 +610,7 @@ h1 {
 }
 
 .btn-secondary {
-    color: #f7f7f7;
+    color: #fff;
     background-color: #8b00de;
     border: none;
     font-family: proxima-nova-soft;
@@ -606,7 +650,8 @@ h1 {
     background-color: #fff;
     border-radius: .25rem;
     color: #525252;
-    box-shadow: 0px 10px 30px rgba(36, 10, 51, 0.15);
+    box-shadow: 0px 1px 4px 0px rgba(139, 0, 222, 0.1);
+    border: 1px solid #e8e8e8;
 }
 
 body {
@@ -677,7 +722,7 @@ h3 {
 }
 
 #sectionResults h1 {
-    color: #fff;
+    color: #525252;
     text-align: center;
     padding: 0 0 10px 0;
 }
@@ -697,6 +742,13 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+.pricing .bg {
+    background-image: url(https://dl.dropbox.com/s/2hysfm2zrsg4xeo/pricing.jpg?dl=0);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
   
 .vertical-center {
   min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
@@ -805,7 +857,7 @@ h3 {
 .bg-faded.navbar-color {
     top: 0;
     background-color: #8b00de;
-    box-shadow: 0 3px 9px rgba(85, 39, 160, .3);
+    box-shadow: 0 1px 8px rgba(85, 39, 160, .3);
     transition: 0.8s;
     -webkit-transition:  0.8s;
 }
@@ -880,10 +932,63 @@ h3 {
     border-radius: 0px;
 }
 
-.card-deck {
-    display: table;
-    table-layout: fixed;
-    border-spacing: 1.25rem 0;;
 }
 
+@media only screen and (max-width: 768px) {
+
+.card-deck .card {
+    position: relative;
+    display: block;
+    margin-bottom: 1.5em;
+    background-color: #fff;
+    border-radius: .25rem;
+    color: #525252;
+    box-shadow: 0px 10px 30px rgba(36, 10, 51, 0.15);
+    width: 100%;
+}
+
+}
+
+#mailchimp {
+    background: rgb(139, 0, 222);
+    color: #fff;
+    padding: 20px 15px;
+    text-align: center;
+}
+
+#mailchimp input {
+    border: medium none;
+    color: rgba(255, 255, 255, 0.3);
+    font-family: proxima-nova-soft;
+    font-size: 16px;
+    font-style: normal;
+    margin: 0 5px 10px 0;
+    padding: 8px 10px;
+    width: 300px;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    display: inline-block;
+}
+
+#mailchimp input.email {
+  background: rgba(72, 0, 115, 0.57);
+}
+
+#mailchimp input.name {
+  background: rgba(72, 0, 115, 0.57);
+}
+
+#mailchimp input[type="submit"] {
+    background: #ffffff;
+    color: #8b00de;
+    cursor: pointer;
+    font-size: 15px;
+    width: 25%;
+    padding: 8px 0;
+}
+  
+#mailchimp input[type="submit"]:hover {
+  box-shadow: 0 4px 12px rgba(85, 39, 160, .3);
+  transform: translate(0, -1px);
 }
