@@ -17,7 +17,8 @@
       "description":"The tiniest programmable robot we could find. Code this smart robot using colored markers and paper.",
       "price":54,
       "buy":"http://amzn.to/2lNU2oF",
-      "link":"http://amzn.to/2lSkzSb",
+      "buy-educator":"http://ozobot.com/stem-education/stem-classroom-kit",
+      "reviews":"http://amzn.to/2lSkzSb",
       "company":"Evollve Inc.",
       "categories":"programming",
       "budget":["50",
@@ -25,7 +26,7 @@
       "200",
       "300",
       ],
-      "rank":10,
+      "rank":Math.random(),
       "image":"https://dl.dropbox.com/s/foyw10t5u0kmrcn/sb_io_ozobot.jpg?dl=0"
     },
     {
@@ -38,15 +39,189 @@
       "description":"This robot ball can be programmed with a smartphone or tablet. It's also made of durable, kid-proof plastic.",
       "price":111,
       "buy":"http://amzn.to/2kUJRiF",
-      "link":"http://amzn.to/2lE3msY",
+      "buy-educator":"https://store.sphero.com/products/sprk-plus-power-pack-education",
+      "reviews":"http://amzn.to/2lE3msY",
       "company":"Sphero",
       "categories":"programming",
       "budget":["100",
       "200",
       "300",
       ],
-      "rank":10,
+      "rank":Math.random(),
       "image":"https://dl.dropboxusercontent.com/s/cy31ehjroj1myjx/sb_io_sprk%2B.jpg?dl=0"
+    },
+    {
+      "group":"kids",
+      "type":"robot",
+      "age":["8-13", 
+      "14+"],
+      "title":"Cozmo",
+      "description":"The little robot with a big personality. Cozmo behaves like Pixar's WALL-E and is fully programmable with an SDK.",
+      "price":179,
+      "buy":"http://amzn.to/2lUwlME",
+      "buy-educator":"",
+      "reviews":"http://amzn.to/2mGDqiA",
+      "company":"Anki",
+      "categories":"programming",
+      "budget":["200",
+      "300"
+      ],
+      "rank":Math.random(),
+      "image":"https://dl.dropbox.com/s/5mat3zg95ztieh6/sb_io_cozmo.jpg?dl=0"
+    },
+    {
+      "group":"kids",
+      "type":"robot",
+      "age":["8-13", 
+      "14+"],
+      "title":"VEX IQ Construction Kit",
+      "description":"A complete robotics kit loaded with tech, including motors, sensors, and a computer. Over 750 pieces in all.",
+      "price":299,
+      "buy":"http://amzn.to/2mXbHdv",
+      "buy-educator":"http://www.vexrobotics.com/vexiq/education",
+      "reviews":"https://www.hexbug.com/review/product/list/id/1/category/22/#customer-reviews",
+      "company":"VEX Robotics",
+      "categories":["mechanics",
+      "electronics",
+      "programming"
+      ],
+      "budget":"300",
+      "rank":Math.random(),
+      "image":"https://dl.dropbox.com/s/n0mynvlqcduht7m/sb_io_vex_iq.jpg?dl=0"
+    },
+    {
+      "group":"kids",
+      "type":"robot",
+      "age":["8-13", 
+      "14+"],
+      "title":"VEX Motorized Robotic Arm",
+      "description":"Ever wondered how an industrial robotic arm works? Build your own miniturized version with this VEX Robotics kit.",
+      "price":79,
+      "buy":"http://amzn.to/2nGaqVC",
+      "buy-educator":"",
+      "reviews":"https://www.hexbug.com/review/product/list/id/240/category/22/#customer-reviews",
+      "company":"VEX Robotics",
+      "categories":["mechanics",
+      "electronics"
+      ],
+      "budget":["100",
+      "200",
+      "300"
+      ],
+      "rank":Math.random(),
+      "image":"https://dl.dropbox.com/s/ekdux2wd1u2a1su/sb_io_vex_motorized_robotic_arm.jpg?dl=0"
+    },
+    {
+      "group":"kids",
+      "type":"robot",
+      "age":["8-13", 
+      "14+"
+      ],
+      "title":"VEX Robotic Arm",
+      "description":"Build a completely mechanical robotic arm without motoros or electronics. Over 350 included. Batteries not required.",
+      "price":49,
+      "buy":"http://amzn.to/2myUdBN",
+      "buy-educator":"",
+      "reviews":"http://amzn.to/2mNA5wp",
+      "company":"VEX Robotics",
+      "categories":"mechanics",
+      "budget":["50",
+      "100",
+      "200",
+      "300"
+      ],
+      "rank":Math.random(),
+      "image":"https://dl.dropbox.com/s/u8q70tfzggp3gfd/sb_io_vex_robotic_arm.jpg?dl=0"
+    },
+    {
+      "group":"kids",
+      "type":"robot",
+      "age":["8-13", 
+      "14+"
+      ],
+      "title":"VEX Robotics Ant",
+      "description":"Construct a jumbo-sized remote-control robotic ant and customize its programming. Batteries required.",
+      "price":49,
+      "buy":"http://amzn.to/2n3UQGl",
+      "buy-educator":"",
+      "reviews":"https://www.hexbug.com/review/product/list/id/5/category/22/#customer-reviews",
+      "company":"VEX Robotics",
+      "categories":["mechanics",
+      "electronics"
+      ],
+      "budget":["50",
+      "100",
+      "200",
+      "300"
+      ],
+      "rank":Math.random(),
+      "image":"https://dl.dropbox.com/s/mdb497e74j79gi1/sb_io_vex_hexbug_ant.jpg?dl=0"
+    },
+    {
+      "group":["kids",
+      "students"
+      ],
+      "type":"robot",
+      "age":["8-13", 
+      "14+"],
+      "title":"Jimu Robot",
+      "description":"Build and program your own robot. The Jimu robot is a do it yourself, robotics building kit with Bluetooth.",
+      "price":129,
+      "buy":"http://amzn.to/2n3kwTW",
+      "buy-educator":"https://jimurobots.com/learning/",
+      "reviews":"http://amzn.to/2nywCRv",
+      "company":"UBTECH",
+      "categories":["programming",
+      "mechanics"
+      ],
+      "budget":["200",
+      "300"
+      ],
+      "rank":Math.random(),
+      "image":"https://dl.dropbox.com/s/id4wlb4ut2p2xog/sb_io_jimu.jpg?dl=0"
+    },
+    {
+      "group":"kids",
+      "type":"robot",
+      "age":["8-13", 
+      "14+"],
+      "title":"mBot",
+      "description":"mBot is an educational kit for kids to get hands-on experience about computer programming, electronics and robotics.",
+      "price":89,
+      "buy":"http://amzn.to/2nnIKWx",
+      "buy-educator":"",
+      "reviews":"http://amzn.to/2n3uAwt",
+      "company":"MakeBlock",
+      "categories":["programming",
+      "mechanics",
+      "electronics"
+      ],
+      "budget":["100",
+      "200",
+      "300"
+      ],
+      "rank":Math.random(),
+      "image":"https://dl.dropbox.com/s/9h85ib8coydipef/sb_io_mbot.jpg?dl=0"
+    },
+    {
+      "group":"kids",
+      "type":"robot",
+      "age":["8-13", 
+      "14+"],
+      "title":"EZ-Robot",
+      "description":"A hexapod robot that walks on six legs. Complete with servo motors, sensors, and a camera.",
+      "price":454,
+      "buy":"http://amzn.to/2nya83l",
+      "buy-educator":"",
+      "reviews":"http://makezine.com/2014/12/09/review-ez-robot-six-and-the-ez-builder-software/",
+      "company":"Anki",
+      "categories":["programming",
+      "electronics",
+      "mechanics"
+      ],
+      "budget":"",
+      "rank":Math.random(),
+      "image":"https://dl.dropbox.com/s/cxgud5ae2j7stv2/sb_io_ez_robot.jpg?dl=0"
     },
     {
       "group":["kids",
@@ -60,13 +235,14 @@
       "description":"A playful robot on wheels. Kids ages 5 and up can program this robot with a smartphone or tablet.",
       "price":119,
       "buy":"http://amzn.to/2kUTgqp",
-      "link":"http://amzn.to/2kUTopT",
+      "buy-educator":"https://teachers.makewonder.com/",
+      "reviews":"http://amzn.to/2kUTopT",
       "company":"Wonder Workshop",
       "categories":"programming",
       "budget":["200",
       "300"
       ],
-      "rank":8.3,
+      "rank":Math.random(),
       "image":"https://dl.dropbox.com/s/qqhv3l5no7dpy5a/sb_io_dash_dot.jpg?dl=0"
     },
     {
@@ -81,15 +257,16 @@
       "description":"The LEGO EV3 kit combines the classic plastic brick with modern computer technology for hundreds of projects.",
       "price":349,
       "buy":"http://amzn.to/2kUVgyQ",
-      "link":"http://amzn.to/2lStUcA",
+      "buy-educator":"https://education.lego.com/en-us/products/lego-mindstorms-education-ev3-core-set-/5003400",
+      "reviews":"http://amzn.to/2lStUcA",
       "company":"LEGO",
       "categories":[
       "programming",
       "mechanics",
       ],
       "budget":"300",
-      "rank":10,
-      "image":"https://dl.dropbox.com/s/19obolm4y38kg4t/sb_io_lego_mindstorms_ev3.jpg?dl=0"
+      "rank":8.3,
+      "image":"https://dl.dropbox.com/s/ucxh5ktl9tzbyqz/sb_io_lego_mindstorms_ev3.jpg?dl=0"
     },
     {
       "group":["kids",
@@ -101,7 +278,8 @@
       "description":"Build and program an origami-inspired and bug-like robot with Kamigami. No tools required. Just a smartphone.",
       "price":99,
       "buy":"http://amzn.to/2lO0lZ3",
-      "link":"http://amzn.to/2lNYx2y",
+      "buy-educator":"http://kamigamirobots.com/for-educators",
+      "reviews":"http://amzn.to/2lNYx2y",
       "company":"Dash Robotics",
       "categories":[
       "mechanics",
@@ -111,7 +289,7 @@
       "200",
       "300",
       ],
-      "rank":8,
+      "rank":Math.random(),
       "image":"https://dl.dropbox.com/s/0i6xi1sxclm0mll/sb_io_kamigami.jpg?dl=0"
     },
     {
@@ -123,10 +301,11 @@
       "14+"
       ],
       "title":"Sparki",
-      "description":"The tiniest programmable robot we could find. Code this smart robot using colored markers and paper.",
+      "description":"An all-in-one robotics kit that's ready to go out-of-the-box. Works with graphical and text-based programming languages.",
       "price":149,
       "buy":"http://amzn.to/2lSpyCc",
-      "link":"http://amzn.to/2lDZpVh",
+      "buy-educator":"http://arcbotics.com/sparki-educator-trial/",
+      "reviews":"http://amzn.to/2lDZpVh",
       "company":"ArcBotics",
       "categories":[
       "programming",
@@ -135,7 +314,7 @@
       "budget":["200",
       "300",
       ],
-      "rank":10,
+      "rank":Math.random(),
       "image":"https://dl.dropbox.com/s/9x0dbln634h8ysb/sb_io_sparki.jpg?dl=0"
     },
     {
@@ -146,7 +325,8 @@
       "description":"A 4-foot tall programmable robotics kit. Build and program a humanoid, dinosour, or scorpion.",
       "price":174,
       "buy":"http://amzn.to/2lEcf5Q",
-      "link":"http://amzn.to/2l8vMt9",
+      "buy-educator":"",
+      "reviews":"http://amzn.to/2l8vMt9",
       "company":"Meccano",
       "categories":[
       "mechanics",
@@ -155,7 +335,7 @@
       "budget":["200",
       "300",
       ],
-      "rank":8.3,
+      "rank":Math.random(),
       "image":"https://dl.dropbox.com/s/qslmcdqyizio693/sb_io_meccanoid_xl_2.0.jpg?dl=0"
     },
     {
@@ -166,11 +346,12 @@
       "description":"A cuboid robot made from wood. Includes physical coding blocks and a colorful playmat for hands-on learning.",
       "price":239,
       "buy":"https://www.primotoys.com/shop/",
-      "link":"https://ww2.feefo.com/en_GB/reviews/primo-toys",
+      "buy-educator":"",
+      "reviews":"https://ww2.feefo.com/en_GB/reviews/primo-toys",
       "company":"Primo Toys",
       "categories":"programming",
       "budget":"300",
-      "rank":5,
+      "rank":Math.random(),
       "image":"https://dl.dropbox.com/s/h9nksuvrpoxoyzw/sb_io_cubetto.jpg?dl=0"
     },
     {
@@ -179,11 +360,12 @@
       "age":["3+",
       "4-7",
       ],
-      "title":"Codeapillar",
+      "title":"Code-a-pillar",
       "description":"A cute toy that lets kids learn basic coding skills by arranging snap-together segments that control the robot.",
       "price":45,
       "buy":"http://amzn.to/2lE3B7e",
-      "link":"http://amzn.to/2l8oDcg",
+      "buy-educator":"",
+      "reviews":"http://amzn.to/2l8oDcg",
       "company":"Fisher Price",
       "categories":"programming",
       "budget":["50",
@@ -191,7 +373,7 @@
       "200",
       "300",
       ],
-      "rank":11.7,
+      "rank":Math.random(),
       "image":"https://dl.dropbox.com/s/hugxpue78khwrcf/sb_io_codeapillar.jpg?dl=0"
     },
     {
@@ -202,7 +384,8 @@
       "description":"A cuboid robot made from wood. Includes physical coding blocks and a colorful playmat for hands-on learning",
       "price":23,
       "buy":"http://amzn.to/2l8m2z8",
-      "link":"http://amzn.to/2lSmeHl",
+      "buy-educator":"",
+      "reviews":"http://amzn.to/2lSmeHl",
       "company":"WowWee",
       "categories":"programming",
       "budget":["50",
@@ -210,7 +393,7 @@
       "200",
       "300",
       ],
-      "rank":10,
+      "rank":Math.random(),
       "image":"https://dl.dropbox.com/s/w944upuzsp2gqwm/sb_io_coji.jpg?dl=0"
     },
     {
@@ -223,7 +406,8 @@
       "description":"A cuboid robot made from wood. Includes physical coding blocks and a colorful playmat for hands-on learning",
       "price":139,
       "buy":"http://amzn.to/2lk5F7H",
-      "link":"http://amzn.to/2lk5XeN",
+      "buy-educator":"https://kano.me/educators",
+      "reviews":"http://amzn.to/2lk5XeN",
       "company":"Kano",
       "categories":["programming",
       "electronics"
@@ -231,7 +415,7 @@
       "budget":["200",
       "300",
       ],
-      "rank":6.7,
+      "rank":Math.random(),
       "image":"https://dl.dropbox.com/s/riho717du996x7d/sb_io_kano.jpg?dl=0"
     },
     {
@@ -245,10 +429,11 @@
       "8-13"
       ],
       "title":"Osmo Coding",
-      "description":"Osmo Coding uses hands-on physical blocks to control an iPad game. Each block is a piece of code that commands the game's character, Awbie.",
+      "description":"Osmo Coding uses hands-on blocks to control an iPad game. Each block is a bit of code that controls the game.",
       "price":49,
       "buy":"http://amzn.to/2lk5F7H",
-      "link":"http://amzn.to/2lk5XeN",
+      "buy-educator":"https://www.playosmo.com/en/schools/",
+      "reviews":"http://amzn.to/2lk5XeN",
       "company":"Tangible Play Inc.",
       "categories":"programming",
       "budget":["50",
@@ -256,7 +441,7 @@
       "200",
       "300",
       ],
-      "rank":11.7,
+      "rank":Math.random(),
       "image":"https://dl.dropbox.com/s/4s5xgnkflv60rqm/sb_io_osmo.jpg?dl=0"
     },
     {
@@ -267,7 +452,8 @@
       "description":"Snap and click custom circuits together in seconds. Includes everything from resistors, switches, and motors for the budding engineer.",
       "price":20,
       "buy":"http://amzn.to/2l8nl0Z",
-      "link":"http://amzn.to/2lSvivD",
+      "buy-educator":"",
+      "reviews":"http://amzn.to/2lSvivD",
       "company":"Elenco",
       "categories":"electronics",
       "budget":["50",
@@ -275,8 +461,8 @@
       "200",
       "300",
       ],
-      "rank":10,
-      "image":"https://dl.dropbox.com/s/f268ppr7h2xsts1/sb_io_snapcircuitsjr.jpg?dl=0"
+      "rank":Math.random(),
+      "image":"https://dl.dropbox.com/s/52izf360as56v4h/sb_io_snap_circuits.jpg?dl=0"
     },
     {
       "group":["kids",
@@ -287,10 +473,11 @@
       "14+",
       ],
       "title":"Little Robot Friends",
-      "description":"A plucky robot buildable from scratch. Complete with resistors, buzzers, and blinky LEDs.",
+      "description":"A plucky robot buildable from scratch. Complete with resistors, buzzers, and breviewsy LEDs.",
       "price":95,
-      "buy":"https://shop-ca.littlerobotfriends.com/products/ready-to-make-kit",
-      "link":"https://littlerobotfriends.com/products/ready-to-make/",
+      "buy":"https://shop.littlerobotfriends.com/products/ready-to-make-kit",
+      "buy-educator":"http://littlerobotfriends.com/educators.html",
+      "reviews":"https://littlerobotfriends.com/products/ready-to-make/",
       "company":"Little Robot Friends",
       "categories":["electronics",
       "programming",
@@ -299,7 +486,7 @@
       "200",
       "300",
       ],
-      "rank":11.7,
+      "rank":Math.random(),
       "image":"https://dl.dropbox.com/s/8yfgpsnxx3783pi/sb_io_little_robot_friends.jpg?dl=0"
     },
     {
@@ -310,13 +497,14 @@
       "description":"A cuboid robot made from wood. Includes physical coding blocks and a colorful playmat for hands-on learning",
       "price":249,
       "buy":"https://flybrix.com/collections/flybrix-kits/products/deluxe-kit-v1",
-      "link":"https://flybrix.com/collections/flybrix-kits/products/deluxe-kit-v1",
+      "buy-educator":"",
+      "reviews":"https://flybrix.com/collections/flybrix-kits/products/deluxe-kit-v1",
       "company":"Flybrix",
       "categories":["electronics",
       "mechanics",
       ],
       "budget":"300",
-      "rank":6.7,
+      "rank":Math.random(),
       "image":"https://dl.dropbox.com/s/2p33yrowc2v9rps/sb_io_flybrix.jpg?dl=0"
     },
     {
@@ -328,10 +516,11 @@
       "14+",
       ],
       "title":"littleBits",
-      "description":"These tiny electronic modules snap together with magnets and make building circuits like LEGO. Snap together gizmos and more with littleBits!",
+      "description":"These tiny electronic modules snap together with magnets and make building circuits like LEGO.",
       "price":99,
-      "buy":"",
-      "link":"https://littlerobotfriends.com/products/ready-to-make/",
+      "buy":"http://amzn.to/2mzvrRI",
+      "buy-educator":"http://littlebits.cc/education",
+      "reviews":"https://littlerobotfriends.com/products/ready-to-make/",
       "company":"littleBits",
       "categories":["electronics",
       "mechanics",
@@ -341,7 +530,7 @@
       "200",
       "300"
       ],
-      "rank":13.3,
+      "rank":Math.random(),
       "image":"https://dl.dropbox.com/s/i84otkpk22pbp3m/sb_io_littlebits.jpg?dl=0"
     },
     {
@@ -351,10 +540,11 @@
       "14+",
       ],
       "title":"Thimble",
-      "description":"A subscription box for makers, hackers, and anyone with an interest in STEM. Build and program robots, drones, and more!",
+      "description":"A subscription box for makers, hackers, and anyone with an interest in robots, drones, and technology.",
       "price":89,
       "buy":"https://www.thimble.io/shop/",
-      "link":"https://www.thimble.io/#how-thimble-works",
+      "buy-educator":"",
+      "reviews":"https://www.thimble.io/#how-thimble-works",
       "company":"Thimble",
       "categories":["electronics",
       "programming",
@@ -364,10 +554,10 @@
       "200",
       "300",
       ],
-      "rank":13.3,
+      "rank":Math.random(),
       "image":"https://dl.dropbox.com/s/h617dqmhkhsdogt/sb_io_thimble.jpg?dl=0"
-    },
-    ]
+    }
+  ]
 
   });
 
