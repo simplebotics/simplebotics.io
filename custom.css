@@ -14,17 +14,22 @@ p {
     font-family: open sans, serif;
 }
 
+ol {
+    margin: 0!important;
+    padding: 0!important;
+}
+
 .em-smile {
     font-size: 23px;
     vertical-align: sub;
 }
 
 .navbar {
-  border-radius:0;
+    border-radius:0;
 }
 
 .navbar-toggler {
-  border:1px solid rgba(0,0,0,0.2);
+    border:1px solid rgba(0,0,0,0.2);
 }
 
 .navbar-toggler:hover {
@@ -32,11 +37,11 @@ p {
 }
 
 .navbar-toggler:focus {
-  outline:0;
+    outline:0;
 }
 
 .dropdown-toggle {
-  cursor:pointer;
+    cursor:pointer;
 }
 
 /* Navbar Collapse Styles To Stack Items At Mobile Widths*/
@@ -77,6 +82,7 @@ p {
     background:none;
     border:none;
   }
+
 }
 
 .lead {
@@ -86,39 +92,27 @@ p {
     color: #8f7e94;
 }
 
-#section1 {
-  background-color: #fff;
-  color:#686868;
-  padding: 23% 0;
+.form {
+    text-align: center;
 }
 
-#section2 {
-  background-color: #f7f7f7;
-  color:#686868;
-  padding: 23% 0;
+.form ol li:nth-child(odd) {
+    background-color: #fff;
+    list-style-type:none;
 }
 
-#section3 {
-  background-color: #fff;
-  color:#686868;
-  padding: 23% 0;
+.form ol li:nth-child(even) {
+    background-color: #f7f7f7;
+    list-style-type:none;
 }
 
-#section4 {
-  background-color: #f7f7f7;
-  color:#686868;
-  padding: 23% 0;
-}
-
-#section5 {
-  background-color: #fff;
-  color:#686868;
-  padding: 23% 0;
+.form .container-fluid {
+    padding: 23% 0;
 }
 
 #sectionResults {
     background: #f7f7f7;
-    padding: 9% 10%;
+    padding: 7% 10%;
 }
 
 #about {
@@ -170,6 +164,7 @@ p {
     table-layout: fixed;
     border-spacing: 1.25rem 0;
     width: 100%;
+    text-align: left;
 }
 
 .card-block {
@@ -192,7 +187,7 @@ p {
 }
 
 .card img {
-    max-width: 80%;
+    max-width: 100%;
     padding: 10px 0 10px 0;
     display: block;
     margin: auto;
@@ -268,42 +263,12 @@ h1 {
 }
 
 #section.ng-hide {
-  opacity:0;
+    opacity:0;
 }
 
-#section1 {
-  background-color: #fff;
-  color:#686868;
-  padding: 70% 0;
-  text-align: center;
-}
-
-#section2 {
-  background-color: #f7f7f7;
-  color:#686868;
-  padding: 70% 0;
-  text-align: center;
-}
-
-#section3 {
-  background-color: #fff;
-  color:#686868;
-  padding: 70% 0;
-  text-align: center;
-}
-
-#section4 {
-  background-color: #f7f7f7;
-  color:#686868;
-  padding: 70% 0;
-  text-align: center;
-}
-
-#section5 {
-  background-color: #fff;
-  color:#686868;
-  padding: 70% 0;
-  text-align: center;
+.form .container-fluid {
+    padding: 70% 0;
+    text-align: center;
 }
 
 #sectionResults {
@@ -326,7 +291,7 @@ h1 {
 }
 
 .video-container {
-  display: none;
+    display: none;
 }
 
 .image-container {
@@ -458,84 +423,88 @@ h1 {
 }
 
 .pricing li + li {
-  border-top: none;
+    border-top: none;
 }
 
-.pricing big {
-  font-size: 25px;
-  color: #8b00de!important;
-  text-transform: uppercase;
-  font-family: proxima-nova-soft;
+.pricing h1, h2, h3, h4, h5, h6 {
+    color: #8b00de;
+    font-family: proxima-nova-soft;
 }
+
+.pricing h2 {
+    font-size: 35px;
+    text-transform: uppercase;
+}
+
 
 .pricing h3 {
-    margin-bottom: 0;
-    font-size: 35px;
+    font-size: 25px;
+    text-transform: uppercase;
 }
 
 .pricing span {
-  font-size: 13px;
-  color: #999;
-  font-weight: normal;
+    font-size: 13px;
+    color: #999;
+    font-weight: normal;
 }
 
 .pricing li:nth-last-child(2) {
-  padding: 10px 5px;
+    padding: 10px 5px;
 }
 
 .pricing button {
-  width: auto;
-  margin: auto;
-  font-size: 15px;
-  font-weight: bold;
-  border-radius: .25rem;
-  color: #fff;
-  padding: 9px 24px;
-  background: #aaa;
-  opacity: 1;
-  transition: opacity .2s ease;
-  border: none;
-  outline: none;
-  background-color: #8b00de;
+    width: auto;
+    margin: auto;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: .25rem;
+    color: #fff;
+    padding: 9px 24px;
+    background: #aaa;
+    opacity: 1;
+    transition: opacity .2s ease;
+    border: none;
+    outline: none;
+    background-color: #8b00de;
 }
 
 .pricing button:hover {
-  background-color: #5527A0;
+    background-color: #5527A0;
 }
 
 .pricing button:active {
-  box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.1);
+    box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.1);
 }
 
 /* pricing color */
 .p-startup big,
 .p-startup h3 {
-  color: #8b00de;
+    color: #8b00de;
 }
 
 .p-startup button {
-  background-color: #8b00de;
-  font-family: 'proxima-nova-soft', sans-serif;
+    background-color: #8b00de;
+    font-family: 'proxima-nova-soft', sans-serif;
 }
 
 .p-company big,
 .p-company h3 {
-  color: #8b00de;
+    color: #8b00de;
 }
 
 .p-company button {
-  background-color: #8b00de;
-  font-family: 'proxima-nova-soft', sans-serif;
+    background-color: #8b00de;
+    font-family: 'proxima-nova-soft', sans-serif;
 }
 
 .p-unicorn big,
 .p-unicorn h3 {
-  color: #8b00de;
+    color: #8b00de;
 }
 
 .p-unicorn button {
-  background-color: #8b00de;
-  font-family: 'proxima-nova-soft', sans-serif;
+    background-color: #8b00de;
+    font-family: 'proxima-nova-soft', sans-serif;
 }
 
 #typed-cursor {
@@ -634,7 +603,7 @@ h1 {
 }
 
 .card-image {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 .card-title {
@@ -655,7 +624,7 @@ h1 {
 }
 
 body {
-  background-color: #fff;
+    background-color: #fff;
 }
 
 video {
@@ -680,15 +649,15 @@ video {
 }
 
 .begin a {
-  transition: transform .1s ease-out;
-  display: inline-block;
-  font-family: open sans, serif;
-  font-size: 16px;
+    transition: transform .1s ease-out;
+    display: inline-block;
+    font-family: open sans, serif;
+    font-size: 16px;
 }
 
 .begin a:hover {
-  transform: translate(0, 3px);
-  color: rgba(255, 255, 255, 0.3);
+    transform: translate(0, 3px);
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .fa-heart:before {
@@ -701,11 +670,11 @@ video {
   }
   
 #contentBegin {  
-  padding: 200px;
+    padding: 200px;
 }
 
 #content {
-font-family: open sans;
+    font-family: open sans;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -751,11 +720,11 @@ h3 {
 
   
 .vertical-center {
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
+    min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
 
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .video-container {
@@ -777,7 +746,7 @@ h3 {
 }
   
 .jumbotron {
-    background: rgba(105,240,218,1);
+    background: rgba(139, 0, 222, 0.9);
     background: -moz-linear-gradient(-45deg, rgba(139, 0, 222, 0.9) 0%, rgba(85, 39, 160, 0.9) 100%);
     background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(139, 0, 222, 0.9)), color-stop(100%, rgba(85, 39, 160, 0.9)));
     background: -webkit-linear-gradient(-45deg, rgba(139, 0, 222, 0.9) 0%, rgba(85, 39, 160, 0.9) 100%);
@@ -894,12 +863,12 @@ h3 {
 
 .hidden-xs {
     padding: 0;
-    font-size: 15px;
+    font-size: 11px;
 }
 
 .footer-list {
     padding: 0;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 .footer-list-item {
@@ -910,7 +879,7 @@ h3 {
 /* pricing css */
 
 #pricing .jumbotron {
-    background: rgba(105,240,218,1);
+    background: rgba(139, 0, 222, 0.9);
     background: -moz-linear-gradient(-45deg, rgba(139, 0, 222, 0.9) 0%, rgba(85, 39, 160, 0.9) 100%);
     background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(139, 0, 222, 0.9)), color-stop(100%, rgba(85, 39, 160, 0.9)));
     background: -webkit-linear-gradient(-45deg, rgba(139, 0, 222, 0.9) 0%, rgba(85, 39, 160, 0.9) 100%);
@@ -945,6 +914,7 @@ h3 {
     color: #525252;
     box-shadow: 0px 10px 30px rgba(36, 10, 51, 0.15);
     width: 100%;
+    text-align: left;
 }
 
 }
@@ -972,11 +942,11 @@ h3 {
 }
 
 #mailchimp input.email {
-  background: rgba(72, 0, 115, 0.57);
+    background: rgba(72, 0, 115, 0.57);
 }
 
 #mailchimp input.name {
-  background: rgba(72, 0, 115, 0.57);
+    background: rgba(72, 0, 115, 0.57);
 }
 
 #mailchimp input[type="submit"] {
@@ -989,6 +959,6 @@ h3 {
 }
   
 #mailchimp input[type="submit"]:hover {
-  box-shadow: 0 4px 12px rgba(85, 39, 160, .3);
-  transform: translate(0, -1px);
+    box-shadow: 0 4px 12px rgba(85, 39, 160, .3);
+    transform: translate(0, -1px);
 }
