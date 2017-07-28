@@ -1,290 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-<meta name="description" content="">
-<meta name="author" content="">
-<link rel="icon" href="../../favicon.ico">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+  <meta name="description" content="Discover hand-picked STEM toys for kids.">
+  <meta name="author" content="Simplebotics">
+  <link rel="icon" href="/icons/favicon.ico">
+  <link rel="apple-touch-icon" sizes="57x57" href="/icons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/icons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/icons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/icons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/icons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/icons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/icons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/icons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/icons/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="/icons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+  <link rel="manifest" href="/icons/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/icons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
-<script src="https://use.typekit.net/kfd7yhz.js"></script>
-<script>try{Typekit.load({ async: true });}catch(e){}</script>
+  <script src="https://use.typekit.net/kfd7yhz.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 
-<title>simplebotics.io</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-<link rel="stylesheet" href="/Users/gabriel/Desktop/simplebotics.io/css/custom.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
-<script type="text/javascript" src="//userlike-cdn-widgets.s3-eu-west-1.amazonaws.com/8aa0763a08c22520bffebfed8cf71c012de9184dab0a8ec4fb472c2a9a015dea.js"></script>
-<script src="/Users/gabriel/Desktop/simplebotics.io/scripts/custom.js"></script>
+  <title>simplebotics.io - Discover STEM Toys for Kids</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Mono:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="https://github.com/simplebotics/simplebotics.io/blob/gh-pages/custom.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+  <script src="https://github.com/simplebotics/simplebotics.io/blob/gh-pages/custom.js"></script>
 
-<!-- Start of Async Drift Code -->
-<script>
-  !function() {
-    var t;
-    if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, 
-      t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
-      t.factory = function(e) {
-        return function() {
-          var n;
-          return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
-        };
-      }, t.methods.forEach(function(e) {
-        t[e] = t.factory(e);
-      }), t.load = function(t) {
-        var e, n, o, i;
-        e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"), 
-        o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js", 
-        n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
-      });
-  }();
-drift.SNIPPET_VERSION = '0.3.1';
-drift.load('6nxces4c8en6');
+  <!-- Start of Async Drift Code -->
+  <script>
+    !function() {
+      var t;
+      if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0, 
+        t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+        t.factory = function(e) {
+          return function() {
+            var n;
+            return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+          };
+        }, t.methods.forEach(function(e) {
+          t[e] = t.factory(e);
+        }), t.load = function(t) {
+          var e, n, o, i;
+          e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"), 
+          o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js", 
+          n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+        });
+    }();
+  drift.SNIPPET_VERSION = '0.3.1';
+  drift.load('6nxces4c8en6');
 </script>
 <!-- End of Async Drift Code -->
 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-93981896-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 </head>
 
 <body data-ng-app="simpleboticsIO" data-ng-controller="ioController">
 
-<nav class="navbar navbar-fixed-top navbar-light bg-faded">
-  <button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#navbar-collapse">&#9776;</button>
-  <a class="navbar-brand" href="http://www.simplebotics.io">simplebotics.io
-    <p style="color: rgba(123, 26, 205, 0.5); font-size: 13px; margin: -9px 0 0 0">(beta)</p></a>
-    <div class="collapse navbar-toggleable-sm" id="navbar-collapse">
-      <ul class="nav navbar-nav pull-xs-right">
-        <li class="nav-item">
-          <a class="nav-link" href="http://www.simplebotics.io/about">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="http://www.simplebotics.com">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="mailto:contact@simplebotics.io">Contact</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="http://www.simplebotics.io/faq">FAQ</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+  <nav class="navbar navbar-static-top navbar-light bg-faded">
+    <button class="navbar-toggler pull-xs-right hidden-md-up" type="button" data-toggle="collapse" data-target="#navbar-collapse">&#9776;</button>
+    <a class="navbar-brand" href="http://www.simplebotics.io">simplebotics.io
+      <p style="color: rgba(255, 255, 255, 0.5); font-size: 13px; font-weight: normal; margin: -5px 0 0 0">version 2.0!</p></a>
+      <div class="collapse navbar-toggleable-sm" id="navbar-collapse">
+        <ul class="nav navbar-nav pull-xs-right">
+          <li class="nav-item">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="http://www.simplebotics.com">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="mailto:contact@simplebotics.io">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/faq">More</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
-  <!-- Display video background -->
+    <div class="jumbotron">
 
-  <div class="video-container">
+      <div class="container-fluid">
 
-    <video autoplay="autoplay" loop="" poster="/assets/marketing/home-video-poster.jpg" muted>
-      <source src="/assets/marketing/home-video.webm" type="video/webm">
-        <source src="https://dl.dropboxusercontent.com/s/kxzrx3uijpy9u48/kamigami_jumbotron_background.mp4?dl=0" type="video/mp4">
-          <source src="/assets/marketing/home-video.ogv" type="video/ogg">
-          </video>
+        <div class="mobileNavigation">
 
-        </div>
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Navigation
+            </button>
 
-        <!-- Display image background on mobile -->
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 
-        <div class="image-container"></div>
+              <h6>Specialty</h6>
+              <form action="#" class="radio">
+                <label><input type="radio" name="subject" value="kids" checked data-ng-click="ProductFilterGroup = {group: 'kids'}; group = false"> Parent</label>
+                <label><input type="radio" name="subject" value="students" data-ng-click="ProductFilterGroup = {group: 'students'}; group = true"> Teacher</label>
+              </form>
 
-        <!-- Display intro text and begin button -->
+              <h6>Product Type</h6>
+              <form action="#" class="radio">
+                <label><input type="radio" name="product" value="robot" data-ng-click="ProductFilterType = {type: 'robot'}"> Robot</label>
+                <label><input type="radio" name="product" value="drone" data-ng-click="ProductFilterType = {type: 'drone'}"> Drone</label>
+                <label><input type="radio" name="product" value="app" data-ng-click="ProductFilterType = {type: 'app'}"> App</label>
+                <label><input type="radio" name="product" value="other" data-ng-click="ProductFilterType = {type: 'other'}"> Other</label>
+              </form>
 
-        <div class="jumbotron vertical-center">
+              <h6>Age Group</h6>
+              <form action="#" class="radio">
+                <label><input type="radio" name="age" value="3" data-ng-click="ProductFilterAge = {age: '3+'}"> 3+</label>
+                <label><input type="radio" name="age" value="4-7" data-ng-click="ProductFilterAge = {age: '4-7'}"> 4-7</label>
+                <label><input type="radio" name="age" value="8-13" data-ng-click="ProductFilterAge = {age: '8-13'}"> 8-13</label>
+                <label><input type="radio" name="age" value="14" data-ng-click="ProductFilterAge = {age: '14'}"> 14+</label>
+              </form>
 
-          <div class="container">
-            <h1>Need <span class="typed-header"></span> in your classroom?</h1>
-            <h2>Discover the best STEM gadgets for your students and kids, for free.</h2>
-            <div class="begin-center">
-              <div class="begin">
-                <a class="btn btn-primary-outline-none" href="javascript:void(null)" role="button" data-scroll-to="#section1">Start now<br><i class="fa fa-angle-down" aria-hidden="true"></i></a>
-              </div>
+              <h6>Subject</h6>
+              <form action="#" class="radio">
+                <label><input type="radio" name="subject" value="programming" data-ng-click="ProductFilterCategories = {categories: 'programming'}"> Coding</label>
+                <label><input type="radio" name="subject" value="mechanics" data-ng-click="ProductFilterCategories = {categories: 'mechanics'}"> Mechanics</label>
+                <label><input type="radio" name="subject" value="electronics" data-ng-click="ProductFilterCategories = {categories: 'electronics'}"> Electronics</label>
+              </form>
+
             </div>
+
           </div>
-        </div>
-
-        <!-- Product filter in view -->
-
-        <div class="form">
-
-          <ol>
-
-            <li>
-
-              <section class="container-fluid" id="section1">
-                <h2>You're interested in STEM for who?</h2>
-                <div class="btn-toolbar">
-                  <label class="btn btn-primary" data-scroll-to="#section2" data-ng-click="showSection2 = true; group = true; ProductFilterGroup = {group: 'kids'}" uib-btn-radio>Kids</label>
-                  <label class="btn btn-primary" data-scroll-to="#section2" data-ng-click="showSection2 = true; group = false; ProductFilterGroup = {group: 'students'}" uib-btn-radio>Students</label>
-                </div>
-              </section>
-
-            </li>
-
-            <li>
-
-              <section class="container-fluid" id="section2" data-ng-show="showSection2">
-                <h2 data-ng-show="group">What is their age group?</h2>
-                <h2 data-ng-show="!group">What age group do you teach?</h2>
-                <h3><a class="text" data-toggle="collapse" href="#collapseParentAgeGroup"><i class="fa fa-question-circle" aria-hidden="true" style="color: #8b00de"></i>
-                </a></h3>
-                <div class="collapse" id="collapseParentAgeGroup">
-                  <div class="card card-block">
-                    We use this information to match you with appropriate products.
-                  </div>
-                </div>
-                <div class="btn-toolbar">
-                  <label class="btn btn-primary" data-scroll-to="#section5" data-ng-click="showSection5 = true; ProductFilterAge = {age: '3+'}" uib-btn-radio>3+</label>
-                  <label class="btn btn-primary" data-scroll-to="#section5" data-ng-click="showSection5 = true; ProductFilterAge = {age: '4-7'}" uib-btn-radio>4-7</label>
-                  <label class="btn btn-primary" data-scroll-to="#section3" data-ng-click="showSection3 = true; ProductFilterAge = {age: '8-13'}" uib-btn-radio>8-13</label>
-                  <label class="btn btn-primary" data-scroll-to="#section3" data-ng-click="showSection3 = true; showDroneButton = true; hide50Button = true; ProductFilterAge = {age: '14+'}" uib-btn-radio>14+</label>
-                </div>
-              </section>
-
-            </li>
-
-            <li>
-
-              <section class="container-fluid" id="section3" data-ng-show="showSection3">
-                <h2 data-ng-show="group">What subject interests them the most?</h2>
-                <h2 data-ng-show="!group">What subject would you like to teach?</h2>
-                <div class="btn-toolbar">
-                  <label class="btn btn-primary" data-scroll-to="#section4" data-ng-click="showSection4 = true; ProductFilterCategories = {categories: 'electronics'}" uib-btn-checkbox>Electronics</label>
-                  <label class="btn btn-primary" data-scroll-to="#section4" data-ng-click="showSection4 = true; ProductFilterCategories = {categories: 'programming'}" uib-btn-checkbox>Computers</label>
-                  <label class="btn btn-primary" data-scroll-to="#section4" data-ng-click="showSection4 = true; hide50Button = true; ProductFilterCategories = {categories: 'mechanics'}" uib-btn-checkbox>Mechanics</label>
-                </div>
-              </section>
-
-            </li>
-
-            <li>
-
-              <section class="container-fluid" id="section4" data-ng-show="showSection4">
-                <h2 data-ng-show="group">Almost done. What type of product would you like?</h2>
-                <h2 data-ng-show="!group">Almost done. What type of product would you prefer?</h2>
-                <div class="btn-toolbar">
-                  <label class="btn btn-primary" data-scroll-to="#sectionResults" data-ng-click="showResults = true; ProductFilterType = {type: 'app'}" uib-btn-checkbox>App</label>
-                  <label class="btn btn-primary" data-scroll-to="#section5" data-ng-click="showSection5 = true; ProductFilterType = {type: 'robot'}" uib-btn-checkbox>Robot</label>
-                  <label class="btn btn-primary" data-ng-show="showDroneButton" data-scroll-to="#sectionResults" data-ng-click="showResults = true; ProductFilterType = {type: 'drone'}" uib-btn-checkbox>Drone</label>
-                  <label class="btn btn-primary" data-scroll-to="#section5" data-ng-click="showSection5 = true; ProductFilterType = {type: 'other'}" uib-btn-checkbox>Other</label>
-                </div>
-              </section>
-
-            </li>
-
-            <li>
-
-              <section class="container-fluid" id="section5" data-ng-show="showSection5">
-                <h2 data-ng-show="group">What's your budget?</h2>
-                <h2 data-ng-show="!group">What's your classroom budget?</h2>
-                <div class="btn-toolbar">
-                  <label class="btn btn-primary" data-ng-hide="hide50Button" data-scroll-to="#sectionResults" data-ng-click="showResults = true; ProductFilterBudget = {budget: '50'}" uib-btn-checkbox>$50</label>
-                  <label class="btn btn-primary" data-scroll-to="#sectionResults" data-ng-click="showResults = true; ProductFilterBudget = {budget: '100'}"uib-btn-checkbox>$100</label>
-                  <label class="btn btn-primary" data-scroll-to="#sectionResults" data-ng-click="showResults = true; ProductFilterBudget = {budget: '200'}" uib-btn-checkbox>$200</label>
-                  <label class="btn btn-primary" data-scroll-to="#sectionResults" data-ng-click="showResults = true; ProductFilterBudget = {budget: '300'}" uib-btn-checkbox>$300</label>
-                </div>
-                <h6 style="padding: 10px"><a class="text" data-scroll-to="#sectionResults" data-ng-click="showResults = true; toggleDisplay()">I'm not sure. Show me all the robots!</a></h6>
-              </section>
-
-            </li>
-
-            <li>
-
-              <section class="container-fluid" data-ng-show="showResults" id="sectionResults">
-                <h2 data-ng-show="(products | filter:ProductFilterGroup | filter:ProductFilterAge | filter:ProductFilterCategories | filter:ProductFilterType | filter:ProductFilterBudget).length" style="text-align: center"><i class="fa fa-magic" style="color: #8b00de" aria-hidden="true"></i> Huzzah! Here's what we recommend:</h2>
-                <h2 data-ng-show="!(products | filter:ProductFilterGroup | filter:ProductFilterAge | filter:ProductFilterCategories | filter:ProductFilterType | filter:ProductFilterBudget).length" style="text-align: center"><i class="fa fa-frown-o" style="color: #8b00de" aria-hidden="true"></i> Rats! We couldn't find any products.</h2>
-                <div class="card-deck">
-                  <div class="card" data-ng-repeat="product in products | filter:ProductFilterGroup | filter:ProductFilterAge | filter:ProductFilterCategories | filter:ProductFilterType | filter:ProductFilterBudget | orderBy:'rank' | limitTo:3">
-                    <card>
-                      <div class="card-block">
-                        <h4 class="card-title">{{ product.title }}</h4>
-                        <h6 class="card-subtitle text-muted">by {{ product.company }}</h6>
-                        <img ng-src="{{ product.image }}" alt="Card image">
-                        <p class="card-text">{{ product.description }}</p>
-                        <p><a href="{{ product.reviews }}" target="_blank" class="card-text-sm">Read reviews</a></p>
-                        <p class="card-text" data-ng-show="group"><span style="color: #8b00de; padding: 5px; float: right">{{ product.price | currency : symbol }}</span></p>
-                        <p class="card-text" data-ng-show="!group"><span style="color: #8b00de; padding: 5px; float: right">{{ product.price | currency : symbol }} each</span></p>
-                        <a href="{{ product.buy }}" target="_blank" class="btn btn-secondary" ng-show="group">Buy now</a>
-                        <a href="{{ product.buy-classroom }}" target="_blank" class="btn btn-secondary" data-ng-show="!group">Buy classroom pack</a>
-                      </div>
-                    </card>
-                  </div>
-                </div>
-
-                <h6 style="text-align: center; color: #525252; padding: 1rem; line-height: 1.5">Couldn't find what you're looking for? <a href="mailto:contact@simplebotics.io" style="color: #8b00de">Contact us</a> and we'll take care of you.</h6>
-
-              </section>
-
-            </li>
-
-          </ol>
 
         </div>
 
-        <!-- Begin MailChimp Signup Form -->
+        <div class="mainContent">
 
-        <div id="mailchimp">
-          <form action="//simplebotics.us8.list-manage.com/subscribe/post?u=a37683d28b61d278f0a3872f1&amp;id=9c860994c" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+          <h1 class="hero-text">Discover the best STEM products for kids and students 🙌</h1>
 
-            <h3 style="color: #fff;">Get top gadgets and activities in your inbox. <i class="fa fa-hand-o-down" aria-hidden="true"></i></h3>
+          <div class="featuredContainer" data-ng-hide="featuredContainer">
 
-            <input type="email" size="30" value="Enter your email" name="EMAIL" class="required email" id="mce-EMAIL" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
-            <input type="text" size="30" value="Enter your name" name="FNAME" class="name" id="mce-FNAME" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+            <button type="button" class="close" aria-label="Close" data-ng-click="featuredContainer = true">
+              <span aria-hidden="true">&times;</span>
+            </button>
 
-            <div id="mce-responses" class="clear">
-              <div class="response" id="mce-error-response" style="display:none"></div>
-              <div class="response" id="mce-success-response" style="display:none"></div>
+            <div class="header">
+
+              <h4 style="text-align: left; font-size: 17px; padding: 0 15px;">Featured 🎉</h4>
+
             </div>
 
-            <div class="clear">
-              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+            <div class="card-deck">
+
+              <div class="card" data-ng-repeat="product in products | filter:{ featured:true } | orderBy:'rank' | limitTo:1">
+
+                <card>
+                  <div class="card-block">
+                    <h4 class="card-title" data-ng-show="!group"><a href="{{ product.buy }}">{{ product.title }}</a></h4>
+                    <h4 class="card-title" data-ng-show="group"><a href="{{ product.buyEducator }}">{{ product.title }}</a></h4>
+                    <img ng-src="{{ product.image }}" alt="Card image">
+                    <p class="card-text">{{ product.description }}</p>
+                    <a href="{{ product.buy }}" target="_blank" onClick="ga('send', 'event', 'Products', 'clicked');" class="btn btn-secondary" data-ng-show="!group">View</a>
+                    <a href="{{ product.buyEducator }}" target="_blank" onClick="ga('send', 'event', 'Products', 'clicked');" class="btn btn-secondary" data-ng-show="group">View</a>
+                  </div>
+                </card>
+
+              </div>
+
             </div>
-          </form>
+
+          </div>
+
+          <div class="recommendedContainer">
+
+            <div class="header">
+
+              <h4 data-ng-show="(products | filter:ProductFilterGroup | filter:ProductFilterAge | filter:ProductFilterCategories | filter:ProductFilterType | filter:ProductFilterBudget).length" style="text-align: left; font-size: 17px; padding: 0 15px;">Recommended products ✌️</h4>
+
+              <h4 data-ng-show="!(products | filter:ProductFilterGroup | filter:ProductFilterAge | filter:ProductFilterCategories | filter:ProductFilterType | filter:ProductFilterBudget).length" style="text-align: center; font-size: 17px; padding: 0 15px"> We couldn't find any products. <a href="mailto:contact@simplebotics.io">Contact us</a> and we'll take care of you.</h4>
+
+            </div>
+
+            <div class="card-deck">
+
+              <div class="card" data-ng-repeat="product in products | filter:ProductFilterGroup | filter:ProductFilterAge | filter:ProductFilterCategories | filter:ProductFilterType | filter:ProductFilterBudget | orderBy:'rank' | limitTo:9">
+
+                <card>
+                  <div class="card-block">
+                    <h4 class="card-title" data-ng-show="!group"><a href="{{ product.buy }}">{{ product.title }}</a></h4>
+                    <h4 class="card-title" data-ng-show="group"><a href="{{ product.buyEducator }}">{{ product.title }}</a></h4>
+                    <img ng-src="{{ product.image }}" alt="Card image">
+                    <p class="card-text">{{ product.description }}</p>
+                    <a href="{{ product.buy }}" target="_blank" onClick="ga('send', 'event', 'Products', 'clicked');" class="btn btn-secondary" data-ng-show="!group">View</a>
+                    <a href="{{ product.buyEducator }}" target="_blank" onClick="ga('send', 'event', 'Products', 'clicked');" class="btn btn-secondary" data-ng-show="group">View</a>
+                  </div>
+                </card>
+
+              </div>
+
+            </div>
+
+          </div>
+
         </div>
 
-        <!--End mc_embed_signup-->
+        <div class="secondaryContent">
 
-        <footer class="footer">
+          <div class="sidebar">
 
-          <p class="copyright">Copyright © 2017 Simplebotics. All rights reserved.</p>
+            <h6 style="text-align: left; text-transform: uppercase; color: #7f00ea;">Filter</h6>
 
-          <ul class="footer-list">
+            <div class="sidebarOptions">
 
-            <li class="footer-list-item">
-              <a class="footer-list-link" href="/pages/about-us">About</a>
-            </li>
+              <h6>Specialty</h6>
+              <form action="#" class="radio">
+                <label><input type="radio" name="subject" value="kids" checked data-ng-click="ProductFilterGroup = {group: 'kids'}; group = false"> Parent</label>
+                <label><input type="radio" name="subject" value="students" data-ng-click="ProductFilterGroup = {group: 'students'}; group = true"> Teacher</label>
+              </form>
 
-            <li class="footer-list-item">
-              <a class="footer-list-link" href="/pages/terms-of-service">Terms</a>
-            </li>
+              <h6>Product Type</h6>
+              <form action="#" class="radio">
+                <label><input type="radio" name="product" value="robot" data-ng-click="ProductFilterType = {type: 'robot'}"> Robot</label>
+                <label><input type="radio" name="product" value="drone" data-ng-click="ProductFilterType = {type: 'drone'}"> Drone</label>
+                <label><input type="radio" name="product" value="app" data-ng-click="ProductFilterType = {type: 'app'}"> App</label>
+                <label><input type="radio" name="product" value="other" data-ng-click="ProductFilterType = {type: 'other'}"> Other</label>
+              </form>
 
-            <li class="footer-list-item">
-              <a class="footer-list-link" href="/pages/privacy-policy">Privacy</a>
-            </li>
+              <h6>Age Group</h6>
+              <form action="#" class="radio">
+                <label><input type="radio" name="age" value="3" data-ng-click="ProductFilterAge = {age: '3+'}"> 3+</label>
+                <label><input type="radio" name="age" value="4-7" data-ng-click="ProductFilterAge = {age: '4-7'}"> 4-7</label>
+                <label><input type="radio" name="age" value="8-13" data-ng-click="ProductFilterAge = {age: '8-13'}"> 8-13</label>
+                <label><input type="radio" name="age" value="14" data-ng-click="ProductFilterAge = {age: '14'}"> 14+</label>
+              </form>
 
-            <li class="footer-list-item">
-              <a class="footer-list-link" href="mailto:contact@simplebotics.io">Contact</a>
-            </li>
+              <h6>Subject</h6>
+              <form action="#" class="radio">
+                <label><input type="radio" name="subject" value="programming" data-ng-click="ProductFilterCategories = {categories: 'programming'}"> Coding</label>
+                <label><input type="radio" name="subject" value="mechanics" data-ng-click="ProductFilterCategories = {categories: 'mechanics'}"> Mechanics</label>
+                <label><input type="radio" name="subject" value="electronics" data-ng-click="ProductFilterCategories = {categories: 'electronics'}"> Electronics</label>
+              </form>
 
-          </ul>
+            </div>
 
-          <p class="hidden-xs">
-            Built with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="http://twitter.com/simplebotics">@simplebotics</a>
-          </p>
+          </div>
 
-          <p style="font-size: 10px">This website is not affiliated with, maintained, authorized, or endorsed by the companies listed unless noted otherwise.</p>
-        </footer>
+        </div>
 
-        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-        <script src="/Users/gabriel/Desktop/simplebotics.io/scripts/app.js"></script>
-        <script src="/Users/gabriel/Desktop/simplebotics.io/components/simplebotics.io.ctr.js"></script>
-        <script src="/Users/gabriel/Desktop/simplebotics.io/node_modules/scroll-to/scroll-to.js"></script>
+        <div class="metaContent" data-ng-hide="metaContent">
 
-        <script>
-          var _intro_bar = window._intro_bar || {};(function() {var i,e;i=document.createElement("script"), i.type='text/javascript';i.async=1, i.src="//cdn.introbar.com/js/v1.js", e=document.getElementsByTagName("script")[0], e.parentNode.insertBefore(i,e);})();
-          _intro_bar.account_id = '58b104af6e8e7';
-        </script>
+          <div class="sidebar">
 
-      </body>
-      </html>
+            <h6 style="text-align: left; font-weight: 400; color: #8b00de;">Newsletter</h6>
+
+            <p>Get top STEM products and activities in your inbox. ✉️</p>
+
+            <a href="http://eepurl.com/cESEtP" target="_blank" onclick="ga('send', 'event', 'Newsletter', 'clicked');" class="btn btn-primary">Subscribe</a>
+
+          </div>
+
+          <a data-pin-do="embedBoard" data-pin-board-width="400" data-pin-scale-height="240" data-pin-scale-width="80" href="https://www.pinterest.com/simplebotics/all-things-stem/"></a>
+
+        </div>
+
+      </div>
+
+    </div>
+    <!-- Begin MailChimp Signup Form -->
+
+    <div id="mailchimp">
+      <form action="//simplebotics.us8.list-manage.com/subscribe/post?u=a37683d28b61d278f0a3872f1&amp;id=9c860994c2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+
+        <h5 style="color: #fff;">Get top gadgets and activities in your inbox.🔥</h5>
+
+        <input type="email" size="30" value="Enter your email" name="EMAIL" class="required email" id="mce-EMAIL" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+        <input type="text" size="30" value="Enter your name" name="FNAME" class="name" id="mce-FNAME" onfocus="if(this.value==this.defaultValue)this.value='';" onblur="if(this.value=='')this.value=this.defaultValue;">
+
+        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a37683d28b61d278f0a3872f1_9c860994c2" tabindex="-1" value=""></div>
+
+        <div id="mce-responses" class="clear">
+          <div class="response" id="mce-error-response" style="display:none"></div>
+          <div class="response" id="mce-success-response" style="display:none"></div>
+        </div>
+
+        <div class="clear">
+          <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+        </div>
+      </form>
+    </div>
+
+    <!--End mc_embed_signup-->
+
+    <footer class="footer">
+
+      <p class="copyright">Copyright © 2017 Simplebotics. All rights reserved.</p>
+
+      <ul class="footer-list">
+
+        <li class="footer-list-item">
+          <a class="footer-list-link" href="/about">About</a>
+        </li>
+
+        <li class="footer-list-item">
+          <a class="footer-list-link" href="/terms">Terms</a>
+        </li>
+
+        <li class="footer-list-item">
+          <a class="footer-list-link" href="/privacy">Privacy</a>
+        </li>
+
+        <li class="footer-list-item">
+          <a class="footer-list-link" href="mailto:contact@simplebotics.io">Contact</a>
+        </li>
+
+      </ul>
+
+      <p class="hidden-xs">
+        Built with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="http://twitter.com/simplebotics">@simplebotics</a>
+      </p>
+
+      <p style="font-size: 10px">This website is not affiliated with, maintained, authorized, or endorsed by the companies listed unless noted otherwise.</p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
+    <script src="https://github.com/simplebotics/simplebotics.io/blob/gh-pages/app.js"></script>
+    <script src="https://github.com/simplebotics/simplebotics.io/blob/gh-pages/simplebotics.io.ctr.js"></script>
+    <script src="https://github.com/simplebotics/simplebotics.io/blob/gh-pages/scroll-to.js"></script>
+
+    <script>
+      var _intro_bar = window._intro_bar || {};(function() {var i,e;i=document.createElement("script"), i.type='text/javascript';i.async=1, i.src="//cdn.introbar.com/js/v1.js", e=document.getElementsByTagName("script")[0], e.parentNode.insertBefore(i,e);})();
+      _intro_bar.account_id = '58b104af6e8e7';
+    </script>
+
+</body>
+</html>
