@@ -254,7 +254,7 @@
 
   $(function(){
       $(".typed-header").typed({
-        strings: ["robotics", "drones", "apps", "electronics", "coding"],
+        strings: ["science", "technology", "engineering", "mathematics"],
         typeSpeed: 90,
         loop: true,
         backDelay: 3000,
@@ -294,7 +294,7 @@
       });
     } );
 
-    // remove fragment as much as it can go without adding an entry in browser history:
+// remove fragment as much as it can go without adding an entry in browser history:
 window.location.replace("#");
 
 // slice off the remaining '#' in HTML5:    
